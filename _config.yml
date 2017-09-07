@@ -6,3 +6,5 @@ theme: jekyll-theme-minimal
 
 plugins:
   - jekyll-mentions
+
+repository: pcrane/pcrane.github.io
