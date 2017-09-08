@@ -3,6 +3,7 @@ description:
 google_analytics:
 show_downloads: false
 theme: jekyll-theme-minimal
+baseUrl: paul.crane.net.nz
 
 plugins:
   - jekyll-mentions
