@@ -1,0 +1,11 @@
+title: Paul Crane
+description: 
+google_analytics:
+show_downloads: false
+theme: jekyll-theme-minimal
+baseUrl: paul.crane.net.nz
+
+plugins:
+  - jekyll-mentions
+
+repository: pcrane/pcrane.github.io
