@@ -138,7 +138,7 @@
       "year":"2017",
       "where":"Montreal, Canada",
       "organisation":"IEEE",
-      "paper":{"text": "doi", "href":"./publications/pimrc2017/pimrc2017.pdf"},
+      "paper":{"text": "doi", "href":""},
       "bibtex":{"text": "citation", "href":"./publications/pimrc2017/pimrc2017.bib"},
       "slides":{"text": "slides", "href":""}
     },
