@@ -204,7 +204,7 @@
         "end":"present"
       },
       "details": [
-        "There is a cross-discipline group exploring energy related research. One of the ongoing projects is to develop software to monitor/visualise energy usage across the campus. This involves the collection of a variety of measurements (e.g. temperatures, lighting levels, occupancy, electricity usage, including the units and scale) from a disparate set of systems (e.g. building management systems, lighting systems, ad hoc sensors) at a high level of geographic precision (e.g. room, floor, building, building, and campus levels of detail) and temporal precision (most commercial systems only persist aggregate data).",
+        "There is a cross-discipline group exploring energy related research. One of the ongoing projects is to develop software to monitor/visualise energy usage across the campus. This involves the collection of a variety of measurements (e.g. temperatures, lighting levels, occupancy, electricity usage, including the units and scale) from a disparate set of systems (e.g. building management systems, lighting systems, ad hoc sensors) at a high level of geographic precision (e.g. room, floor, building, and campus levels of detail) and temporal precision (most commercial systems only persist aggregate data).",
         "The prototype system was presented at the Otago Energy Research Centre's Symposium in 2016, and awarded Best Student Presentation."
       ]
     },
@@ -475,7 +475,7 @@
     },
     {
       "name": "West Coast Swing Dance Community",
-      "description": "Planning classes, teaching, and supporting a local dance community for weekly lessons. Along with promoting national events and organising for overseas teachers to teach workshops over weekend."
+      "description": "Planning classes, teaching, and supporting a local dance community for weekly lessons. Along with promoting national events and organising for overseas teachers to teach workshops over weekends."
     }
   ],
   "hobbies": [
