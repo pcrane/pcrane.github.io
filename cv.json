@@ -1,0 +1,491 @@
+{
+  "name": "Paul Crane",
+  "title":"",
+  "contact": {
+    "methods": [
+      {
+        "href": "tel://+64212742117",
+        "value": "+64 (0) 21 274 2117",
+        "prefix": "tel:",
+        "icon": "mobile icon"
+      },
+      {
+        "href": "mailto://paul@crane.net.nz",
+        "value": "paul@crane.net.nz",
+        "prefix": "email:",
+        "icon":"mail icon"
+      },
+      {
+        "href": "https://paul.crane.net.nz",
+        "value": "paul.crane.net.nz",
+        "prefix": "web:",
+        "icon":"home icon"
+      },
+      {
+        "href": "https://github.com/pcrane",
+        "value": "Github",
+        "prefix": "github:",
+        "icon":"github icon"
+      },
+      {
+        "href": "https://www.linkedin.com/in/paulscrane/",
+        "value": "LinkedIn",
+        "prefix": "linkedin:",
+        "icon":"linkedin icon"
+      },
+      {
+        "href": "https://scholar.google.co.nz/citations?user=kjrHeXQAAAAJ",
+        "value": "Google Scholar",
+        "prefix": "Google Scholar:",
+        "icon":"google icon"
+      }
+    ]
+  },
+  "education": [
+    {
+      "what": "PhD",
+      "subject": "Computer Science",
+      "visible": true,
+      "where": {
+        "text": "University of Otago",
+        "href": "http://www.otago.ac.nz"
+      },
+      "when": {
+        "start": "August 2012",
+        "end": "Feburary 2017 (Defended June 2017; Graduation December 2017)"
+      },
+      "title": {
+        "text": "An Indoor Localisation System Based on Ubiquitous Technology",
+        "href": ""
+      },
+      "abstract": {
+        "visible": true,
+        "long": [
+          "Indoor localisation systems are concerned with locating people or devices within an indoor environment. Within the field, there are a large number of technologies available for this task. Depending on the technology and underlying method of location estimate the accuracy is variable.  This thesis examines ways to increase the accuracy of indoor localisation systems focusing on using ubiquitous technologies. Two popular methods for indoor localisation, fingerprinting and trilateration, were investigated.",
+          "The improvement to the fingerprint location accuracy is approximately 85% and was achieved by excluding poor quality measurements through the manipulation of the radio hardware transmission powers. The trilateration scheme location accuracy was improved by 32% accompanied by a decrease in computation time by 70% in general, and up to two orders of magnitude in some cases.",
+          "One problem with these popular indoor localisation methods is the need for a large amount of training data. To counter this a crowd-sourced approach was developed to decrease the amount of time taken to deploy a localisation system while improving the accuracy by 25% with state- of-the-art systems."
+        ],
+        "short": "Indoor localisation systems are concerned with locating people or devices indoors without the support of GPS. A key challenge is to derive accurate location estimates. The thesis explores, and improves upon, the accuracy of two different signal strength based approaches. The final contribution is to reduce the effort needed to deploy an indoor localisation system via crowd sourcing."
+      }
+    },
+    {
+      "what": "MSc",
+      "subject": "Information Science",
+      "visible": true,
+      "where": {
+        "text": "University of Otago",
+        "href": "http://www.otago.ac.nz"
+      },
+      "when": {
+        "start": "July 2010",
+        "end": "December 2011"
+      },
+      "title": {
+        "text": "Beacon - A Rapidly Deployable Cellphone Network",
+        "href": "https://ourarchive.otago.ac.nz/handle/10523/2267"
+      },
+      "abstract": {
+        "visible": false,
+        "long": [],
+        "short": "The thesis is an examination of the use of rapidly deployable cell-phone networks for disaster relief efforts. During a disaster, effective communications are vital to coordinate response efforts and to keep civilians informed. We propose and test a system that is aimed at use by civilians without the need for them to have any special equipment apart from a GSM mobile phone."
+      }
+    },
+    {
+      "what": "Postgraduate Diploma in Science",
+      "subject": "Telecommunications",
+      "visible": true,
+      "where": {
+        "text": "University of Otago",
+        "href": "http://www.otago.ac.nz"
+      },
+      "when": {
+        "start": "March 2010",
+        "end": "December 2010"
+      },
+      "title": {
+        "text": "The Future of Telephony",
+        "href": ""
+      },
+      "abstract": {
+        "visible": false,
+        "long": [],
+        "short": "This project serves to answer the question 'what is the future of telephony?'.  We look at a history of telephony and its present state as well as what is possible in future telecommunications networks. To demonstrate this, we develop two experimental application to showcase the abilities of a fully programmable telephone system. The first application is an click-to-call button on a website. The second is a capture the flag type game that uses payphones to claim areas. We propose that a fully programmable telephone system can be of use in a disaster."
+      },
+      "honours": "Awarded with Distinction"
+    },
+    {
+      "what": "BSc (Hons)",
+      "subject": "Computer Science",
+      "visible": false,
+      "where": {
+        "text": "University of Otago",
+        "href": "www.otago.ac.nz"
+      },
+      "when": {
+        "start": "February 2003",
+        "end": "December 2006"
+      },
+      "title": [],
+      "abstract": {"visible": false}
+    }
+  ],
+  "publications":[
+    {
+      "title":"CRAFT: Reducing the effort for Indoor Localisation",
+      "author": [{ "name":"Zhiyi Huang"},{"name":"Haibo Zhang"}],
+      "booktitle": "IEEE 28th Annual International Symposium on Person, Indoor and Mobile Radio Communications (PIMRC)",
+      "pages":"1-6",
+      "year":"2017",
+      "where":"Montreal, Canada",
+      "organisation":"IEEE",
+      "paper":{"text": "doi", "href":"./publications/pimrc2017/pimrc2017.pdf"},
+      "bibtex":{"text": "citation", "href":"./publications/pimrc2017/pimrc2017.bib"},
+      "slides":{"text": "slides", "href":""}
+    },
+    {
+      "title":"Emender: Signal filter for Trilateration Based Indoor Localisation",
+      "author": [{ "name":"Zhiyi Huang"},{"name":"Haibo Zhang"}],
+      "booktitle": "IEEE 27th Annual International Symposium on Person, Indoor and Mobile Radio Communications (PIMRC)",
+      "pages":"1-6",
+      "year":"2016",
+      "where":"Valencia, Spain",
+      "organisation":"IEEE",
+      "paper":{"text": "doi", "href":"./publications/pimrc2016/pimrc2016.pdf"},
+      "bibtex":{"text": "citation", "href":"./publications/pimrc2016/pimrc2016.bib"},
+      "slides":{"text": "slides", "href":""}
+    },
+    {
+      "title":"SIB: Noise Reduction in Fingerprint-based Indoor Localisation using Multiple Transmission Powers",
+      "author": [{ "name":"Zhiyi Huang"},{"name":"Haibo Zhang"}],
+      "booktitle": "Proceedings of the 13th International Conference on Mobile and Ubiquitous Multimedia",
+      "pages":"208-211",
+      "year":"2014",
+      "where":"Melbourne, Australia",
+      "organisation":"ACM",
+      "paper":{"text": "doi", "href":"./publications/mum2014/mum2014.pdf"},
+      "bibtex":{"text": "citation", "href":"./publications/mum2014/mum2014.bib"}
+    }
+  ],
+  "projects": [
+    {
+      "what": "Real-time Neuro-feedback",
+      "who": {"name":"Phoebe Neo", "department":"Department of Psychology", "organisation":"University of Otago"},
+      "when": {
+        "start": "March 2017",
+        "end":"present"
+      },
+      "details": [
+        "This research project in the Psychology department aims to discover ways to reduce depressivity. The literature suggests that a difference in activity in the two brain's hemispheres can help reduce the depressivity.",
+        "I was tasked with implementing an experimental protocol in a real-time and online manner as the participants needed to see their performance in order for them to learn how to increase the activity differences (and possibly decrease depressivity). This involved components integrating the EEG measuring device (only available on Windows), the experimental protocol, visual feedback, data exporting (all implemented in Matlab---to fit with the existing code base used within the lab). Currently, I am assisting with the analysis of the collected data."
+      ]
+    },
+    {
+      "what": "Information Display",
+      "who": {"name":"Joe Connolly", "department":"ITS", "organisation":"Downer Group"},
+      "when": {
+        "start": "July 2017",
+        "end":"present"
+      },
+      "details": [
+        "As an independent contractor working for Downer one of their clients needed to display a remote camera feed in the client's reception area. The priority of requirements were thus: reliability, functionality, then cost.",
+        "The content was displayed on a wall-mounted TV using a Raspberry Pi (incorporating a small batter backup system---UPS PiCo), controlled by a Python application. A server (thingsboard) provided settings for each of the clients, the clients loaded the configuration from the server (or used a local file if the server was unavailable). The clients sent health statistics (CPU, RAM, Harddisk, Network activity) to the server to monitor performance and assist with the reliability."
+      ]
+    },
+    {
+      "what": "Network Management Course Content Refresh",
+      "who": {"name":"Zhiyi Huang", "department":"Department of Computer Science", "organisation":"University of Otago"},
+      "when": {
+        "start": "September 2017",
+        "end":"present"
+      },
+      "details": [
+        "The course lab manual and website were last updated in 2010. Since then, there have been a large number of changes to the commands, tools, and general practises around Linux administration. Beyond the content of the refresh, the course web page was updated to use modern (responsive) web design practises, and the lab manual build process was updated to use modern continuous integration techniques to automate as much as possible. The previous system used `makefile`s and docbook to produce the PDF version of the manual."
+      ]
+    },
+    {
+      "what": "Supporting Energy Monitoring At University of Otago",
+      "who": {"name": "Hans Pietsch and David Eyers", "department":"Property Services Division and Department of Computer Science", "organisation":"University of Otago"},
+      "when": {
+        "start": "July 2016",
+        "end":"present"
+      },
+      "details": [
+        "There is a cross-discipline group exploring energy related research. One of the ongoing projects is to develop software to monitor/visualise energy usage across the campus. This involves the collection of a variety of measurements (e.g. temperatures, lighting levels, occupancy, electricity usage, including the units and scale) from a disparate set of systems (e.g. building management systems, lighting systems, ad hoc sensors) at a high level of geographic precision (e.g. room, floor, building, building, and campus levels of detail) and temporal precision (most commercial systems only persist aggregate data).",
+        "The prototype system was presented at the Otago Energy Research Centre's Symposium in 2016, and awarded Best Student Presentation."
+      ]
+    },
+    {
+      "what": "Accelerometer Gloves",
+      "who": {"name":"Liz Franz", "department":"Department of Psychology", "organisation":"University of Otago"},
+      "when": {
+        "start": "2014",
+        "end":"2014"
+      },
+      "details": ["In this project I designed, developed, and prototyped a set of gloves to measure minute tremor at the fingertips of participants. The participants were asked to perform everyday tasks (e.g. opening a door handle, writing, etc.), so the device had to have minimal impact. This was achieved by attaching four accelerometers to the participants fingertips with velcro, with an Arduino to interact with the accelerometers. The acceleromers used (ADXL345) are only able to have one of two addresses available, and so a creative solution was found to support this limitation and give a high sample rate (approximately 125Hz)."]
+    },
+    {
+      "what": "Differentiation of Essential Tremor and Parkinson's Disease",
+      "who": {"name":"Liz Franz", "department":"Department of Psychology", "organisation":"University of Otago"},
+      "when": {
+        "start": "2014",
+        "end":"2014"
+      },
+      "details": ["This project investigated the use of machine learning (specifically support vector machines) to differentiate Essential Tremor from Parkinson's Disease from a control group using a simple set of tests performed on an Android mobile phone."]
+    }
+  ],
+  "skill_levels": {
+    "languages":[{
+      "category":"languages",
+      "name": "Daily",
+      "sort": 1,
+      "details": [
+        {
+          "name": "Python",
+          "keys": [
+            "python"
+          ],
+          "capability": 7,
+          "desire": 7
+        },
+        {
+          "name": "Java",
+          "keys": [
+            "java"
+          ],
+          "capability": 7,
+          "desire": 7
+        },
+        {
+          "name": "C",
+          "keys": [
+            "c"
+          ],
+          "capability": 7,
+          "desire": 7
+        }
+      ]
+    },
+      {
+        "name": "Familiar",
+        "sort": 2,
+        "details": [
+          {
+            "name": "LaTeX",
+            "keys": [
+              "latex",
+              "tex",
+              "xetex"
+            ],
+            "capability": 3,
+            "desire": 1
+          },
+          {
+            "name": "R",
+            "keys": [
+              "r"
+            ],
+            "capability": 3,
+            "desire": 1
+          },
+          {
+            "name": "MatLab",
+            "keys": [
+              "matlab"
+            ],
+            "capability": 3,
+            "desire": 1
+          },
+          {
+            "name": "HTML/CSS/Javascript",
+            "keys": [
+              "html",
+              "css",
+              "js"
+            ],
+            "capability": 3,
+            "desire": 1
+          }
+        ]
+      },
+      {
+        "name": "Novice",
+        "sort": 3,
+        "details": [
+          {
+            "name": "Go",
+            "keys": [
+              "go"
+            ],
+            "capability": 3,
+            "desire": 1
+          },
+          {
+            "name": "C++",
+            "keys": [
+              "c++"
+            ],
+            "capability": 3,
+            "desire": 1
+          },
+          {
+            "name": "C#",
+            "keys": [
+              "c#"
+            ],
+            "capability": 3,
+            "desire": 1
+          }
+        ]
+      }],
+    "tools":[
+      {"name":"Version Control",
+        "sort": 4,
+        "details": [
+          {
+            "name": "git",
+            "keys": ["git"],
+            "capability": 7,
+            "desire": 7
+          },
+          {
+            "name": "subversion",
+            "keys": ["svn"],
+            "capability": 7,
+            "desire": 7
+          }]
+      },
+      {"name":"Databases",
+        "sort": 5,
+        "details": [
+          {
+            "name": "SQL",
+            "keys": ["mysql","postgresql"],
+            "capability": 7,
+            "desire": 7
+          },
+          {
+            "name": "NoSQL",
+            "keys": ["Bolt"],
+            "capability": 7,
+            "desire": 7
+          },
+          {
+            "name": "Timeseries",
+            "keys": ["influx"],
+            "capability": 7,
+            "desire": 7
+          }
+        ]
+      },
+      {"name":"Systems",
+        "sort": 6,
+        "details": [
+          {
+            "name": "Linux (debian flavours)",
+            "keys": ["linux","debian", "ubuntu"],
+            "capability": 7,
+            "desire": 7
+          },
+          {
+            "name": "IoT",
+            "keys": ["TinyOS", "Android Things"],
+            "capability": 7,
+            "desire": 7
+          }
+        ]
+      }
+    ]
+  },
+  "courses": [
+    {
+      "name": { "text": "COMP160", "href": "http://www.cs.otago.ac.nz/comp160/"},
+      "title": { "text": "Computer Programming", "href": "http://www.cs.otago.ac.nz/comp160/"},
+      "language": "Java",
+      "year": [
+        2005,
+        2007
+      ],
+      "postfix": "(renamed to COSC160 in 2009)"
+    },
+    {
+      "name": { "text": "COSC241", "href": "http://www.cs.otago.ac.nz/cosc241/"},
+      "title": { "text": "Programming and Problem Solving", "href": "http://www.cs.otago.ac.nz/cosc241/"},
+      "language": "Java",
+      "year": [
+        2009,
+        2010,
+        2012,
+        2017
+      ]
+    },
+    {
+      "name": { "text": "COSC242", "href": "http://www.cs.otago.ac.nz/cosc242/"},
+      "title": { "text": "Algorithms and Data Structures", "href": "http://www.cs.otago.ac.nz/cosc242/"},
+      "language": "C",
+      "year": [
+        2006,
+        2007,
+        2009,
+        2010,
+        2011,
+        2017
+      ]
+    },
+    {
+      "name": { "text": "COSC243", "href": "http://www.cs.otago.ac.nz/cosc243/"},
+      "title": { "text": "Computer Architecture and Operating Systems", "href": "http://www.cs.otago.ac.nz/cosc243/"},
+      "language": "theory",
+      "year": [
+        2007,
+        2012,
+        2013
+      ]
+    },
+    {
+      "name": { "text": "COSC244", "href": "http://www.cs.otago.ac.nz/cosc244/"},
+      "title": { "text": "Data Communications, Networks, and the Internet", "href": "http://www.cs.otago.ac.nz/cosc244/"},
+      "language": "theory, Java",
+      "year": [
+        2007,
+        2009,
+        2010,
+        2012,
+        2013
+      ]
+    },
+    {
+      "name": { "text": "COSC301", "href": "http://www.cs.otago.ac.nz/cosc301/"},
+      "title": { "text": "Network Management", "href": "http://www.cs.otago.ac.nz/cosc301/"},
+      "language": "Linux, Ubuntu",
+      "year": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ]
+    }
+  ],
+  "feedback": {
+    "preface": "The following feedback was obtained by end-of-semester student evaluation questionnaires:",
+    "comments": [
+      "Paul was very helpful and cleared up any misunderstandings.",
+      "Paul performed his herculean task with grace, empathy, and deep understanding of the material.",
+      "The lab demonstrator is very helpful."
+    ]
+  },
+  "administration": [
+    {
+      "name": "COSC301 Administration",
+      "description": "Given the structure of the paper (50% internal assessment) and as sole demonstrator I was responsible for recording student marks, granting extensions, administering practical tests to classes of around 50 students each year."
+    },
+    {
+      "name": "West Coast Swing Dance Community",
+      "description": "Planning classes, teaching, and supporting a local dance community for weekly lessons. Along with promoting national events and organising for overseas teachers to teach workshops over weekend."
+    }
+  ],
+  "hobbies": [
+    "Routinely attend weekly Ceroc and West Coast Swing partner dancing classes, and occasional competitions.",
+    "I played Saxophone (jazz band and symphonic) for numerous years in local amateur groups."
+  ]
+}
