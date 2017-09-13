@@ -4,12 +4,6 @@
   "contact": {
     "methods": [
       {
-        "href": "tel://+64212742117",
-        "value": "+64 (0) 21 274 2117",
-        "prefix": "tel:",
-        "icon": "mobile icon"
-      },
-      {
         "href": "mailto://paul@crane.net.nz",
         "value": "paul@crane.net.nz",
         "prefix": "email:",
@@ -188,7 +182,7 @@
       },
       "details": [
         "As an independent contractor working for Downer one of their clients needed to display a remote camera feed in the client's reception area. The priority of requirements were thus: reliability, functionality, then cost.",
-        "The content was displayed on a wall-mounted TV using a Raspberry Pi (incorporating a small batter backup system---UPS PiCo), controlled by a Python application. A server (thingsboard) provided settings for each of the clients, the clients loaded the configuration from the server (or used a local file if the server was unavailable). The clients sent health statistics (CPU, RAM, Harddisk, Network activity) to the server to monitor performance and assist with the reliability."
+        "The content was displayed on a wall-mounted TV using a Raspberry Pi (incorporating a small batter backup system---UPS PiCo), controlled by a Python application. A server (thingsboard) provided settings for each of the clients, the clients loaded the configuration from the server (or used a local file if the server was unavailable). The clients sent health statistics (CPU, RAM, hard disk, network activity) to the server to monitor performance and assist with the reliability."
       ]
     },
     {
