@@ -216,7 +216,7 @@
         "start": "2014",
         "end":"2014"
       },
-      "details": ["In this project I designed, developed, and prototyped a set of gloves to measure minute tremor at the fingertips of participants. The participants were asked to perform everyday tasks (e.g. opening a door handle, writing, etc.), so the device had to have minimal impact. This was achieved by attaching four accelerometers to the participants fingertips with velcro, with an Arduino to interact with the accelerometers. The acceleromers used (ADXL345) are only able to have one of two addresses available, and so a creative solution was found to support this limitation and give a high sample rate (approximately 125Hz)."]
+      "details": ["In this project I designed, developed, and prototyped a set of gloves to measure minute tremor at the fingertips of participants. The participants were asked to perform everyday tasks (e.g. opening a door handle, writing, etc.), so the device had to have minimal impact. This was achieved by attaching four accelerometers to the participants fingertips with velcro, with an Arduino to interact with the accelerometers. The accelerometers used (ADXL345) are only able to have one of two addresses available, and so a creative solution was found to support this limitation and give a high sample rate (approximately 125Hz)."]
     },
     {
       "what": "Differentiation of Essential Tremor and Parkinson's Disease",
