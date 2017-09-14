@@ -3,53 +3,104 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.css">
-    
+    <link rel="stylesheet" href="https:////cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.css">
+
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-106063554-1', 'auto');
         ga('send', 'pageview');
     </script>
 
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "givenName": "Paul",
+          "familyName": "Crane",
+          "url": "https://paul.crane.net.nz",
+          "email": "mailto:paul@crane.net.nz",
+          "sameAs": [
+            "https://github.com/pcrane",
+            "https://www.linkedin.com/in/paulscrane/",
+            "https://scholar.google.co.nz/citations?user=kjrHeXQAAAAJ",
+            "http://keybase.io/pscrane",
+            "https://twitter.com/paul_crane"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dunedin",
+            "addressRegion": "Otago",
+            "addressCountry": "nz"
+          },
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "362 Leith Street",
+              "addressLocality": "Dunedin",
+              "addressRegion": "Otago"
+            },
+            "url":"https://otago.ac.nz",
+            "name":"University of Otago"
+          }
+        }
+    </script>
+
     <style>
-        html,body{
+        html, body {
             /*font-size: 12px;*/
             color: #333;
         }
 
         body {
-            margin: 6em auto;
+            margin: 4em auto;
             max-width: 68em;
             text-align: justify;
         }
 
-        section,span,div,table {
-            text-align:justify;
+        section, span, div, table {
+            text-align: justify;
         }
 
-        @media print{
-
+        @media print {
             @page {
-                margin: 1cm;
+                margin: 1.5cm;
             }
+
             body {
                 width: 100%;
                 margin: 0;
                 padding: 0;
             }
 
-            html,body{
+            html, body {
                 font-size: 10px;
             }
+
+            /*p {*/
+                /*font-size: 9px;*/
+            /*}*/
 
             h1, h2, h3, h4, h5 {
                 page-break-after: avoid;
             }
-            h1, h2{
+            div{
+                page-break-inside: avoid;
+            }
+
+            h1, h2 {
                 text-decoration: underline;
             }
 
@@ -59,7 +110,7 @@
             }
 
             a[href^=http]:after {
-                content:" <" attr(href) "> ";
+                content: " <" attr(href) "> ";
             }
 
         }
@@ -275,87 +326,111 @@
 
             <section class="column">
                 <h2>Education</h2>
-                <div data-bind="foreach: education" class="ui item content">
-                    <h3 class="ui header" data-bind="visible: visible">
-                        <span class="content">
-                            <span><span data-bind="text: what"></span> - <span data-bind="text: subject"></span></span>
-                                <span data-bind="link: title" class="sub header"></span>
-                            </span>
-                        </span>
-                        <span class="sub header">
-                            <span data-bind="with: when" class="ui left aligned">
-                                <span data-bind="text: start"></span> - <span data-bind="text: end"></span>
-                            </span>
-                            <span data-bind="link: where" class="ui right aligned"></span>
-                        </span>
-                    </h3>
-                    <span data-bind="with: abstract">
-                        <span data-bind="visible: visible, optional: short, binding: 'text'"></span>
-                    </span>
-                </div>
+                <span class="ui items">
+                    <!-- ko foreach: education -->
+                        <div class="item">
+                            <div class="content">
 
+                                <h3 class="ui header" data-bind="visible: visible">
+                                    <span class="content">
+                                        <span>
+                                            <span data-bind="text: what"></span> - <span data-bind="text: subject"></span>
+                                        </span>
+                                        <span data-bind="link: title" class="sub header"></span>
+                                    </span>
+                                    <span class="sub header">
+                                        <span data-bind="with: when" class="ui left aligned">
+                                            <span data-bind="text: start"></span> - <span data-bind="text: end"></span>
+                                        </span>
+                                        <span data-bind="link: where" class="ui right aligned"></span>
+                                    </span>
+                                </h3>
+                                <p data-bind="with: abstract">
+                                    <span data-bind="visible: visible, optional: short, binding: 'text'"></span>
+                                </p>
+
+                            </div>
+                        </div>
+                    <!-- /ko -->
+                </span>
             </section>
 
             <section class="column">
                 <h2>Publications</h2>
-                <div data-bind="foreach: publications">
-                    <h3 class="ui header">
-                        <span data-bind="text: title"></span>
-                        <span class="content sub header">
-                            with <span data-bind="foreach: author"><span data-bind="text: name"></span>, </span>
-                            <i data-bind="text: booktitle"></i>,
-                            pp. <span data-bind="text: pages"></span>, <span data-bind="text: year"></span></br><span data-bind="text: where"></span>.
-                        </span>
-                        <span class="sub header">
-                            <span data-bind="optional: bibtex, binding: 'link'"></span>
-                            <span data-bind="optional: paper, binding: 'link'"></span>
-                            <span data-bind="optional: slides, binding: 'link'"></span>
-                        </span>
-                    </h3>
-                </div>
+                <span class="ui items">
+                    <!-- ko foreach: publications -->
+                        <div class="item">
+                            <div class="content">
+                                <h3 class="ui header">
+                                    <span data-bind="text: title"></span>
+                                    <span class="content sub header">
+                                        with <span data-bind="foreach: author"><span data-bind="text: name"></span>, </span>
+                                        <i data-bind="text: booktitle"></i>,
+                                        pp. <span data-bind="text: pages"></span>, <span data-bind="text: year"></span></br><span
+                                            data-bind="text: where"></span>.
+                                    </span>
+                                    <span class="sub header">
+                                        <span data-bind="optional: bibtex, binding: 'link'"></span>
+                                        <span data-bind="optional: paper, binding: 'link'"></span>
+                                        <span data-bind="optional: slides, binding: 'link'"></span>
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    <!-- /ko -->
+                </span>
             </section>
 
             <section class="column">
                 <h2>Projects</h2>
-                <div data-bind="foreach: projects">
-                    <h3 class="ui header">
-                        <span data-bind="text: what"></span>
-                        <span  class="sub header">
-                            <span data-bind="with: who">
-                                <span data-bind="text: name"></span>,
-                                <span data-bind="text: department"></span>,
-                                <span data-bind="text: organisation"></span>,
-                            </span>
-                            <span data-bind="with: when">
-                                <span data-bind="text: start"></span> - <span data-bind="optional: end, binding:'text'"></span>
-                            </span>
-                        </span>
-                    </h3>
-                    <!-- ko if: $data.details -->
-                    <span data-bind="foreach: details" class="">
-                            <p data-bind="text: $data"></p>
-                    </span>
+                <span class="ui items">
+                    <!-- ko foreach: projects -->
+                        <div class="item">
+                            <div class="content">
+                                <h3 class="ui header">
+                                    <span data-bind="text: what"></span>
+                                    <span class="sub header">
+                                        <span data-bind="with: who">
+                                            <span data-bind="text: name"></span>,
+                                            <span data-bind="text: department"></span>,
+                                            <span data-bind="text: organisation"></span>,
+                                        </span>
+                                        <span data-bind="with: when">
+                                            <span data-bind="text: start"></span> - <span
+                                                data-bind="optional: end, binding:'text'"></span>
+                                        </span>
+                                    </span>
+                                </h3>
+
+                                <!-- ko if: $data.details -->
+                                <span data-bind="foreach: details" class="">
+                                        <p data-bind="text: $data"></p>
+                                </span>
+                                <!-- /ko -->
+                            </div>
+                        </div>
                     <!-- /ko -->
-                </div>
+                </span>
             </section>
 
             <section class="column">
                 <h2 class="title">Technical Knowledge</h2>
+
                 <div data-bind="with: skill_levels" class="ui two column stackable doubling grid container">
                     <div class="column">
                         <table class="ui very basic small compact table">
                             <tbody data-bind="foreach: languages">
                             <tr>
                                 <th>
-                                    <span data-bind="text: name"></span>
+                                    <span data-bind="text: name" class="three column wide"></span>
                                 </th>
-                                    <td>
+                                <td>
                                         <span class="ui horizontal bulleted list">
                                         <!-- ko foreach: details -->
                                             <span data-bind="text: name" class="item"></span>
-                                        <!-- /ko -->
+                                            <!-- /ko -->
                                         </span>
-                                    </td>
+                                </td>
                             </tr>
                             </tbody>
                         </table>
@@ -365,13 +440,13 @@
                             <tbody data-bind="foreach: tools">
                             <tr>
                                 <th>
-                                    <span data-bind="text: name"></span>
+                                    <span data-bind="text: name" class="three column wide"></span>
                                 </th>
                                 <td>
                                     <span class="ui horizontal bulleted list">
                                     <!-- ko foreach: details -->
                                         <span data-bind="text: name" class="item"></span>
-                                    <!-- /ko -->
+                                        <!-- /ko -->
                                     </span>
                                 </td>
                             </tr>
@@ -384,7 +459,8 @@
             <section class="column">
                 <h2 class="title">Work</h2>
                 <div><p>I have worked demonstrating labs for numerous undergraduate courses concurrent with
-                    postgraduate studies. Lab demonstrators have similar responsibilities to a teaching-assistant. The main role is to
+                    postgraduate studies. Lab demonstrators have similar responsibilities to a teaching-assistant. The
+                    main role is to
                     assist students with the practical lab work and help them to understand concepts taught in
                     lectures.
                 </p></div>
@@ -392,49 +468,61 @@
                 <div>
                     <table class="ui very basic small compact table">
                         <thead>
-                            <tr>
-                                <th>Paper</th>
-                                <th>Title</th>
-                                <th>Skillset</th>
-                                <th>Years</th>
-                            </tr>
+                        <tr>
+                            <th>Paper</th>
+                            <th>Title</th>
+                            <th>Skillset</th>
+                            <th>Years</th>
+                        </tr>
                         </thead>
                         <tbody data-bind="foreach: courses">
-                            <tr>
-                                <td><span data-bind="text: name.text"></span></td>
-                                <td><span data-bind="link: title"></span></td>
-                                <td data-bind="text:language"></td>
-                                <td data-bind="text:year"></td>
-                            </tr>
+                        <tr>
+                            <td><span data-bind="text: name.text"></span></td>
+                            <td><span data-bind="link: title"></span></td>
+                            <td data-bind="text:language"></td>
+                            <td data-bind="text:year"></td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
                 <h5 class="title">Anonymous Student Feedback</h5>
                 <!-- ko with: feedback -->
-                    <p data-bind="text: preface"></p>
-                    <ul>
+                <p data-bind="text: preface"></p>
+                <ul>
                     <!-- ko foreach: comments -->
-                        <li><q data-bind="text: $data"></q></li>
+                    <li><q data-bind="text: $data"></q></li>
                     <!-- /ko -->
-                    </ul>
+                </ul>
                 <!-- /ko -->
             </section>
 
             <section class="column">
                 <h2 class="title">Administration</h2>
-                <div data-bind="foreach: administration">
-                    <h3 class="ui header">
-                        <span data-bind="text: name"></span>
-                    </h3>
-                    <p data-bind="text: description"></p>
-                </div>
+                <span class="ui items">
+                    <!-- ko foreach: administration -->
+                        <div class="item">
+                            <div class="content">
+                                <h3 class="ui header">
+                                    <span data-bind="text: name"></span>
+                                </h3>
+                                <p data-bind="text: description"></p>
+                            </div>
+                        </div>
+                    <!-- /ko -->
+                </span>
             </section>
 
             <section class="column">
                 <h2 class="title">Hobbies</h2>
-                <div data-bind="foreach: hobbies">
-                    <p data-bind="text: $data"></p>
-                </div>
+                <span class="ui items">
+                    <!-- ko foreach: hobbies -->
+                        <div class="item">
+                            <div class="content">
+                                <p data-bind="text: $data"></p>
+                            </div>
+                        </div>
+                    <!-- /ko -->
+                </span>
             </section>
         </section>
     </article>
@@ -533,7 +621,7 @@
 
                     nextBinding = "html";
                     newValue = link.outerHTML;
-                } else if(text && !href) {
+                } else if (text && !href) {
                     nextBinding = "text";
                     newValue = text;
                 } else {
