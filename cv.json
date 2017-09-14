@@ -132,9 +132,9 @@
       "year":"2017",
       "where":"Montreal, Canada",
       "organisation":"IEEE",
-      "paper":{"text": "doi", "href":""},
+      "paper":{"text": "paper", "href":""},
       "bibtex":{"text": "citation", "href":"./publications/pimrc2017/pimrc2017.bib"},
-      "slides":{"text": "slides", "href":""}
+      "slides":[]
     },
     {
       "title":"Emender: Signal filter for Trilateration Based Indoor Localisation",
@@ -144,9 +144,9 @@
       "year":"2016",
       "where":"Valencia, Spain",
       "organisation":"IEEE",
-      "paper":{"text": "doi", "href":"./publications/pimrc2016/pimrc2016.pdf"},
-      "bibtex":{"text": "citation", "href":"./publications/pimrc2016/pimrc2016.bib"},
-      "slides":{"text": "slides", "href":""}
+      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/pimrc2016/pimrc2016.pdf"},
+      "bibtex":{"text": "citation", "href":"./publications/publications/pimrc2016/pimrc2016.bib"},
+      "slides":[]
     },
     {
       "title":"SIB: Noise Reduction in Fingerprint-based Indoor Localisation using Multiple Transmission Powers",
@@ -156,8 +156,9 @@
       "year":"2014",
       "where":"Melbourne, Australia",
       "organisation":"ACM",
-      "paper":{"text": "doi", "href":"./publications/mum2014/mum2014.pdf"},
-      "bibtex":{"text": "citation", "href":"./publications/mum2014/mum2014.bib"}
+      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/mum2014/mum2014.pdf"},
+      "bibtex":{"text": "citation", "href":"./publications/publications/mum2014/mum2014.bib"},
+      "slides":[]
     }
   ],
   "projects": [
