@@ -42,7 +42,7 @@
       "visible": true,
       "where": {
         "text": "University of Otago",
-        "href": "http://www.otago.ac.nz"
+        "href": "http://cs.otago.ac.nz"
       },
       "when": {
         "start": "August 2012",
@@ -68,7 +68,7 @@
       "visible": true,
       "where": {
         "text": "University of Otago",
-        "href": "http://www.otago.ac.nz"
+        "href": "http://www.otago.ac.nz/info-science/"
       },
       "when": {
         "start": "July 2010",
@@ -90,7 +90,7 @@
       "visible": true,
       "where": {
         "text": "University of Otago",
-        "href": "http://www.otago.ac.nz"
+        "href": "http://www.telecom.otago.ac.nz"
       },
       "when": {
         "start": "March 2010",
@@ -182,7 +182,7 @@
       },
       "details": [
         "As an independent contractor working for Downer one of their clients needed to display a remote camera feed in the client's reception area. The priority of requirements were thus: reliability, functionality, then cost.",
-        "The content was displayed on a wall-mounted TV using a Raspberry Pi (incorporating a small batter backup system---UPS PiCo), controlled by a Python application. A server (thingsboard) provided settings for each of the clients, the clients loaded the configuration from the server (or used a local file if the server was unavailable). The clients sent health statistics (CPU, RAM, hard disk, network activity) to the server to monitor performance and assist with the reliability."
+        "The content was displayed on a wall-mounted TV using a Raspberry Pi (incorporating a small batter backup system---UPS PiCo), controlled by a Python application. The displays sent health statistics (CPU, RAM, hard disk, network activity) to a server to monitor performance and assist with the reliability. The same server provided dynamic configuration to override local static configuration values."
       ]
     },
     {
