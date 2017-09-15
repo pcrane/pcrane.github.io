@@ -182,7 +182,7 @@
         "end":"present"
       },
       "details": [
-        "As an independent contractor working for Downer one of their clients needed to display a remote camera feed in the client's reception area. The priority of requirements were thus: reliability, functionality, then cost.",
+        "One of Downer's clients needed to display a remote camera feed in their reception area. As an independent contrator I developed a solution to this problem. The priority of requirements were thus: reliability, functionality, then cost.",
         "The content was displayed on a wall-mounted TV using a Raspberry Pi (incorporating a small batter backup system---UPS PiCo), controlled by a Python application. The displays sent health statistics (CPU, RAM, hard disk, network activity) to a server to monitor performance and assist with the reliability. The same server provided dynamic configuration to override local static configuration values."
       ]
     },
@@ -205,7 +205,7 @@
         "end":"present"
       },
       "details": [
-        "There is a cross-discipline group exploring energy related research. One of the ongoing projects is to develop software to monitor/visualise energy usage across the campus. This involves the collection of a variety of measurements (e.g. temperatures, lighting levels, occupancy, electricity usage, including the units and scale) from a disparate set of systems (e.g. building management systems, lighting systems, ad hoc sensors) at a high level of geographic precision (e.g. room, floor, building, and campus levels of detail) and temporal precision (most commercial systems only persist aggregate data).",
+        "A cross-discipline group within the University of Otago explores energy related research. One of the ongoing projects is to develop software to monitor/visualise energy usage across the campus. This involves the collection of a variety of measurements (e.g. temperatures, lighting levels, occupancy, electricity usage, including the units and scale) from a disparate set of systems (e.g. building management systems, lighting systems, ad hoc sensors) at a high level of geographic precision (e.g. room, floor, building, and campus levels of detail) and temporal precision (most commercial systems only persist aggregate data).",
         "The prototype system was presented at the Otago Energy Research Centre's Symposium in 2016, and awarded Best Student Presentation."
       ]
     },
