@@ -163,69 +163,219 @@
   ],
   "projects": [
     {
+      "a":"rtnf",
       "what": "Real-time Neuro-feedback",
-      "who": {"name":"Phoebe Neo", "department":"Department of Psychology", "organisation":"University of Otago"},
+      "who": {
+        "name": "Phoebe Neo",
+        "department": "Department of Psychology",
+        "organisation": "University of Otago"
+      },
+      "role": "Research Assistant",
       "when": {
         "start": "March 2017",
-        "end":"present"
+        "end": "present"
       },
+      "languages": [
+        {
+          "name": "MatLab",
+          "purpose": "Data Analysis, Experiment"
+        },
+        {
+          "name": "C#",
+          "purpose": "Interfacing with hardware (the manufacturer's only supply DLLs), Saving data stream to file"
+        },
+        {
+          "name": "java",
+          "purpose": "Miscellaneous processing, optimising file format."
+        }
+      ],
+      "technologies": null,
+      "hardware": [
+        {
+          "text": "BioRadio150",
+          "href": "https://glneurotech.com/bioradio/bioradio-150/"
+        },
+        {
+          "text": "BioRadio",
+          "href": "https://glneurotech.com/bioradio/"
+        }
+      ],
+      "short": "This research project in the Psychology department aims to discover ways to reduce depressivity. The literature suggests that a difference in activity in the two brain's hemispheres can help reduce the depressivity.",
       "details": [
-        "This research project in the Psychology department aims to discover ways to reduce depressivity. The literature suggests that a difference in activity in the two brain's hemispheres can help reduce the depressivity.",
-        "I was tasked with implementing an experimental protocol in a real-time and online manner as the participants needed to see their performance in order for them to learn how to increase the activity differences (and possibly decrease depressivity). This involved components integrating the EEG measuring device (only available on Windows), the experimental protocol, visual feedback, data exporting (all implemented in Matlab---to fit with the existing code base used within the lab). Currently, I am assisting with the analysis of the collected data."
-      ]
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat feugiat odio, non accumsan est dapibus ac. Phasellus sed leo vel velit tempus fermentum sit amet vitae quam. Phasellus ac nisi fringilla, viverra nisi ac, pellentesque sem. Suspendisse potenti. Morbi ac ultrices enim, egestas accumsan purus. Donec in metus odio. Morbi non dignissim nulla, ut scelerisque ligula. Ut tempor libero justo, vitae mattis metus mollis ac. In mi tortor, ullamcorper ut dui nec, venenatis faucibus nibh. Suspendisse facilisis, mauris ac consequat ultricies, arcu felis sagittis enim, at blandit massa ante nec purus. Nulla lacinia neque metus, ut luctus velit faucibus eget.",
+        "Key challenges with this project... including data import into other tools."
+      ],
+      "image": {
+        "alt": "Participant's view of the experiment.",
+        "href": "./img/neurofeedback/participant_view.png",
+        "caption": "The display shown to the participants. The number of cupcakes and oreos are determined by according to rules that monitor EEG signals in realtime."
+      }
     },
     {
+      "a":"pidis",
       "what": "Information Display",
-      "who": {"name":"Joe Connolly", "department":"ITS", "organisation":"Downer Group"},
+      "who": {
+        "name": "Joe Connolly",
+        "department": "ITS",
+        "organisation": "Downer Group"
+      },
+      "role": "Contract Software Developer",
       "when": {
         "start": "July 2017",
-        "end":"present"
+        "end": "present"
       },
+      "short": "One of Downer's clients needed to display a remote camera feed in their reception area. As an independent contrator I developed a solution to this problem. The priority of requirements were thus: reliability, functionality, then cost. The content was displayed on a wall-mounted TV using a Raspberry Pi (incorporating a small batter backup system---UPS PiCo), controlled by a Python application. The displays sent health statistics (CPU, RAM, hard disk, network activity) to a server to monitor performance and assist with the reliability. The same server provided dynamic configuration to override local static configuration values.",
       "details": [
-        "One of Downer's clients needed to display a remote camera feed in their reception area. As an independent contrator I developed a solution to this problem. The priority of requirements were thus: reliability, functionality, then cost.",
-        "The content was displayed on a wall-mounted TV using a Raspberry Pi (incorporating a small batter backup system---UPS PiCo), controlled by a Python application. The displays sent health statistics (CPU, RAM, hard disk, network activity) to a server to monitor performance and assist with the reliability. The same server provided dynamic configuration to override local static configuration values."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat feugiat odio, non accumsan est dapibus ac. Phasellus sed leo vel velit tempus fermentum sit amet vitae quam. Phasellus ac nisi fringilla, viverra nisi ac, pellentesque sem. Suspendisse potenti. Morbi ac ultrices enim, egestas accumsan purus. Donec in metus odio. Morbi non dignissim nulla, ut scelerisque ligula. Ut tempor libero justo, vitae mattis metus mollis ac. In mi tortor, ullamcorper ut dui nec, venenatis faucibus nibh. Suspendisse facilisis, mauris ac consequat ultricies, arcu felis sagittis enim, at blandit massa ante nec purus. Nulla lacinia neque metus, ut luctus velit faucibus eget.",
+        "Maecenas sit amet elit quis ligula gravida euismod id vel tortor. Sed tincidunt diam nec dui laoreet pellentesque. Donec ullamcorper diam nisl, quis sollicitudin leo consectetur vel. Aliquam erat volutpat. Suspendisse pulvinar ultrices urna vitae ornare. Donec quis tempor enim. Quisque nec nunc varius tellus congue dignissim. Sed vestibulum nunc vitae mattis mollis. In hac habitasse platea dictumst. Donec quis libero a felis suscipit tincidunt."
+      ],
+      "image": {
+        "alt": "Caption.",
+        "href": "./img/downer/info_board.jpg",
+        "caption": "The display shown to the participants. The number of cupcakes and oreos are determined by according to rules that monitor EEG signals in realtime."
+      },
+      "languages": [
+        {
+          "name": "Python 3",
+          "purpose": "Client and server side processing"
+        },
+        {
+          "name": "HTML/CSS/Javascript",
+          "purpose": "Content display"
+        }
+      ],
+      "technologies": [
+        "Message Queues"
+      ],
+      "hardware": [
+        {
+          "text": "Raspberry Pi 3",
+          "href": "https://www.raspberrypi.org/products/raspberry-pi-3-model-b/"
+        }
       ]
     },
     {
+      "a":"cosc301",
       "what": "Network Management Course Content Refresh",
-      "who": {"name":"Zhiyi Huang", "department":"Department of Computer Science", "organisation":"University of Otago"},
+      "who": {
+        "name": "Zhiyi Huang",
+        "department": "Department of Computer Science",
+        "organisation": "University of Otago"
+      },
+      "role": "",
       "when": {
         "start": "September 2017",
-        "end":"present"
+        "end": "present"
       },
+      "short": "The course lab manual and website were last updated in 2010. Since then, there have been a large number of changes to the commands, tools, and general practises around Linux administration. Beyond the content of the refresh, the course web page was updated to use modern (responsive) web design practises, and the lab manual build process was updated to use modern continuous integration techniques to automate as much as possible. The previous system used `makefile`s and docbook to produce the PDF version of the manual.",
       "details": [
-        "The course lab manual and website were last updated in 2010. Since then, there have been a large number of changes to the commands, tools, and general practises around Linux administration. Beyond the content of the refresh, the course web page was updated to use modern (responsive) web design practises, and the lab manual build process was updated to use modern continuous integration techniques to automate as much as possible. The previous system used `makefile`s and docbook to produce the PDF version of the manual."
-      ]
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat feugiat odio, non accumsan est dapibus ac. Phasellus sed leo vel velit tempus fermentum sit amet vitae quam. Phasellus ac nisi fringilla, viverra nisi ac, pellentesque sem. Suspendisse potenti. Morbi ac ultrices enim, egestas accumsan purus. Donec in metus odio. Morbi non dignissim nulla, ut scelerisque ligula. Ut tempor libero justo, vitae mattis metus mollis ac. In mi tortor, ullamcorper ut dui nec, venenatis faucibus nibh. Suspendisse facilisis, mauris ac consequat ultricies, arcu felis sagittis enim, at blandit massa ante nec purus. Nulla lacinia neque metus, ut luctus velit faucibus eget.",
+        "Maecenas sit amet elit quis ligula gravida euismod id vel tortor. Sed tincidunt diam nec dui laoreet pellentesque. Donec ullamcorper diam nisl, quis sollicitudin leo consectetur vel. Aliquam erat volutpat. Suspendisse pulvinar ultrices urna vitae ornare. Donec quis tempor enim. Quisque nec nunc varius tellus congue dignissim. Sed vestibulum nunc vitae mattis mollis. In hac habitasse platea dictumst. Donec quis libero a felis suscipit tincidunt."
+      ],
+      "image": null,
+      "languages": [
+        {
+          "name": "Markdown/HTML/CSS/Javascript",
+          "purpose": "Content presentation"
+        }
+      ],
+      "technologies": [
+        "Continuous Integration"
+      ],
+      "hardware": null
     },
     {
+      "a":"pseman",
       "what": "Supporting Energy Monitoring At University of Otago",
-      "who": {"name": "Hans Pietsch and David Eyers", "department":"Property Services Division and Department of Computer Science", "organisation":"University of Otago"},
+      "role": "Designer & Developer",
+      "who": {
+        "name": "Hans Pietsch and David Eyers",
+        "department": "Property Services Division and Department of Computer Science",
+        "organisation": "University of Otago"
+      },
       "when": {
         "start": "July 2016",
-        "end":"present"
+        "end": "present"
       },
+      "short": "A cross-discipline group within the University of Otago explores energy related research. One of the ongoing projects is to develop software to monitor/visualise energy usage across the campus. This involves the collection of a variety of measurements (e.g. temperatures, lighting levels, occupancy, electricity usage, including the units and scale) from a disparate set of systems (e.g. building management systems, lighting systems, ad hoc sensors) at a high level of geographic precision (e.g. room, floor, building, and campus levels of detail) and temporal precision (most commercial systems only persist aggregate data). The prototype system was presented at the Otago Energy Research Centre's Symposium in 2016, and awarded Best Student Presentation.",
       "details": [
-        "A cross-discipline group within the University of Otago explores energy related research. One of the ongoing projects is to develop software to monitor/visualise energy usage across the campus. This involves the collection of a variety of measurements (e.g. temperatures, lighting levels, occupancy, electricity usage, including the units and scale) from a disparate set of systems (e.g. building management systems, lighting systems, ad hoc sensors) at a high level of geographic precision (e.g. room, floor, building, and campus levels of detail) and temporal precision (most commercial systems only persist aggregate data).",
-        "The prototype system was presented at the Otago Energy Research Centre's Symposium in 2016, and awarded Best Student Presentation."
-      ]
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat feugiat odio, non accumsan est dapibus ac. Phasellus sed leo vel velit tempus fermentum sit amet vitae quam. Phasellus ac nisi fringilla, viverra nisi ac, pellentesque sem. Suspendisse potenti. Morbi ac ultrices enim, egestas accumsan purus. Donec in metus odio. Morbi non dignissim nulla, ut scelerisque ligula. Ut tempor libero justo, vitae mattis metus mollis ac. In mi tortor, ullamcorper ut dui nec, venenatis faucibus nibh. Suspendisse facilisis, mauris ac consequat ultricies, arcu felis sagittis enim, at blandit massa ante nec purus. Nulla lacinia neque metus, ut luctus velit faucibus eget.",
+        "Maecenas sit amet elit quis ligula gravida euismod id vel tortor. Sed tincidunt diam nec dui laoreet pellentesque. Donec ullamcorper diam nisl, quis sollicitudin leo consectetur vel. Aliquam erat volutpat. Suspendisse pulvinar ultrices urna vitae ornare. Donec quis tempor enim. Quisque nec nunc varius tellus congue dignissim. Sed vestibulum nunc vitae mattis mollis. In hac habitasse platea dictumst. Donec quis libero a felis suscipit tincidunt."
+      ],
+      "image": {
+        "alt": "Caption.",
+        "href": "./img/energy/oerc-best-student-presentation.jpg",
+        "caption": "Presentation of the award for best student presentation at the 2016 OERC Symposium."
+      },
+      "languages": [
+        {
+          "name": "Python 3",
+          "purpose": "Server side processing."
+        },
+        {
+          "name": "HTML/CSS/Javascript",
+          "purpose": "User interface display"
+        }
+      ],
+      "technologies": [
+        "Message Queues",
+        "Time series database",
+        "Relational Database",
+        "Graph-database",
+        "REST/SOAP APIs"
+      ],
+      "hardware": null
     },
     {
+      "a":"dextero",
       "what": "Accelerometer Gloves",
-      "who": {"name":"Liz Franz", "department":"Department of Psychology", "organisation":"University of Otago"},
-      "when": {
-        "start": "2014",
-        "end":"2014"
+      "role": "Designer & Developer",
+      "who": {
+        "name": "Liz Franz",
+        "department": "Department of Psychology",
+        "organisation": "University of Otago"
       },
-      "details": ["In this project I designed, developed, and prototyped a set of gloves to measure minute tremor at the fingertips of participants. The participants were asked to perform everyday tasks (e.g. opening a door handle, writing, etc.), so the device had to have minimal impact. This was achieved by attaching four accelerometers to the participants fingertips with velcro, with an Arduino to interact with the accelerometers. The accelerometers used (ADXL345) are only able to have one of two addresses available, and so a creative solution was found to support this limitation and give a high sample rate (approximately 125Hz)."]
-    },
-    {
-      "what": "Differentiation of Essential Tremor and Parkinson's Disease",
-      "who": {"name":"Liz Franz", "department":"Department of Psychology", "organisation":"University of Otago"},
       "when": {
-        "start": "2014",
-        "end":"2014"
+        "start": "2013",
+        "end": "2014"
       },
-      "details": ["This project investigated the use of machine learning (specifically support vector machines) to differentiate Essential Tremor from Parkinson's Disease from a control group using a simple set of tests performed on an Android mobile phone."]
+      "short": "In this project I designed, developed, and prototyped a set of gloves to measure minute tremor at the fingertips of participants. The participants were asked to perform everyday tasks (e.g. opening a door handle, writing, etc.), so the device had to have minimal impact. This was achieved by attaching four accelerometers to the participants fingertips with velcro, with an Arduino to interact with the accelerometers. The accelerometers used (ADXL345) are only able to have one of two addresses available, and so a creative solution was found to support this limitation and give a high sample rate (approximately 125Hz).",
+      "details": [
+        "Recording fine-grained movements of hands and fingers is important to be able to differentiate Essential Tremor from Parkinson's Disease. The two diseases are easy to misdiagnose as they both share common symptoms. Previously Accelegloves were being used for this purpose, however, there are two main problems with these devices. The first is that they are no longer being manufactured, and the second is the gloves cannot fit every hand.",
+        "I was tasked with designing, prototyping, and developing a replacement pair of gloves that could record the fine-grained movements while being suitable for a wide range of hand sizes and shapes. Furthermore, the sample rate needed to be as close to the existing as possible (125Hz)",
+        "These goals were accomplished by using velcro strips to attach accelerometers to the fingers, along with a multiplexing approach to retrieving data over the I2C bus from multiple accelerometers at the same time. Obtaining measurements from a single accelerometer took 250Hz, however using a naive loop brought the sample rate down to only 25Hz (further complicated by the accelerometers using only one of two pre-programmed addresses), the multiplexed approach produced a sample rate of 125Hz.",
+        "Several studies have used the gloves, one of which was to analyse every-day tasks (such as writing, turning a door knob, buttoning and unbuttoning a shirt). "
+      ],
+      "image": {
+        "alt": "The new and old accelerometers gloves being tested on a participant's fingers while at a laptop.",
+        "href": "./img/gloves/glove_test.jpg",
+        "caption": "Testing the new gloves with the old."
+      },
+      "languages": [
+        {
+          "name": "C",
+          "purpose": "Implementing I2C multiplexing library."
+        },
+        {
+          "name": "C++",
+          "purpose": "Collection program (Qt)."
+        },
+        {
+          "name": "MatLab",
+          "purpose": "Offline processing and analysis."
+        }
+      ],
+      "technologies": null,
+      "hardware": [
+        {
+          "text": "Arduino Uno",
+          "href": "https://store.arduino.cc/usa/arduino-uno-rev3"
+        },
+        {
+          "text": "ADXL345",
+          "href": "https://www.sparkfun.com/products/9836"
+        }
+      ]
     }
   ],
   "skill_levels": {

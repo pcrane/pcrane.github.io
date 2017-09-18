@@ -174,12 +174,7 @@
                                         </span>
                                     </span>
                                 </h3>
-
-                                <!-- ko if: $data.details -->
-                                <span data-bind="foreach: details" class="">
-                                    <p data-bind="text: $data"></p>
-                                </span>
-                                <!-- /ko -->
+                                <p data-bind="text: short"></p>
                             </div>
                         </div>
                     <!-- /ko -->
@@ -219,7 +214,7 @@
                                     <span class="ui horizontal bulleted list">
                                     <!-- ko foreach: details -->
                                         <span data-bind="text: name" class="item"></span>
-                                        <!-- /ko -->
+                                    <!-- /ko -->
                                     </span>
                                 </td>
                             </tr>

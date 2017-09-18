@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Paul Crane's Resume</title>
-    <meta name="description" content="I am a computer scientist and recently completed a PhD with a broad range of interests in operating systems, networks, and solving interesting problems.">
+    <meta name="description"
+          content="I am a computer scientist and recently completed a PhD with a broad range of interests in operating systems, networks, and solving interesting problems.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.css">
 
     <link href="style.css" rel="stylesheet"/>
@@ -48,6 +49,10 @@
             "name":"University of Otago"
           }
         }
+
+
+
+
     </script>
 
     <!-- Google Analytics -->
@@ -100,149 +105,123 @@
                 </section>
             </header>
 
-
             <section class="ui items">
                 <!-- ko foreach: projects -->
                 <div class="ui item">
-                <div class="ui celled stackable grid">
-
-                    <div class="row">
-                        <div class="eight wide column">
-                            <h3 data-bind="text: what"></h3>
-                        </div>
-                        <div class="four wide stackable column">
-                            <p data-bind="optional: role, binding:'text'"></p>
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <!-- ko with: who -->
-                        <div class="four wide column">
-                            <h3 class="ui header"><span data-bind="text: name" class="sub header"></span></h3>
-                        </div>
-                        <div class="eight wide column">
-                            <h3 class="ui header">
-                                <span data-bind="text: department" class="sub header"></span>
-                                <span data-bind="text: organisation" class="sub header"></span>
-                            </h3>
-                        </div>
-                        <!-- /ko -->
-                        <div class="four wide column">
-                            <span data-bind="with: when">
-                                <span data-bind="text: start"></span> - <span data-bind="text: end"></span>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="ten wide column">
-                            <!-- ko foreach: details -->
-                            <p data-bind="text: $data"></p>
-                            <!-- /ko -->
-                        </div>
-                        <div class="six wide column">
-                            <!-- ko if: image -->
-                            <!-- ko with: image -->
-                            <figure>
-                                <img data-bind="attr: {src:href, alt:alt}" class="ui rounded image">
-                                <figcaption data-bind="text:caption"></figcaption>
-                            </figure>
-                            <!-- /ko -->
-                            <!-- /ko -->
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <div class="ui equal width stackable grid">
-
-                                <div class="column">
-                                    <h4>Languages</h4>
-                                    <div class="ui list">
-                                        <!-- ko foreach: languages -->
-                                        <div class="item">
-                                            <div class="content">
-                                                <span class="header" data-bind="text: name"></span>
-                                                <div class="description" data-bind="text: purpose"></div>
-                                            </div>
-                                        </div>
+                    <div class="ui stackable grid">
+                        <div class="row">
+                            <a data-bind="attr: {id: a}"></a>
+                            <div class="sixteen wide column">
+                                <span class="ui header">
+                                    <h2 data-bind="text: what"></h2>
+                                    <h3 class="ui sub header">
+                                        <!-- ko if: role -->
+                                        Role: <span data-bind="optional: role, binding:'text'"></span>
                                         <!-- /ko -->
-                                    </div>
-                                </div>
+                                    </h3>
+                                </span>
+                            </div>
 
-                                <div class="column">
-                                    <h4>Technologies</h4>
-                                    <div class="ui list">
-                                        <!-- ko foreach: technologies -->
-                                        <div class="item">
-                                            <div class="content">
-                                                <span class="header" data-bind="text: $data"></span>
+                            <!-- ko with: who -->
+                            <div class="four wide column left aligned">
+                                <span class="ui header">
+                                    <span class="sub header"><span data-bind="text: name"></span></span>
+                                </span>
+                            </div>
+
+                            <div class="eight wide column">
+                                <span class="ui header">
+                                    <span class="sub header">
+                                        <span data-bind="text: department"></span>,
+                                        <span data-bind="text: organisation"></span>
+                                    </span>
+                                </span>
+                            </div>
+                            <!-- /ko -->
+                            <div class="four wide column right aligned">
+                                <span data-bind="with: when">
+                                    <span data-bind="text: start"></span> - <span data-bind="text: end"></span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="equal width row">
+                            <div class="column">
+                                <!-- ko with: image -->
+                                <figure class="ui medium right floated rounded image">
+                                    <img data-bind="attr: {src:href, alt:alt}">
+                                    <figcaption data-bind="text:caption"></figcaption>
+                                </figure>
+                                <!-- /ko -->
+
+                                <!-- ko foreach: details -->
+                                <p data-bind="text: $data"></p>
+                                <!-- /ko -->
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <div class="ui equal width stackable grid">
+                                    <!-- ko with: languages -->
+                                    <div class="column">
+                                        <h4>Languages</h4>
+                                        <div class="ui list">
+                                            <!-- ko foreach: $data -->
+                                            <div class="item">
+                                                <div class="content">
+                                                    <span class="header" data-bind="text: name"></span>
+                                                    <div class="description" data-bind="text: purpose"></div>
+                                                </div>
                                             </div>
+                                            <!-- /ko -->
                                         </div>
-                                        <!-- /ko -->
                                     </div>
-                                </div>
+                                    <!-- /ko -->
 
-                                <div class="column">
-                                    <h4>Hardware</h4>
-                                    <div class="ui list">
-                                        <!-- ko foreach: hardware -->
-                                        <div class="item">
-                                            <div class="content">
-                                                <span class="header" data-bind="link: $data"></span>
+                                    <!-- ko with: technologies -->
+                                    <div class="column">
+                                        <h4>Technologies</h4>
+                                        <div class="ui list">
+                                            <!-- ko foreach: $data -->
+                                            <div class="item">
+                                                <div class="content">
+                                                    <span class="header" data-bind="text: $data"></span>
+                                                </div>
                                             </div>
+                                            <!-- /ko -->
                                         </div>
-                                        <!-- /ko -->
                                     </div>
-                                </div>
+                                    <!-- /ko -->
 
+                                    <!-- ko with: hardware -->
+                                    <div class="column">
+                                        <h4>Hardware</h4>
+                                        <div class="ui list">
+                                            <!-- ko foreach: $data -->
+                                            <div class="item">
+                                                <div class="content">
+                                                    <span class="header" data-bind="link: $data"></span>
+                                                </div>
+                                            </div>
+                                            <!-- /ko -->
+                                        </div>
+                                    </div>
+                                    <!-- /ko -->
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
-                <!-- /ko -->
+                <div class="ui divider"></div>
+            <!-- /ko -->
             </section>
-
-
-            <!---->
-            <!--<section class="column">-->
-                <!--<h2>Projects</h2>-->
-                <!--<span class="ui items">-->
-                    <!-- ko foreach: projects -->
-                        <!--<div class="item">-->
-                            <!--<div class="content">-->
-                                <!--<h3 class="ui header">-->
-                                    <!--<span data-bind="text: what"></span>-->
-                                    <!--<span class="sub header">-->
-                                        <!--<span data-bind="with: who">-->
-                                            <!--<span data-bind="text: name"></span>,-->
-                                            <!--<span data-bind="text: department"></span>,-->
-                                            <!--<span data-bind="text: organisation"></span>,-->
-                                        <!--</span>-->
-                                        <!--<span data-bind="with: when">-->
-                                            <!--<span data-bind="text: start"></span> - <span data-bind="optional: end, binding:'text'"></span>-->
-                                        <!--</span>-->
-                                    <!--</span>-->
-                                <!--</h3>-->
-
-                                <!--&lt;!&ndash; ko if: $data.details &ndash;&gt;-->
-                                <!--<span data-bind="foreach: details" class="">-->
-                                    <!--<p data-bind="text: $data"></p>-->
-                                <!--</span>-->
-                                <!--&lt;!&ndash; /ko &ndash;&gt;-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!-- /ko -->
-                <!--</span>-->
-            <!--</section>-->
-
         </section>
     </article>
 </script>
 
-<script type='text/javascript' src="knockout-min.js"></script>
+<script type = 'text/javascript' src = "knockout-min.js" ></script>
 <script>
 
     function loadResume() {
@@ -254,7 +233,7 @@
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
 
-        xmlhttp.open("GET", "projects.json", false);
+        xmlhttp.open("GET", "cv.json", false);
         xmlhttp.send();
 
         return JSON.parse(xmlhttp.responseText);
