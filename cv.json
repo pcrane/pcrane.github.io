@@ -1,6 +1,7 @@
 {
   "name": "Paul Crane",
   "title":"",
+  "tag":"",
   "contact": {
     "methods": [
       {
@@ -185,8 +186,8 @@
           "purpose": "Interfacing with hardware (the manufacturer's only supply DLLs), Saving data stream to file"
         },
         {
-          "name": "java",
-          "purpose": "Miscellaneous processing, optimising file format."
+          "name": "Java",
+          "purpose": "Optimising file format."
         }
       ],
       "technologies": null,
@@ -204,7 +205,7 @@
       "details": [
         "The overall aim of this project is to reduce the likely-hood of depression (or depressivity) in people. At this point, there is only speculation as to what causes depression.  Current research suggests that a hemispheric difference in activity of the pre-frontal areas of the brain can be used as a marker of depression.",
         "My tasks on this project was to, gather data from in-house EEG devices, process the data and present the participant with a display that reacted to the current asymmetry. On a technical level this involved: working with guidelines (as opposed to requirements), great attention to detail (to ensure the experiment's parameters were correctly set), and multiple languages (forced by availability of hardware interfaces or matching an existing code-based).",
-        "There were several key challenges encountered, the major challenge was to ensure the offline data import process was fast. Due to the nature of the data collection the measurements (recorded at 128Hz) and markers were stored as they occured, i.e. by timestamp. This lead to an inefficient naive import process (each file took two hours to import). By reordering the file so that the markers appeared before the EEG data the import process took only 6 seconds."
+        "There were several key challenges encountered, the major challenge was to ensure the offline data import process was fast. Due to the nature of the data collection, the measurements (recorded at 128Hz for the entire duration of the experiment---around 45min) and markers were stored as they occurred, i.e. by timestamp. This lead to an inefficient naive import process (each file took two hours to import). By reordering the file so that the markers appeared before the EEG data the import process took only 6 seconds."
       ],
       "image": {
         "alt": "Participant's view of the experiment.",
@@ -265,7 +266,7 @@
         "department": "Department of Computer Science",
         "organisation": "University of Otago"
       },
-      "role": "",
+      "role": "Technical Writer",
       "when": {
         "start": "October 2017",
         "end": "present"
@@ -291,7 +292,7 @@
     {
       "a":"pseman",
       "what": "Supporting Energy Monitoring At University of Otago",
-      "role": "Designer & Developer",
+      "role": "Designer & Software Developer",
       "who": {
         "name": "Hans Pietsch and David Eyers",
         "department": "Property Services Division and Department of Computer Science",
@@ -337,7 +338,7 @@
     {
       "a":"dextero",
       "what": "Accelerometer Gloves",
-      "role": "Designer & Developer",
+      "role": "Designer & Software Developer",
       "who": {
         "name": "Liz Franz",
         "department": "Department of Psychology",
@@ -347,7 +348,7 @@
         "start": "2013",
         "end": "2014"
       },
-      "short": "In this project I designed, developed, and prototyped a set of gloves to measure minute tremor at the fingertips of participants. The participants were asked to perform everyday tasks (e.g. opening a door handle, writing, etc.), so the device had to have minimal impact. This was achieved by attaching four accelerometers to the participants fingertips with velcro, with an Arduino to interact with the accelerometers. The accelerometers used (ADXL345) are only able to have one of two addresses available, and so a creative solution was found to support this limitation and give a high sample rate (approximately 125Hz).",
+      "short": "In this project I designed, developed, and prototyped a set of accelerometer gloves to replace and improve upon a set of gloves that have gone out of production. The design of the new gloves achieved a sample rate of 125Hz (matching the existing pair), while improving upon the comfort level across a variety of different hand sizes and shapes.",
       "details": [
         "Recording fine-grained movements of hands and fingers is important to be able to differentiate Essential Tremor from Parkinson's Disease,  the two diseases are easy to misdiagnose because they share common symptoms. Previously Accelegloves were being used for this purpose, however, there are two main problems with these devices. The first is that they are no longer being manufactured, and the second is the gloves cannot fit every hand.",
         "I was tasked with designing, prototyping, and developing a replacement pair of gloves that could record the fine-grained movements while being suitable for a wide range of hand sizes and shapes. Furthermore, the sample rate needed to be as close to the existing as possible (125Hz)",

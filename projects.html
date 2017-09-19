@@ -81,9 +81,10 @@
             <header class="column">
 
                 <h1 class="ui header">
+                    <span data-bind="optional: title, binding: 'text'"></span>
                     <span data-bind="text: name"></span>
-                    <!-- ko if: title -->
-                    <span data-bind="optional: title, binding: 'text'" class="sub header"></span>
+                    <!-- ko if: tag -->
+                    <span data-bind="optional: tag, binding: 'text'" class="sub header"></span>
                     <!-- /ko -->
                 </h1>
                 <section data-bind="with: contact">
@@ -112,7 +113,7 @@
                                     <h2 data-bind="text: what"></h2>
                                     <h3 class="ui sub header">
                                         <!-- ko if: role -->
-                                        Role: <span data-bind="optional: role, binding:'text'"></span>
+                                            <span data-bind="optional: role, binding:'text'"></span>
                                         <!-- /ko -->
                                     </h3>
                                 </span>

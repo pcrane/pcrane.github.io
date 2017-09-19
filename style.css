@@ -24,10 +24,10 @@ section, span, div, table {
         padding: 0;
         overflow-x: visible !important;
     }
-    
-    .ui.grid {
-        display: block !important;
-    }
+
+    /*.ui.grid {*/
+        /*display: block !important;*/
+    /*}*/
 
     html, body {
         font-size: 10px;
@@ -35,10 +35,6 @@ section, span, div, table {
 
     h1, h2, h3, h4, h5 {
         page-break-after: avoid;
-    }
-
-    div {
-        page-break-inside: avoid;
     }
 
     h1, h2 {

@@ -78,9 +78,10 @@
             <header class="column">
 
                 <h1 class="ui header">
+                    <span data-bind="optional: title, binding: 'text'"></span>
                     <span data-bind="text: name"></span>
-                    <!-- ko if: title -->
-                        <span data-bind="optional: title, binding: 'text'" class="sub header"></span>
+                    <!-- ko if: tag -->
+                    <span data-bind="optional: tag, binding: 'text'" class="sub header"></span>
                     <!-- /ko -->
                 </h1>
                 <section data-bind="with: contact">
@@ -157,13 +158,22 @@
 
             <section class="column">
                 <h2>Projects</h2>
+                <div class="ui raised segment">
+                    <p>
+                        Each of the projects listed below were completed concurrent with PhD as paid work. All the
+                        projects involved aspects of requirements gathering, design, development, testing, and
+                        performance tuning. These projects were all conducted as sole software developer. See the
+                        <a href="https://paul.crane.net.nz/projects.html">projects page</a> for more detail.
+                    </p>
+                </div>
                 <span class="ui items">
                     <!-- ko foreach: projects -->
                         <div class="item">
                             <div class="content">
                                 <h3 class="ui header">
-                                    <span data-bind="text: what"></span>
+                                    <a data-bind="attr: {href: './projects.html#' + a}"><span data-bind="text: what"></span></a>
                                     <span class="sub header">
+                                        <span data-bind="text: role"></span>,
                                         <span data-bind="with: who">
                                             <span data-bind="text: name"></span>,
                                             <span data-bind="text: department"></span>,
@@ -225,7 +235,7 @@
             </section>
 
             <section class="column">
-                <h2 class="title">Work</h2>
+                <h2 class="title">Teaching Experience</h2>
                 <div><p>I have been employed demonstrating labs for numerous undergraduate courses concurrent with
                     postgraduate studies. Lab demonstrators have similar responsibilities to a teaching-assistant. The
                     main role is to assist students with the practical lab work and help them to understand concepts
