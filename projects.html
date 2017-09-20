@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Paul Crane's Resume</title>
+    <title>Paul Crane - Project Details</title>
     <meta name="description"
           content="I am a computer scientist and recently completed a PhD with a broad range of interests in operating systems, networks, and solving interesting problems.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.css">
@@ -80,10 +80,7 @@
 
                 <h1 class="ui header">
                     <span data-bind="optional: title, binding: 'text'"></span>
-                    <span data-bind="text: name"></span>
-                    <!-- ko if: tag -->
-                    <span data-bind="optional: tag, binding: 'text'" class="sub header"></span>
-                    <!-- /ko -->
+                    <span data-bind="text: name"></span> - Project Details
                 </h1>
                 <section data-bind="with: contact">
                     <ul data-bind="foreach: methods" class="ui horizontal bulleted link list">
@@ -98,7 +95,20 @@
                         </li>
                     </ul>
                 </section>
+
+                <!-- ko if: tag -->
+                <span data-bind="optional: tag, binding: 'text'" class="sub header"></span>
+                <!-- /ko -->
             </header>
+
+            <div class="ui raised segment">
+                <p>
+                    Each of the projects listed below were completed concurrent with PhD as paid work. All the
+                    projects involved aspects of requirements gathering, design, development, testing, and
+                    performance tuning. These projects were all conducted as sole software developer. See the
+                    <a href="https://paul.crane.net.nz/projects.html">projects page</a> for more detail.
+                </p>
+            </div>
 
             <section class="ui items">
                 <!-- ko foreach: projects -->
