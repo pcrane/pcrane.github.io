@@ -19,6 +19,8 @@ DIR=$(dirname ${DIR})
 
 IN="index.html"
 OUT="paul_crane.pdf"
+AUTHOR="Dr. Paul Crane"
+TITLE="Dr. Paul Crane - Resume"
 
 electron-pdf -m 0 ${DIR}/${IN} ${DIR}/${OUT}
-exiftool -overwrite_original -Author="Dr. Paul Crane" -Title="Dr. Paul Crane - Resume" "${OUT}"
+exiftool -overwrite_original -Author="${AUTHOR}" -Title="${TITLE}" "${OUT}"
