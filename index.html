@@ -80,9 +80,6 @@
                 <h1 class="ui header">
                     <span data-bind="optional: title, binding: 'text'"></span>
                     <span data-bind="text: name"></span>
-                    <!-- ko if: tag -->
-                    <span data-bind="optional: tag, binding: 'text'" class="sub header"></span>
-                    <!-- /ko -->
                 </h1>
                 <section data-bind="with: contact">
                     <ul data-bind="foreach: methods" class="ui horizontal bulleted link list">
@@ -97,6 +94,10 @@
                         </li>
                     </ul>
                 </section>
+
+                <!-- ko if: tag -->
+                <span data-bind="optional: tag, binding: 'text'" class="sub header"></span>
+                <!-- /ko -->
             </header>
 
             <section class="column">
