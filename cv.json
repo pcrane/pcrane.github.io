@@ -325,8 +325,8 @@
       ],
       "technologies": [
         {"text":"RabbitMQ (message queue)", "href":"https://www.rabbitmq.com/"},
-        {"text":"InfluxDB (timeseries database)", "href":"https://www.influxdata.com/"},
-        {"text":"Grafana (timeseries visualisation)", "href":"https://grafana.com/"},
+        {"text":"InfluxDB (time series database)", "href":"https://www.influxdata.com/"},
+        {"text":"Grafana (time series visualisation)", "href":"https://grafana.com/"},
         {"text":"Django (administration and query interface)", "href":"https://www.djangoproject.com/"},
         {"text":"Postgresql", "href":"https://www.postgresql.org/"},
         {"text":"neo4j","href":"https://neo4j.com/"},
