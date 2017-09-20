@@ -1,7 +1,7 @@
 {
   "name": "Paul Crane",
   "title":"Dr.",
-  "tag":"Computer scientist, recently completed PhD, who enjoys teaching and working with people who may be less technically literate. Most of all, likes rising to a technical challenge.",
+  "tag":"Computer scientist, recently completed PhD, who enjoys teaching and working alongside others with different skill-sets. Most of all, likes rising to a technical challenge.",
   "contact": {
     "methods": [
       {
@@ -348,7 +348,7 @@
         "start": "2013",
         "end": "2014"
       },
-      "short": "In this project I designed, developed, and prototyped a set of accelerometer gloves to replace and improve upon a set of gloves that have gone out of production. The design of the new gloves achieved a sample rate of 125Hz (matching the existing pair), while improving upon the comfort level across a variety of different hand sizes and shapes.",
+      "short": "In this project I designed, developed, and prototyped a set of accelerometer gloves to replace and improve upon a set of gloves that had gone out of production. The design of the new gloves achieved a sample rate of 125Hz (matching the existing pair), while improving upon the comfort level across a variety of different hand sizes and shapes.",
       "details": [
         "Recording fine-grained movements of hands and fingers is important to be able to differentiate Essential Tremor from Parkinson's Disease,  the two diseases are easy to misdiagnose because they share common symptoms. Previously Accelegloves were being used for this purpose, however, there are two main problems with these devices. The first is that they are no longer being manufactured, and the second is the gloves cannot fit every hand.",
         "I was tasked with designing, prototyping, and developing a replacement pair of gloves that could record the fine-grained movements while being suitable for a wide range of hand sizes and shapes. Furthermore, the sample rate needed to be as close to the existing as possible (125Hz)",
@@ -639,7 +639,7 @@
     }
   ],
   "hobbies": [
-    "Routinely attend weekly Ceroc and West Coast Swing partner dancing classes, and occasional competitions.",
+    "Routinely attend Ceroc and West Coast Swing partner dancing classes, and occasional competitions.",
     "I played Saxophone (jazz band and symphonic) for numerous years in local amateur groups."
   ]
 }
