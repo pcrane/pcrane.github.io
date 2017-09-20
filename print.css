@@ -2,6 +2,10 @@
     margin: 1.5cm;
 }
 
+.no-print{
+    visibility: hidden;
+}
+
 body {
     width: 100%;
     text-align: justify;

@@ -21,4 +21,4 @@ IN="index.html"
 OUT="paul_crane.pdf"
 
 electron-pdf -m 0 ${DIR}/${IN} ${DIR}/${OUT}
-exiftool -overwrite_original -Author="Paul Crane" -Title="Dr." "${OUT}"
+exiftool -overwrite_original -Author="Dr. Paul Crane" -Title="Dr. Paul Crane - Resume" "${OUT}"

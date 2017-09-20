@@ -85,7 +85,8 @@
                     <span data-bind="text: name"></span>
                 </h1>
                 <section data-bind="with: contact">
-                    <ul data-bind="foreach: methods" class="ui horizontal bulleted link list">
+                    <ul class="ui horizontal bulleted link list">
+                        <!-- ko foreach: methods -->
                         <li class="item">
                             <!-- ko if: icon -->
                                 <i data-bind="css: icon"></i>
@@ -94,6 +95,11 @@
                                 <span data-bind="text: prefix"></span>
                             <!-- /ko -->
                             <a data-bind="text: value, attr: { href: href }"></a>
+                        </li>
+
+                        <!-- /ko -->
+                        <li class="item no-print">
+                            <a href="./paul_crane.pdf">PDF Version</a>
                         </li>
                     </ul>
                 </section>
