@@ -133,7 +133,7 @@
       "year":"2017",
       "where":"Montreal, Canada",
       "organisation":"IEEE",
-      "paper":{"text": "paper", "href":""},
+      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/pimrc2017/pimrc2017.pdf"},
       "bibtex":{"text": "citation", "href":"./publications/pimrc2017/pimrc2017.bib"},
       "slides":[]
     },
