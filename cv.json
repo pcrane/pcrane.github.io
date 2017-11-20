@@ -620,14 +620,22 @@
       ]
     }
   ],
-  "feedback": {
-    "preface": "The following feedback was obtained by end-of-semester student evaluation questionnaires:",
-    "comments": [
-      "Paul was very helpful and cleared up any misunderstandings.",
-      "Paul performed his herculean task with grace, empathy, and deep understanding of the material.",
-      "The lab demonstrator is very helpful."
-    ]
-  },
+  "feedback":{
+    "title": "Student Feedback",
+    "items": [
+      {
+        "preface": "Nominated for an OUSA teaching award 2017. The students were invited by the Otago University Student Association to nominate Teachers/Tutors who made big impact and went above and beyond.",
+        "comments": []
+      },
+      {
+        "preface": "The following anonymous feedback was obtained by end-of-semester student evaluation questionnaires:",
+        "comments": [
+          "Paul was very helpful and cleared up any misunderstandings.",
+          "Paul performed his herculean task with grace, empathy, and deep understanding of the material.",
+          "The lab demonstrator is very helpful."
+        ]
+      }
+  ]},
   "administration": [
     {
       "name": "COSC301 Administration",
