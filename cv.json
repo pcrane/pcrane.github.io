@@ -33,6 +33,12 @@
         "value": "Google Scholar",
         "prefix": "Google Scholar:",
         "icon":"google icon"
+      },
+      {
+        "href": "https://stackoverflow.com/users/8884278/paul-crane",
+        "value": "Stack Overflow",
+        "prefix": "Stack Overflow",
+        "icon": "stack overflow icon"
       }
     ]
   },
