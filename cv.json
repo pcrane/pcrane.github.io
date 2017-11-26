@@ -57,7 +57,7 @@
       },
       "title": {
         "text": "An Indoor Localisation System Based on Ubiquitous Technology",
-        "href": ""
+        "href": "http://hdl.handle.net/10523/7564"
       },
       "abstract": {
         "visible": true,
@@ -83,7 +83,7 @@
       },
       "title": {
         "text": "Beacon - A Rapidly Deployable Cellphone Network",
-        "href": "https://ourarchive.otago.ac.nz/handle/10523/2267"
+        "href": "http://hdl.handle.net/10523/2267"
       },
       "abstract": {
         "visible": false,
@@ -120,7 +120,7 @@
       "visible": false,
       "where": {
         "text": "University of Otago",
-        "href": "www.otago.ac.nz"
+        "href": "http://cs.otago.ac.nz"
       },
       "when": {
         "start": "February 2003",
@@ -139,7 +139,7 @@
       "year":"2017",
       "where":"Montreal, Canada",
       "organisation":"IEEE",
-      "paper":{"text": "paper", "href":""},
+      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/pimrc2017/pimrc2017.pdf"},
       "bibtex":{"text": "citation", "href":"./publications/pimrc2017/pimrc2017.bib"},
       "slides":[]
     },
@@ -626,14 +626,22 @@
       ]
     }
   ],
-  "feedback": {
-    "preface": "The following feedback was obtained by end-of-semester student evaluation questionnaires:",
-    "comments": [
-      "Paul was very helpful and cleared up any misunderstandings.",
-      "Paul performed his herculean task with grace, empathy, and deep understanding of the material.",
-      "The lab demonstrator is very helpful."
-    ]
-  },
+  "feedback":{
+    "title": "Student Feedback",
+    "items": [
+      {
+        "preface": "Nominated for an OUSA teaching award 2017. The students were invited by the Otago University Student Association to nominate Teachers/Tutors who made big impact and went above and beyond.",
+        "comments": []
+      },
+      {
+        "preface": "The following anonymous feedback was obtained by end-of-semester student evaluation questionnaires:",
+        "comments": [
+          "Paul was very helpful and cleared up any misunderstandings.",
+          "Paul performed his herculean task with grace, empathy, and deep understanding of the material.",
+          "The lab demonstrator is very helpful."
+        ]
+      }
+  ]},
   "administration": [
     {
       "name": "COSC301 Administration",
@@ -645,7 +653,7 @@
     }
   ],
   "hobbies": [
-    "Routinely attend Ceroc and West Coast Swing partner dancing classes, and occasional competitions.",
+    "Routinely attend Ceroc and West Coast Swing partner dancing classes, and occasional competitions. I have recently qualified as a Ceroc Dance Teacher.",
     "I played Saxophone (jazz band and symphonic) for numerous years in local amateur groups."
   ]
 }

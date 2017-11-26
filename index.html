@@ -271,14 +271,16 @@
                         </tbody>
                     </table>
                 </div>
-                <h5 class="title">Anonymous Student Feedback</h5>
                 <!-- ko with: feedback -->
-                <p data-bind="text: preface"></p>
-                <ul>
-                    <!-- ko foreach: comments -->
-                    <li><q data-bind="text: $data"></q></li>
+                <h3 class="title" data-bind="text: title"></h3>
+                    <!-- ko foreach: items -->
+                    <p data-bind="text: preface"></p>
+                    <ul>
+                        <!-- ko foreach: comments -->
+                        <li><q data-bind="text: $data"></q></li>
+                        <!-- /ko -->
+                    </ul>
                     <!-- /ko -->
-                </ul>
                 <!-- /ko -->
             </section>
 
