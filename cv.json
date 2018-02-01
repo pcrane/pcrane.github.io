@@ -152,7 +152,7 @@
       "where":"Valencia, Spain",
       "organisation":"IEEE",
       "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/pimrc2016/pimrc2016.pdf"},
-      "bibtex":{"text": "citation", "href":"./publications/publications/pimrc2016/pimrc2016.bib"},
+      "bibtex":{"text": "citation", "href":"./publications/pimrc2016/pimrc2016.bib"},
       "slides":[]
     },
     {
@@ -164,7 +164,7 @@
       "where":"Melbourne, Australia",
       "organisation":"ACM",
       "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/mum2014/mum2014.pdf"},
-      "bibtex":{"text": "citation", "href":"./publications/publications/mum2014/mum2014.bib"},
+      "bibtex":{"text": "citation", "href":"./publications/mum2014/mum2014.bib"},
       "slides":[]
     }
   ],
