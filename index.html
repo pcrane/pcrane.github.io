@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dr. Paul Crane - Resume</title>
-    <meta name="description" content="I am a computer scientist and recently completed a PhD with a broad range of interests in operating systems, networks, and solving interesting problems.">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.css">
+    <!-- Control the behavior of search engine crawling and indexing -->
+    <meta name="robots" content="index,follow"><!-- All Search Engines -->
+    <meta name="googlebot" content="index,follow"><!-- Google Specific -->
 
+    <!-- Tells Google not to show the sitelinks search box -->
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="google" content="notranslate">
+
+    <meta property="og:url" content="https://paul.crane.net.nz">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Dr. Paul Crane">
+    <meta property="og:description" content="Lecturer in Computer Scientist with a broad range of interests in
+    operating systems, networks, and solving interesting problems.">
+    <meta property="og:site_name" content="Dr. Paul Crane - Resume">
+    <meta property="og:locale" content="en_NZ">
+
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@paul_crane">
+    <meta name="twitter:url" content="https://paul.crane.net.nz">
+    <meta name="twitter:title" content="Dr. Paul Crane">
+    <meta name="twitter:description" content="Lecturer in Computer Scientist with a broad range of interests in
+    operating systems, networks, and solving interesting problems.">
+
+
+    <title>Dr. Paul Crane - Resume</title>
+    <meta name="description" content="I am a Lecturer in Computer Scientist with a broad range of interests in
+    operating systems, networks, and solving interesting problems.">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.css">
     <link href="style.css" type="text/css" rel="stylesheet"/>
     <link href="print.css" type="text/css" rel="stylesheet" media="print"/>
 
@@ -17,6 +45,7 @@
           "@context": "http://schema.org",
           "@type": "Person",
           "name": "Paul Crane",
+          "jobTitle": "Lecturer",
           "givenName": "Paul",
           "familyName": "Crane",
           "url": "https://paul.crane.net.nz",
@@ -30,7 +59,7 @@
             "https://twitter.com/paul_crane",
             "https://otago.academia.edu/PaulCrane",
             "http://orcid.org/0000-0002-7327-3873",
-            "https://www.researchgate.net/profile/Paul_Crane2",
+            "https://www.researchgate.net/profile/Paul_Crane2"
           ],
           "address": {
             "@type": "PostalAddress",
@@ -67,8 +96,10 @@
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-106063554-1', 'auto');
-        ga('send', 'pageview');
+        ga('send', 'pageview', location.pathname);
     </script>
+
+    <link rel="preload" href="knockout-min.js">
 </head>
 <body>
 
@@ -243,7 +274,34 @@
             </section>
 
             <section class="column">
-                <h2 class="title">Teaching Experience</h2>
+                <h2 class="title">Lecturing Experience</h2>
+                <div><p>I have been working as a full-time lecturer in the <a href="http://cs.otago.ac.nz/">Computer
+                    Science Department</a> at <a href="http://otago.ac.nz">Otago University</a>. This involves,
+                    researching and devloping teaching materials (lectures, labs, assignments, etc.), delivering lectures,
+                    marking and providing feedback to students.
+                </p></div>
+                <div>
+                    <table class="ui very basic small compact table">
+                        <thead>
+                        <tr>
+                            <th>Paper</th>
+                            <th>Offering</th>
+                            <th>Title</th>
+                            <th>Skillset</th>
+                        </tr>
+                        </thead>
+                        <tbody data-bind="foreach: lecturing">
+                        <tr>
+                            <td><span data-bind="text: name.text"></span></td>
+                            <td data-bind="text:offering"></td>
+                            <td><span data-bind="link: title"></span></td>
+                            <td data-bind="text:language"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 class="title">Demonstrating Experience</h2>
                 <div><p>I have been employed demonstrating labs for numerous undergraduate courses concurrent with
                     postgraduate studies. Lab demonstrators have similar responsibilities to a teaching-assistant. The
                     main role is to assist students with the practical lab work and help them to understand concepts

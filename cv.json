@@ -1,7 +1,7 @@
 {
   "name": "Paul Crane",
   "title":"Dr.",
-  "tag":"Computer scientist, recently completed PhD, who enjoys teaching and working alongside others with different skill-sets. Most of all, likes rising to a technical challenge.",
+  "tag":"Lecturer in Computer Science who enjoys teaching and working alongside others with different skill-sets. Most of all, likes rising to a technical challenge.",
   "contact": {
     "methods": [
       {
@@ -556,6 +556,20 @@
       }
     ]
   },
+  "lecturing":[
+    {
+      "name": { "text": "COSC430", "href": "http://www.cs.otago.ac.nz/cosc430/"},
+      "title": { "text": "Advanced Databases", "href": "http://www.cs.otago.ac.nz/cosc430/"},
+      "language": "Relational, Non-relational, recent research developments in databases.",
+      "offering": "S1 2018"
+    },
+    {
+      "name": { "text": "COSC326", "href": "http://www.cs.otago.ac.nz/cosc326/"},
+      "title": {"text": "Effective Programming", "href": "http://www.cs.otago.ac.nz/cosc326/"},
+      "language": "Problem solving.",
+      "offering": "S1 2018"
+    }
+  ],
   "courses": [
     {
       "name": { "text": "COMP160", "href": "http://www.cs.otago.ac.nz/comp160/"},
