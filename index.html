@@ -235,6 +235,7 @@
 
                 <div data-bind="with: skill_levels" class="ui two column stackable doubling grid container">
                     <div class="column">
+                        <p>
                         <table class="ui very basic small compact table">
                             <tbody data-bind="foreach: languages">
                             <tr>
@@ -251,8 +252,10 @@
                             </tr>
                             </tbody>
                         </table>
+                        </p>
                     </div>
                     <div class="column">
+                        <p>
                         <table class="ui very basic small compact table">
                             <tbody data-bind="foreach: tools">
                             <tr>
@@ -269,6 +272,7 @@
                             </tr>
                             </tbody>
                         </table>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -281,24 +285,54 @@
                     marking and providing feedback to students.
                 </p></div>
                 <div>
+                    <p>
                     <table class="ui very basic small compact table">
                         <thead>
                         <tr>
                             <th>Paper</th>
                             <th>Offering</th>
                             <th>Title</th>
-                            <th>Skillset</th>
+                            <th>Topics</th>
                         </tr>
                         </thead>
                         <tbody data-bind="foreach: lecturing">
                         <tr>
-                            <td><span data-bind="text: name.text"></span></td>
-                            <td data-bind="text:offering"></td>
-                            <td><span data-bind="link: title"></span></td>
-                            <td data-bind="text:language"></td>
+                            <td>
+                                <span data-bind="text: name.text" class="item"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text: offering" class="item"></span>
+                            </td>
+                            <td>
+                                <span data-bind="link: title" class="item"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text:language" class="item"></span>
+                            </td>
                         </tr>
                         </tbody>
                     </table>
+                    </p>
+                    <!--<table class="ui very basic small compact table">-->
+
+                        <!--<thead>-->
+                        <!--<tr>-->
+                            <!--<th>Paper</th>-->
+                            <!--<th>Offering</th>-->
+                            <!--<th>Title</th>-->
+                            <!--<th>Skillset</th>-->
+                        <!--</tr>-->
+                        <!--</thead>-->
+                        <!---->
+                        <!--<tbody data-bind="foreach: lecturing">-->
+                            <!--<tr>-->
+                                <!--<td><span data-bind="text: name.text"></span></td>-->
+                                <!--<td data-bind="text:offering"></td>-->
+                                <!--<td><span data-bind="link: title"></span></td>-->
+                                <!--<td data-bind="text:language"></td>-->
+                            <!--</tr>-->
+                        <!--</tbody>-->
+                    <!--</table>-->
                 </div>
 
                 <h2 class="title">Demonstrating Experience</h2>
@@ -309,6 +343,7 @@
                 </p></div>
 
                 <div>
+                    <p>
                     <table class="ui very basic small compact table">
                         <thead>
                         <tr>
@@ -327,6 +362,7 @@
                         </tr>
                         </tbody>
                     </table>
+                    </p>
                 </div>
                 <!-- ko with: feedback -->
                 <h3 class="title" data-bind="text: title"></h3>
