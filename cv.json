@@ -1,41 +1,51 @@
 {
-  "name": "Paul Crane",
   "title":"Dr.",
+  "name": "Paul Crane",
+  "jobTitle": "Lecturer",
+  "email":"paul@crane.net.nz",
   "tag":"Lecturer in Computer Science who enjoys teaching and working alongside others with different skill-sets. Most of all, likes rising to a technical challenge.",
+  "givenName": "Paul",
+  "familyName": "Crane",
   "contact": {
     "methods": [
       {
-        "href": "mailto://paul@crane.net.nz",
+        "href": "mailto:paul@crane.net.nz",
+        "onclick": "ga('send', 'event', 'link', 'mailto');",
         "value": "paul@crane.net.nz",
         "prefix": "email:",
         "icon":"mail icon"
       },
       {
         "href": "https://paul.crane.net.nz",
+        "onclick": "ga('send', 'event', 'link', 'home');",
         "value": "paul.crane.net.nz",
         "prefix": "web:",
         "icon":"home icon"
       },
       {
         "href": "https://github.com/pcrane",
+        "onclick": "ga('send', 'event', 'link', 'github');",
         "value": "Github",
         "prefix": "github:",
         "icon":"github icon"
       },
       {
         "href": "https://www.linkedin.com/in/paulscrane/",
+        "onclick": "ga('send', 'event', 'link', 'linkedin');",
         "value": "LinkedIn",
         "prefix": "linkedin:",
         "icon":"linkedin icon"
       },
       {
         "href": "https://scholar.google.co.nz/citations?user=kjrHeXQAAAAJ",
+        "onclick": "ga('send', 'event', 'link', 'scholar');",
         "value": "Google Scholar",
         "prefix": "Google Scholar:",
         "icon":"google icon"
       },
       {
         "href": "https://stackoverflow.com/users/8884278/paul-crane",
+        "onclick": "ga('send', 'event', 'link', 'stackoverflow');",
         "value": "Stack Overflow",
         "prefix": "Stack Overflow",
         "icon": "stack overflow icon"
@@ -49,6 +59,7 @@
       "visible": true,
       "where": {
         "text": "University of Otago",
+        "onclick": "ga('send', 'event', 'link', 'cs');",
         "href": "http://cs.otago.ac.nz"
       },
       "when": {
@@ -57,6 +68,7 @@
       },
       "title": {
         "text": "An Indoor Localisation System Based on Ubiquitous Technology",
+        "onclick": "ga('send', 'event', 'link', 'phd-thesis');",
         "href": "http://hdl.handle.net/10523/7564"
       },
       "abstract": {
@@ -75,6 +87,7 @@
       "visible": true,
       "where": {
         "text": "University of Otago",
+        "onclick": "ga('send', 'event', 'link', 'info');",
         "href": "http://www.otago.ac.nz/info-science/"
       },
       "when": {
@@ -83,6 +96,7 @@
       },
       "title": {
         "text": "Beacon - A Rapidly Deployable Cellphone Network",
+        "onclick": "ga('send', 'event', 'link', 'msc-thesis');",
         "href": "http://hdl.handle.net/10523/2267"
       },
       "abstract": {
@@ -97,6 +111,7 @@
       "visible": true,
       "where": {
         "text": "University of Otago",
+        "onclick": "ga('send', 'event', 'link', 'telecom');",
         "href": "http://www.telecom.otago.ac.nz"
       },
       "when": {
@@ -120,6 +135,7 @@
       "visible": false,
       "where": {
         "text": "University of Otago",
+        "onclick": "ga('send', 'event', 'link', 'cs');",
         "href": "http://cs.otago.ac.nz"
       },
       "when": {
@@ -133,14 +149,14 @@
   "publications":[
     {
       "title":"CRAFT: Reducing the effort for Indoor Localisation",
-      "author": [{ "name":"Zhiyi Huang"},{"name":"Haibo Zhang"}],
+      "author": [{"name":"Zhiyi Huang"},{"name":"Haibo Zhang"}],
       "booktitle": "IEEE 28th Annual International Symposium on Person, Indoor and Mobile Radio Communications (PIMRC)",
       "pages":"1-6",
       "year":"2017",
       "where":"Montreal, Canada",
       "organisation":"IEEE",
-      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/pimrc2017/pimrc2017.pdf"},
-      "bibtex":{"text": "citation", "href":"./publications/pimrc2017/pimrc2017.bib"},
+      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/pimrc2017/pimrc2017.pdf", "onclick": "ga('send', 'event', 'link', 'pimrc2017-pdf');"},
+      "bibtex":{"text": "citation", "href":"./publications/pimrc2017/pimrc2017.bib","onclick": "ga('send', 'event', 'link', 'pimrc2017-bib');"},
       "slides":[]
     },
     {
@@ -151,8 +167,8 @@
       "year":"2016",
       "where":"Valencia, Spain",
       "organisation":"IEEE",
-      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/pimrc2016/pimrc2016.pdf"},
-      "bibtex":{"text": "citation", "href":"./publications/pimrc2016/pimrc2016.bib"},
+      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/pimrc2016/pimrc2016.pdf", "onclick": "ga('send', 'event', 'link', 'pimrc2016-pdf');"},
+      "bibtex":{"text": "citation", "href":"./publications/pimrc2016/pimrc2016.bib", "onclick": "ga('send', 'event', 'link', 'pimrc2016-bib');"},
       "slides":[]
     },
     {
@@ -163,8 +179,8 @@
       "year":"2014",
       "where":"Melbourne, Australia",
       "organisation":"ACM",
-      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/mum2014/mum2014.pdf"},
-      "bibtex":{"text": "citation", "href":"./publications/mum2014/mum2014.bib"},
+      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/mum2014/mum2014.pdf", "onclick": "ga('send', 'event', 'link', 'mum2014-pdf');"},
+      "bibtex":{"text": "citation", "href":"./publications/mum2014/mum2014.bib", "onclick": "ga('send', 'event', 'link', 'mum2014-bib');"},
       "slides":[]
     }
   ],
@@ -200,10 +216,13 @@
       "hardware": [
         {
           "text": "BioRadio150",
+          "onclick": "ga('send', 'event', 'link', 'bioradio');",
           "href": "https://glneurotech.com/bioradio/bioradio-150/"
+
         },
         {
           "text": "BioRadio",
+          "onclick": "ga('send', 'event', 'link', 'bioradio');",
           "href": "https://glneurotech.com/bioradio/"
         }
       ],
@@ -254,12 +273,13 @@
         }
       ],
       "technologies": [
-        {"text":"RabbitMQ (message queue)", "href":"https://www.rabbitmq.com/"},
-        {"text":"Django (administration and user interface)", "href":"https://www.djangoproject.com/"}
+        {"text":"RabbitMQ (message queue)", "onclick": "ga('send', 'event', 'link', 'rabbitmq');","href":"https://www.rabbitmq.com/"},
+        {"text":"Django (administration and user interface)", "onclick": "ga('send', 'event', 'link', 'django');","href":"https://www.djangoproject.com/"}
       ],
       "hardware": [
         {
           "text": "Raspberry Pi 3",
+          "onclick": "ga('send', 'event', 'link', 'rpi');",
           "href": "https://www.raspberrypi.org/products/raspberry-pi-3-model-b/"
         }
       ]
@@ -330,13 +350,13 @@
         }
       ],
       "technologies": [
-        {"text":"RabbitMQ (message queue)", "href":"https://www.rabbitmq.com/"},
-        {"text":"InfluxDB (time series database)", "href":"https://www.influxdata.com/"},
-        {"text":"Grafana (time series visualisation)", "href":"https://grafana.com/"},
-        {"text":"Django (administration and query interface)", "href":"https://www.djangoproject.com/"},
-        {"text":"Postgresql", "href":"https://www.postgresql.org/"},
-        {"text":"neo4j","href":"https://neo4j.com/"},
-        {"text":"Haystack Project (meta data tagging model)","href":"http://project-haystack.org/"},
+        {"text":"RabbitMQ (message queue)", "onclick": "ga('send', 'event', 'link', 'rabbitmq');","href":"https://www.rabbitmq.com/"},
+        {"text":"InfluxDB (time series database)", "onclick": "ga('send', 'event', 'link', 'influx');","href":"https://www.influxdata.com/"},
+        {"text":"Grafana (time series visualisation)", "onclick": "ga('send', 'event', 'link', 'grafana');","href":"https://grafana.com/"},
+        {"text":"Django (administration and query interface)", "onclick": "ga('send', 'event', 'link', 'django');","href":"https://www.djangoproject.com/"},
+        {"text":"Postgresql", "onclick": "ga('send', 'event', 'link', 'postgres');","href":"https://www.postgresql.org/"},
+        {"text":"neo4j","onclick": "ga('send', 'event', 'link', 'neo4j');","href":"https://neo4j.com/"},
+        {"text":"Haystack Project (meta data tagging model)","onclick": "ga('send', 'event', 'link', 'haystack');","href":"http://project-haystack.org/"},
         {"text":"REST/SOAP APIs","href":""}
       ],
       "hardware": null
@@ -558,22 +578,22 @@
   },
   "lecturing":[
     {
-      "name": { "text": "COSC430", "href": "http://www.cs.otago.ac.nz/cosc430/"},
-      "title": { "text": "Advanced Databases", "href": "http://www.cs.otago.ac.nz/cosc430/"},
+      "name": { "text": "COSC430", "href": "http://www.cs.otago.ac.nz/cosc430/", "onclick": "ga('send', 'event', 'link', 'cs-cosc430');"},
+      "title": { "text": "Advanced Databases", "href": "http://www.cs.otago.ac.nz/cosc430/", "onclick": "ga('send', 'event', 'link', 'cs-cosc430');"},
       "language": "Relational, Non-relational, recent research developments in databases.",
       "offering": "S1 2018"
     },
     {
-      "name": { "text": "COSC326", "href": "http://www.cs.otago.ac.nz/cosc326/"},
-      "title": {"text": "Effective Programming", "href": "http://www.cs.otago.ac.nz/cosc326/"},
+      "name": { "text": "COSC326", "href": "http://www.cs.otago.ac.nz/cosc326/", "onclick": "ga('send', 'event', 'link', 'cs-cosc326');"},
+      "title": {"text": "Effective Programming", "href": "http://www.cs.otago.ac.nz/cosc326/", "onclick": "ga('send', 'event', 'link', 'cs-cosc326');"},
       "language": "Students work on various problems, assistance is given via Socratic method.",
       "offering": "S1 2018"
     }
   ],
   "courses": [
     {
-      "name": { "text": "COMP160", "href": "http://www.cs.otago.ac.nz/comp160/"},
-      "title": { "text": "Computer Programming", "href": "http://www.cs.otago.ac.nz/comp160/"},
+      "name": { "text": "COMP160", "href": "http://www.cs.otago.ac.nz/comp160/", "onclick": "ga('send', 'event', 'link', 'cs-cosc160');"},
+      "title": { "text": "Computer Programming", "href": "http://www.cs.otago.ac.nz/comp160/", "onclick": "ga('send', 'event', 'link', 'cs-cosc160');"},
       "language": "Java",
       "year": [
         2005,
@@ -582,8 +602,8 @@
       "postfix": "(renamed to COSC160 in 2009)"
     },
     {
-      "name": { "text": "COSC241", "href": "http://www.cs.otago.ac.nz/cosc241/"},
-      "title": { "text": "Programming and Problem Solving", "href": "http://www.cs.otago.ac.nz/cosc241/"},
+      "name": { "text": "COSC241", "href": "http://www.cs.otago.ac.nz/cosc241/", "onclick": "ga('send', 'event', 'link', 'cs-cosc241');"},
+      "title": { "text": "Programming and Problem Solving", "href": "http://www.cs.otago.ac.nz/cosc241/", "onclick": "ga('send', 'event', 'link', 'cs-cosc241');"},
       "language": "Java",
       "year": [
         2009,
@@ -593,8 +613,8 @@
       ]
     },
     {
-      "name": { "text": "COSC242", "href": "http://www.cs.otago.ac.nz/cosc242/"},
-      "title": { "text": "Algorithms and Data Structures", "href": "http://www.cs.otago.ac.nz/cosc242/"},
+      "name": { "text": "COSC242", "href": "http://www.cs.otago.ac.nz/cosc242/", "onclick": "ga('send', 'event', 'link', 'cs-cosc242');"},
+      "title": { "text": "Algorithms and Data Structures", "href": "http://www.cs.otago.ac.nz/cosc242/", "onclick": "ga('send', 'event', 'link', 'cs-cosc242');"},
       "language": "C",
       "year": [
         2006,
@@ -606,8 +626,8 @@
       ]
     },
     {
-      "name": { "text": "COSC243", "href": "http://www.cs.otago.ac.nz/cosc243/"},
-      "title": { "text": "Computer Architecture and Operating Systems", "href": "http://www.cs.otago.ac.nz/cosc243/"},
+      "name": { "text": "COSC243", "href": "http://www.cs.otago.ac.nz/cosc243/", "onclick": "ga('send', 'event', 'link', 'cs-cosc243');"},
+      "title": { "text": "Computer Architecture and Operating Systems", "href": "http://www.cs.otago.ac.nz/cosc243/", "onclick": "ga('send', 'event', 'link', 'cs-cosc243');"},
       "language": "theory",
       "year": [
         2007,
@@ -616,8 +636,8 @@
       ]
     },
     {
-      "name": { "text": "COSC244", "href": "http://www.cs.otago.ac.nz/cosc244/"},
-      "title": { "text": "Data Communications, Networks, and the Internet", "href": "http://www.cs.otago.ac.nz/cosc244/"},
+      "name": { "text": "COSC244", "href": "http://www.cs.otago.ac.nz/cosc244/", "onclick": "ga('send', 'event', 'link', 'cs-cosc244');"},
+      "title": { "text": "Data Communications, Networks, and the Internet", "href": "http://www.cs.otago.ac.nz/cosc244/", "onclick": "ga('send', 'event', 'link', 'cs-cosc244');"},
       "language": "theory, Java",
       "year": [
         2007,
@@ -628,8 +648,8 @@
       ]
     },
     {
-      "name": { "text": "COSC301", "href": "http://www.cs.otago.ac.nz/cosc301/"},
-      "title": { "text": "Network Management", "href": "http://www.cs.otago.ac.nz/cosc301/"},
+      "name": { "text": "COSC301", "href": "http://www.cs.otago.ac.nz/cosc301/", "onclick": "ga('send', 'event', 'link', 'cs-cosc301');"},
+      "title": { "text": "Network Management", "href": "http://www.cs.otago.ac.nz/cosc301/", "onclick": "ga('send', 'event', 'link', 'cs-cosc301');"},
       "language": "Linux, Ubuntu",
       "year": [
         2013,
@@ -655,7 +675,8 @@
           "The lab demonstrator is very helpful."
         ]
       }
-  ]},
+    ]
+  },
   "administration": [
     {
       "name": "COSC301 Administration",
