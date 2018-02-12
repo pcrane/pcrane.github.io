@@ -153,11 +153,11 @@
                                             {% with where=class.where %}
                                             <span class="ui right aligned">
                                                 {% with a=where %}
-                                                    {% if a.href %}
+                                                    {% if a.href | length > 0 %}
                                                         {{link_format(a.href, a.text, a.onclick)}}
                                                     {% else %}
                                                         {{a.text}}
-                                                    {% endif %}}
+                                                    {% endif %}
                                                 {% endwith %}
                                             </span>
                                             {% endwith %}
