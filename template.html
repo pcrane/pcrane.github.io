@@ -71,9 +71,6 @@
           }
         }
 
-
-
-
     </script>
 
     <!-- Google Analytics -->
@@ -156,7 +153,11 @@
                                             {% with where=class.where %}
                                             <span class="ui right aligned">
                                                 {% with a=where %}
-                                                    {{link_format(a.href, a.text, a.onclick)}}
+                                                    {% if a.href %}
+                                                        {{link_format(a.href, a.text, a.onclick)}}
+                                                    {% else %}
+                                                        {{a.text}}
+                                                    {% endif %}}
                                                 {% endwith %}
                                             </span>
                                             {% endwith %}
