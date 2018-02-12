@@ -7,7 +7,6 @@
 # requires exiftool
 # 	brew install exiftool
 
-
 SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
   DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
@@ -21,6 +20,8 @@ IN="index.html"
 OUT="paul_crane.pdf"
 AUTHOR="Dr. Paul Crane"
 TITLE="Dr. Paul Crane - Resume"
+
+echo "Generating new PDF document..."
 
 electron-pdf -m 0 ${DIR}/${IN} ${DIR}/${OUT}
 exiftool -overwrite_original -Author="${AUTHOR}" -Title="${TITLE}" "${OUT}"
