@@ -139,7 +139,11 @@
                                             </span>
                                             <span class="sub header">
                                                 {% with a=class.title %}
-                                                    {{link_format(a.href, a.text, a.onclick)}}
+                                                    {% if a.href | length > 0 %}
+                                                        {{link_format(a.href, a.text, a.onclick)}}
+                                                    {% else %}
+                                                        {{a.text}}
+                                                    {% endif %}
                                                 {% endwith %}
                                             </span>
                                         </span>
