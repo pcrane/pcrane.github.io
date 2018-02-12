@@ -95,7 +95,7 @@
         ga('send', 'pageview', location.pathname);
     </script>
     {# <link rel="preload" href="knockout-min.js"> #}
-    {%- macro link_format(href, text, onclick, target="_blank", rel="noopener, noreferrer") -%}
+    {%- macro link_format(href, text, onclick, target="_blank", rel="noopener noreferrer") -%}
     <a href="{{ href }}" {% if onclick %} onclick="{{ onclick }}" {% endif %} {%if rel | length > 0%}rel="{{rel}}"{%endif%} target="{{target}}">{{text}}</a>
     {%- endmacro -%}
 
