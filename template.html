@@ -29,7 +29,7 @@
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"
           integrity="sha256-/Z28yXtfBv/6/alw+yZuODgTbKZm86IKbPE/5kjO/xY="
-          crossorigin="anonymous" />
+          crossorigin="anonymous"/>
 
     <link href="style.css" type="text/css" rel="stylesheet"/>
     <link href="print.css" type="text/css" rel="stylesheet" media="print"/>
@@ -75,6 +75,7 @@
           }
         }
 
+
     </script>
 
     <!-- Google Analytics -->
@@ -94,15 +95,18 @@
         ga('create', 'UA-106063554-1', 'auto');
         ga('send', 'pageview', location.pathname);
     </script>
-    {# <link rel="preload" href="knockout-min.js"> #}
+    {#
+    <link rel="preload" href="knockout-min.js">
+    #}
     {%- macro link_format(href, text, onclick, target="_blank", rel="noopener noreferrer") -%}
-    <a href="{{ href }}" {% if onclick %} onclick="{{ onclick }}" {% endif %} {%if rel | length > 0%}rel="{{rel}}"{%endif%} target="{{target}}">{{text}}</a>
+    <a href="{{ href }}" {% if onclick %} onclick="{{ onclick }}" {% endif %} {%if rel | length>
+        0%}rel="{{rel}}"{%endif%} target="{{target}}">{{text}}</a>
     {%- endmacro -%}
 
 </head>
 
 <body>
-<div class="ui main container">
+<div class="ui main container" role="main">
     <div class="ui one column centered grid">
         <div class="column">
             <h1 class="ui header">{{title}} {{name}}</h1>
@@ -206,16 +210,10 @@
                                     </span>
 
                             <span class="sub header">
-                                        <span data-bind="optional: paper, binding: 'link'">
-                                            {% with a=publication.paper %}{{link_format(a.href, a.text, a.onclick)}}{% endwith %}
-                                        </span>
-                                        <span data-bind="optional: slides, binding: 'link'">
-                                            {% with a=publication.slides %}{{link_format(a.href, a.text, a.onclick)}}{% endwith %}
-                                        </span>
-                                        <span data-bind="optional: bibtex, binding: 'link'">
-                                            {% with a=publication.bibtex %}{{link_format(a.href, a.text, a.onclick)}}{% endwith %}
-                                        </span>
-                                    </span>
+                                {% if publication.paper %}{% with a=publication.paper %}{{link_format(a.href, a.text, a.onclick)}}{% endwith %}{% endif %}}
+                                {% if publication.slides %}{% with a=publication.slides %}{{link_format(a.href, a.text, a.onclick)}}{% endwith %}{%endif%}}
+                                {% if publication.bibtex %}{% with a=publication.bibtex %}{{link_format(a.href, a.text, a.onclick)}}{% endwith %}{%endif %}}
+                            </span>
                         </h3>
                     </div>
                 </div>
