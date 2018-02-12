@@ -95,9 +95,8 @@
         ga('send', 'pageview', location.pathname);
     </script>
     {# <link rel="preload" href="knockout-min.js"> #}
-
-    {%- macro link_format(href, text, onclick, target="_blank") -%}
-    <a href="{{ href }}" {% if onclick %} onclick="{{ onclick }}" {% endif %} target="{{target}}">{{text}}</a>
+    {%- macro link_format(href, text, onclick, target="_blank", rel="noopener, noreferrer") -%}
+    <a href="{{ href }}" {% if onclick %} onclick="{{ onclick }}" {% endif %} {%if rel | length > 0%}rel="{{rel}}"{%endif%} target="{{target}}">{{text}}</a>
     {%- endmacro -%}
 
 </head>
@@ -116,7 +115,7 @@
                         {% else %}
                         <span>{{method.prefix}}</span>
                         {% endif %}
-                        {{ link_format(method.href, method.value, method.onclick) }}
+                        {{ link_format(method.href, method.value, method.onclick, method.rel) }}
                     </li>
                     {% endfor %}
                     <li class="item no-print">
@@ -144,7 +143,7 @@
                                             <span class="sub header">
                                                 {% with a=class.title %}
                                                     {% if a.href | length > 0 %}
-                                                        {{link_format(a.href, a.text, a.onclick)}}
+                                                        {{link_format(a.href, a.text, a.onclick, a.rel)}}
                                                     {% else %}
                                                         {{a.text}}
                                                     {% endif %}

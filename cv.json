@@ -11,6 +11,7 @@
       {
         "href": "mailto:paul@crane.net.nz",
         "onclick": "ga('send', 'event', 'link', 'mailto');",
+        "rel":"",
         "value": "paul@crane.net.nz",
         "prefix": "email:",
         "icon":"mail icon"
@@ -18,6 +19,7 @@
       {
         "href": "https://paul.crane.net.nz",
         "onclick": "ga('send', 'event', 'link', 'home');",
+        "rel":"",
         "value": "paul.crane.net.nz",
         "prefix": "web:",
         "icon":"home icon"
@@ -25,6 +27,7 @@
       {
         "href": "https://github.com/pcrane",
         "onclick": "ga('send', 'event', 'link', 'github');",
+        "rel": "noopener, noreferrer",
         "value": "Github",
         "prefix": "github:",
         "icon":"github icon"
@@ -32,6 +35,7 @@
       {
         "href": "https://www.linkedin.com/in/paulscrane/",
         "onclick": "ga('send', 'event', 'link', 'linkedin');",
+        "rel": "noopener, noreferrer",
         "value": "LinkedIn",
         "prefix": "linkedin:",
         "icon":"linkedin icon"
@@ -39,6 +43,7 @@
       {
         "href": "https://scholar.google.co.nz/citations?user=kjrHeXQAAAAJ",
         "onclick": "ga('send', 'event', 'link', 'scholar');",
+        "rel": "noopener, noreferrer",
         "value": "Google Scholar",
         "prefix": "Google Scholar:",
         "icon":"google icon"
@@ -46,6 +51,7 @@
       {
         "href": "https://stackoverflow.com/users/8884278/paul-crane",
         "onclick": "ga('send', 'event', 'link', 'stackoverflow');",
+        "rel": "noopener, noreferrer",
         "value": "Stack Overflow",
         "prefix": "Stack Overflow",
         "icon": "stack overflow icon"
