@@ -26,7 +26,11 @@
     <title>{{title}} {{name}}</title>
     <meta name="description" content="{{tag}}">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"
+          integrity="sha256-/Z28yXtfBv/6/alw+yZuODgTbKZm86IKbPE/5kjO/xY="
+          crossorigin="anonymous" />
+
     <link href="style.css" type="text/css" rel="stylesheet"/>
     <link href="print.css" type="text/css" rel="stylesheet" media="print"/>
 
@@ -90,7 +94,7 @@
         ga('create', 'UA-106063554-1', 'auto');
         ga('send', 'pageview', location.pathname);
     </script>
-    <!--<link rel="preload" href="knockout-min.js">-->
+    {# <link rel="preload" href="knockout-min.js"> #}
 
     {%- macro link_format(href, text, onclick, target="_blank") -%}
     <a href="{{ href }}" {% if onclick %} onclick="{{ onclick }}" {% endif %} target="{{target}}">{{text}}</a>
