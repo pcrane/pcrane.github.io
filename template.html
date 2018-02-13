@@ -95,9 +95,15 @@
         ga('create', 'UA-106063554-1', 'auto');
         ga('send', 'pageview', location.pathname);
     </script>
-    {#
-    <link rel="preload" href="knockout-min.js">
-    #}
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NQBF3LB');</script>
+    <!-- End Google Tag Manager -->
+
     {%- macro link_format(href, text, onclick, target="_blank", rel="noopener noreferrer") -%}
     <a href="{{ href }}" {% if onclick %} onclick="{{ onclick }}" {% endif %} {%if rel | length>
         0%}rel="{{rel}}"{%endif%} target="{{target}}">{{text}}</a>
@@ -106,6 +112,10 @@
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQBF3LB"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="ui main container" role="main">
     <div class="ui one column centered grid">
         <div class="column">
