@@ -592,7 +592,13 @@
       "name": { "text": "COSC326", "href": "http://www.cs.otago.ac.nz/cosc326/", "onclick": "ga('send', 'event', 'link', 'cs-cosc326');"},
       "title": {"text": "Effective Programming", "href": "http://www.cs.otago.ac.nz/cosc326/", "onclick": "ga('send', 'event', 'link', 'cs-cosc326');"},
       "language": "Students work on various problems, assistance is given via Socratic method.",
-      "offering": "S1 2018"
+      "offering": "S1 and S2 2018"
+    },
+    {
+      "name": { "text": "COSC346", "href": "http://www.cs.otago.ac.nz/cosc346/", "onclick": "ga('send', 'event', 'link', 'cs-cosc346');"},
+      "title": { "text": "Object Oriented Programming and User Interfaces", "href": "http://www.cs.otago.ac.nz/cosc346/", "onclick": "ga('send', 'event', 'link', 'cs-cosc346');"},
+      "language": "Swift 4",
+      "offering": "S2 2018"
     }
   ],
   "courses": [

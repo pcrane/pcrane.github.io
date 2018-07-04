@@ -400,88 +400,183 @@
         </div>
 
         <div class="column">
-            <h2>Projects</h2>
-            <div class="ui raised segment">
-                <p>
-                    Each of the projects listed below were completed concurrent with PhD as paid work. All the
-                    projects involved aspects of requirements gathering, design, development, testing, and
-                    performance tuning. These projects were all conducted as sole software developer. See the
-                    <a href="https://paul.crane.net.nz/projects.html">projects page</a> for more detail.
-                </p>
+            <h2 class="title">Lecturing Experience</h2>
+            <div><p>I have been working as a full-time lecturer in the <a href="http://cs.otago.ac.nz/">Computer
+                Science Department</a> at <a href="http://otago.ac.nz">Otago University</a>. This involves,
+                researching and devloping teaching materials (lectures, labs, assignments, etc.), delivering
+                lectures,
+                marking and providing feedback to students.
+            </p></div>
+            <div>
+                <table class="ui very basic small compact table">
+                    <thead>
+                    <tr>
+                        <th>Paper</th>
+                        <th>Offering</th>
+                        <th>Title</th>
+                        <th>Topics</th>
+                    </tr>
+                    </thead>
+                    <tbody data-bind="foreach: lecturing">
+                    
+                    <tr>
+                        <td>
+                            <span data-bind="text: name.text" class="item">COSC430</span>
+                        </td>
+                        <td>
+                            <span data-bind="text: offering" class="item">S1 2018</span>
+                        </td>
+                        <td>
+                                <span data-bind="link: title" class="item">
+                                    
+                                        <a href="http://www.cs.otago.ac.nz/cosc430/"  onclick="ga('send', 'event', 'link', 'cs-cosc430');"  rel="noopener noreferrer" target="_blank">Advanced Databases</a>
+                                    </span>
+                        </td>
+                        <td>
+                            <span data-bind="text:language" class="item">Relational, Non-relational, recent research developments in databases.</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span data-bind="text: name.text" class="item">COSC326</span>
+                        </td>
+                        <td>
+                            <span data-bind="text: offering" class="item">S1 and S2 2018</span>
+                        </td>
+                        <td>
+                                <span data-bind="link: title" class="item">
+                                    
+                                        <a href="http://www.cs.otago.ac.nz/cosc326/"  onclick="ga('send', 'event', 'link', 'cs-cosc326');"  rel="noopener noreferrer" target="_blank">Effective Programming</a>
+                                    </span>
+                        </td>
+                        <td>
+                            <span data-bind="text:language" class="item">Students work on various problems, assistance is given via Socratic method.</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span data-bind="text: name.text" class="item">COSC346</span>
+                        </td>
+                        <td>
+                            <span data-bind="text: offering" class="item">S2 2018</span>
+                        </td>
+                        <td>
+                                <span data-bind="link: title" class="item">
+                                    
+                                        <a href="http://www.cs.otago.ac.nz/cosc346/"  onclick="ga('send', 'event', 'link', 'cs-cosc346');"  rel="noopener noreferrer" target="_blank">Object Oriented Programming and User Interfaces</a>
+                                    </span>
+                        </td>
+                        <td>
+                            <span data-bind="text:language" class="item">Swift 4</span>
+                        </td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
             </div>
-            <div class="ui items">
-                
-                <div class="item">
-                    <div class="content">
-                        <h3 class="ui header">
-                            <a href="projects.html#rtnf">Real-time Neuro-feedback</a>
-                            <span class="sub header">
-                                        Research Assistant, Phoebe Neo,
-                                        Department of Psychology, University of Otago<br>
-                                        March 2017 - present
-                                    </span>
-                        </h3>
-                        <p>This research project in the Psychology department aims to discover ways to reduce depressivity. I implemented a real-time neuro-feedback task according to an experimental protocol, and developed programs to analyse the data collected.</p>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <div class="content">
-                        <h3 class="ui header">
-                            <a href="projects.html#pidis">Information Display</a>
-                            <span class="sub header">
-                                        Contract Software Developer, Joe Connolly,
-                                        ITS, Downer Group<br>
-                                        July 2017 - present
-                                    </span>
-                        </h3>
-                        <p>At Downer I was tasked with displaying road safety information around Downer's offices, Downer's client's offices, and public information booths across the country. Because the information is being displayed in their client's premises and in public areas, the priority of requirements were thus: reliability, functionality, then cost. Using a RaspberryPI, a small battery powered UPS (UPS PIco), and monitoring of the system (including CPU, RAM, hard disk) allowed us to keep tabs on the performance of the devices in the field. The RaspberryPI was connected to a wall-mounted TV in the offices to display the content. Controlling the devices was done through the use of message queues and a web-based administration interface.</p>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <div class="content">
-                        <h3 class="ui header">
-                            <a href="projects.html#cosc301">Network Management Course Content Refresh</a>
-                            <span class="sub header">
-                                        Technical Writer, Zhiyi Huang,
-                                        Department of Computer Science, University of Otago<br>
-                                        October 2017 - present
-                                    </span>
-                        </h3>
-                        <p>Since the course was last updated in 2010 there have been a large number of changes to the commands, tools, and general practises around Linux administration. Beyond the content of the refresh, the course web page was updated to use modern (responsive) web design practises, and the lab manual build process was updated to use modern continuous integration techniques to automate as much as possible (where the previous build system used docbook and makefiles to generate the lab manual).</p>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <div class="content">
-                        <h3 class="ui header">
-                            <a href="projects.html#pseman">Supporting Energy Monitoring At University of Otago</a>
-                            <span class="sub header">
-                                        Designer & Software Developer, Hans Pietsch and David Eyers,
-                                        Property Services Division and Department of Computer Science, University of Otago<br>
-                                        July 2016 - December 2016
-                                    </span>
-                        </h3>
-                        <p>In this project I worked with a multi-disciplinary team at the University of Otago to collect and collate a variety of energy related measurements from a disparate set of systems (e.g. building management systems, lighting systems, ad hoc sensors) at a high level of geographic (e.g. room, floor, building, and campus levels of detail) and temporal precision (most commercial systems only persist aggregate data). The prototype system was presented at the Otago Energy Research Centre's Symposium in 2016, and awarded Best Student Presentation.</p>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <div class="content">
-                        <h3 class="ui header">
-                            <a href="projects.html#dextero">Accelerometer Gloves</a>
-                            <span class="sub header">
-                                        Research Assistant, Liz Franz,
-                                        Department of Psychology, University of Otago<br>
-                                        2013 - 2014
-                                    </span>
-                        </h3>
-                        <p>In this project I designed, developed, and prototyped a set of accelerometer gloves to replace and improve upon a set of gloves that had gone out of production. The design of the new gloves achieved a sample rate of 125Hz (matching the existing pair), while improving upon the comfort level across a variety of different hand sizes and shapes.</p>
-                    </div>
-                </div>
-                
+
+            <h2 class="title">Demonstrating Experience</h2>
+            <!--<div><p>I have been employed demonstrating labs for numerous undergraduate courses concurrent with
+                postgraduate studies. Lab demonstrators have similar responsibilities to a teaching-assistant. The
+                main role is to assist students with the practical lab work and help them to understand concepts
+                taught in lectures.
+            </p></div>-->
+            <div>
+                <table class="ui very basic small compact table">
+                    <thead>
+                    <tr>
+                        <th>Paper</th>
+                        <th>Title</th>
+                        <th>Skillset</th>
+                        <th>Years</th>
+                    </tr>
+                    </thead>
+                    <tbody data-bind="foreach: courses">
+                    
+                    <tr>
+                        <td><span data-bind="link: title">COMP160</span></td>
+                        <td><span data-bind="link: title" class="item">
+                                    
+                                        <a href="http://www.cs.otago.ac.nz/comp160/"  onclick="ga('send', 'event', 'link', 'cs-cosc160');"  rel="noopener noreferrer" target="_blank">Computer Programming</a>
+                                    </span></td>
+                        <td data-bind="text:language">Java</td>
+                        <td data-bind="text:year">[2005, 2007]</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><span data-bind="link: title">COSC241</span></td>
+                        <td><span data-bind="link: title" class="item">
+                                    
+                                        <a href="http://www.cs.otago.ac.nz/cosc241/"  onclick="ga('send', 'event', 'link', 'cs-cosc241');"  rel="noopener noreferrer" target="_blank">Programming and Problem Solving</a>
+                                    </span></td>
+                        <td data-bind="text:language">Java</td>
+                        <td data-bind="text:year">[2009, 2010, 2012, 2017]</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><span data-bind="link: title">COSC242</span></td>
+                        <td><span data-bind="link: title" class="item">
+                                    
+                                        <a href="http://www.cs.otago.ac.nz/cosc242/"  onclick="ga('send', 'event', 'link', 'cs-cosc242');"  rel="noopener noreferrer" target="_blank">Algorithms and Data Structures</a>
+                                    </span></td>
+                        <td data-bind="text:language">C</td>
+                        <td data-bind="text:year">[2006, 2007, 2009, 2010, 2011, 2017]</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><span data-bind="link: title">COSC243</span></td>
+                        <td><span data-bind="link: title" class="item">
+                                    
+                                        <a href="http://www.cs.otago.ac.nz/cosc243/"  onclick="ga('send', 'event', 'link', 'cs-cosc243');"  rel="noopener noreferrer" target="_blank">Computer Architecture and Operating Systems</a>
+                                    </span></td>
+                        <td data-bind="text:language">theory</td>
+                        <td data-bind="text:year">[2007, 2012, 2013]</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><span data-bind="link: title">COSC244</span></td>
+                        <td><span data-bind="link: title" class="item">
+                                    
+                                        <a href="http://www.cs.otago.ac.nz/cosc244/"  onclick="ga('send', 'event', 'link', 'cs-cosc244');"  rel="noopener noreferrer" target="_blank">Data Communications, Networks, and the Internet</a>
+                                    </span></td>
+                        <td data-bind="text:language">theory, Java</td>
+                        <td data-bind="text:year">[2007, 2009, 2010, 2012, 2013]</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><span data-bind="link: title">COSC301</span></td>
+                        <td><span data-bind="link: title" class="item">
+                                    
+                                        <a href="http://www.cs.otago.ac.nz/cosc301/"  onclick="ga('send', 'event', 'link', 'cs-cosc301');"  rel="noopener noreferrer" target="_blank">Network Management</a>
+                                    </span></td>
+                        <td data-bind="text:language">Linux, Ubuntu</td>
+                        <td data-bind="text:year">[2013, 2014, 2015, 2016, 2017]</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
             </div>
+
+            <h3 class="title">Student Feedback</h3>
+            
+            <p>Nominated for an OUSA teaching award 2017. The students were invited by the Otago University Student Association to nominate Teachers/Tutors who made big impact and went above and beyond.</p>
+            <ul>
+                
+            </ul>
+            
+            <p>The following anonymous feedback was obtained by end-of-semester student evaluation questionnaires:</p>
+            <ul>
+                
+                <li><q>Paul was very helpful and cleared up any misunderstandings.</q></li>
+                
+                <li><q>Paul performed his herculean task with grace, empathy, and deep understanding of the material.</q></li>
+                
+                <li><q>The lab demonstrator is very helpful.</q></li>
+                
+            </ul>
+            
         </div>
 
         <div class="column">
@@ -607,166 +702,72 @@
         </div>
 
         <div class="column">
-            <h2 class="title">Lecturing Experience</h2>
-            <div><p>I have been working as a full-time lecturer in the <a href="http://cs.otago.ac.nz/">Computer
-                Science Department</a> at <a href="http://otago.ac.nz">Otago University</a>. This involves,
-                researching and devloping teaching materials (lectures, labs, assignments, etc.), delivering
-                lectures,
-                marking and providing feedback to students.
-            </p></div>
-            <div>
-                <table class="ui very basic small compact table">
-                    <thead>
-                    <tr>
-                        <th>Paper</th>
-                        <th>Offering</th>
-                        <th>Title</th>
-                        <th>Topics</th>
-                    </tr>
-                    </thead>
-                    <tbody data-bind="foreach: lecturing">
-                    
-                    <tr>
-                        <td>
-                            <span data-bind="text: name.text" class="item">COSC430</span>
-                        </td>
-                        <td>
-                            <span data-bind="text: offering" class="item">S1 2018</span>
-                        </td>
-                        <td>
-                                <span data-bind="link: title" class="item">
-                                    
-                                        <a href="http://www.cs.otago.ac.nz/cosc430/"  onclick="ga('send', 'event', 'link', 'cs-cosc430');"  rel="noopener noreferrer" target="_blank">Advanced Databases</a>
-                                    </span>
-                        </td>
-                        <td>
-                            <span data-bind="text:language" class="item">Relational, Non-relational, recent research developments in databases.</span>
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            <span data-bind="text: name.text" class="item">COSC326</span>
-                        </td>
-                        <td>
-                            <span data-bind="text: offering" class="item">S1 2018</span>
-                        </td>
-                        <td>
-                                <span data-bind="link: title" class="item">
-                                    
-                                        <a href="http://www.cs.otago.ac.nz/cosc326/"  onclick="ga('send', 'event', 'link', 'cs-cosc326');"  rel="noopener noreferrer" target="_blank">Effective Programming</a>
-                                    </span>
-                        </td>
-                        <td>
-                            <span data-bind="text:language" class="item">Students work on various problems, assistance is given via Socratic method.</span>
-                        </td>
-                    </tr>
-                    
-                    </tbody>
-                </table>
+            <h2>Projects</h2>
+            <div class="ui raised segment">
+                <p>Each of the projects listed below were completed concurrent with PhD as paid work. All the
+                   projects involved aspects of requirements gathering, design, development, testing, and
+                   performance tuning. These projects were all conducted as sole software developer. See the
+                   <a href="https://paul.crane.net.nz/projects.html">projects page</a> for more detail.
+                </p>
             </div>
-
-            <h2 class="title">Demonstrating Experience</h2>
-            <div><p>I have been employed demonstrating labs for numerous undergraduate courses concurrent with
-                postgraduate studies. Lab demonstrators have similar responsibilities to a teaching-assistant. The
-                main role is to assist students with the practical lab work and help them to understand concepts
-                taught in lectures.
-            </p></div>
-
-            <div>
-                <table class="ui very basic small compact table">
-                    <thead>
-                    <tr>
-                        <th>Paper</th>
-                        <th>Title</th>
-                        <th>Skillset</th>
-                        <th>Years</th>
-                    </tr>
-                    </thead>
-                    <tbody data-bind="foreach: courses">
-                    
-                    <tr>
-                        <td><span data-bind="link: title">COMP160</span></td>
-                        <td><span data-bind="link: title" class="item">
-                                    
-                                        <a href="http://www.cs.otago.ac.nz/comp160/"  onclick="ga('send', 'event', 'link', 'cs-cosc160');"  rel="noopener noreferrer" target="_blank">Computer Programming</a>
-                                    </span></td>
-                        <td data-bind="text:language">Java</td>
-                        <td data-bind="text:year">[2005, 2007]</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><span data-bind="link: title">COSC241</span></td>
-                        <td><span data-bind="link: title" class="item">
-                                    
-                                        <a href="http://www.cs.otago.ac.nz/cosc241/"  onclick="ga('send', 'event', 'link', 'cs-cosc241');"  rel="noopener noreferrer" target="_blank">Programming and Problem Solving</a>
-                                    </span></td>
-                        <td data-bind="text:language">Java</td>
-                        <td data-bind="text:year">[2009, 2010, 2012, 2017]</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><span data-bind="link: title">COSC242</span></td>
-                        <td><span data-bind="link: title" class="item">
-                                    
-                                        <a href="http://www.cs.otago.ac.nz/cosc242/"  onclick="ga('send', 'event', 'link', 'cs-cosc242');"  rel="noopener noreferrer" target="_blank">Algorithms and Data Structures</a>
-                                    </span></td>
-                        <td data-bind="text:language">C</td>
-                        <td data-bind="text:year">[2006, 2007, 2009, 2010, 2011, 2017]</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><span data-bind="link: title">COSC243</span></td>
-                        <td><span data-bind="link: title" class="item">
-                                    
-                                        <a href="http://www.cs.otago.ac.nz/cosc243/"  onclick="ga('send', 'event', 'link', 'cs-cosc243');"  rel="noopener noreferrer" target="_blank">Computer Architecture and Operating Systems</a>
-                                    </span></td>
-                        <td data-bind="text:language">theory</td>
-                        <td data-bind="text:year">[2007, 2012, 2013]</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><span data-bind="link: title">COSC244</span></td>
-                        <td><span data-bind="link: title" class="item">
-                                    
-                                        <a href="http://www.cs.otago.ac.nz/cosc244/"  onclick="ga('send', 'event', 'link', 'cs-cosc244');"  rel="noopener noreferrer" target="_blank">Data Communications, Networks, and the Internet</a>
-                                    </span></td>
-                        <td data-bind="text:language">theory, Java</td>
-                        <td data-bind="text:year">[2007, 2009, 2010, 2012, 2013]</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><span data-bind="link: title">COSC301</span></td>
-                        <td><span data-bind="link: title" class="item">
-                                    
-                                        <a href="http://www.cs.otago.ac.nz/cosc301/"  onclick="ga('send', 'event', 'link', 'cs-cosc301');"  rel="noopener noreferrer" target="_blank">Network Management</a>
-                                    </span></td>
-                        <td data-bind="text:language">Linux, Ubuntu</td>
-                        <td data-bind="text:year">[2013, 2014, 2015, 2016, 2017]</td>
-                    </tr>
-                    
-                    </tbody>
-                </table>
+            <div class="ui items">
+                
+                <div class="item">
+                    <div class="content">
+                        <h3 class="ui header">
+                            <a href="projects.html#rtnf">Real-time Neuro-feedback</a>
+                            <span class="sub header">Research Assistant, Phoebe Neo,Department of Psychology,
+                                University of Otago<br>March 2017 - present</span>
+                        </h3>
+                        <p>This research project in the Psychology department aims to discover ways to reduce depressivity. I implemented a real-time neuro-feedback task according to an experimental protocol, and developed programs to analyse the data collected.</p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="content">
+                        <h3 class="ui header">
+                            <a href="projects.html#pidis">Information Display</a>
+                            <span class="sub header">Contract Software Developer, Joe Connolly,ITS,
+                                Downer Group<br>July 2017 - present</span>
+                        </h3>
+                        <p>At Downer I was tasked with displaying road safety information around Downer's offices, Downer's client's offices, and public information booths across the country. Because the information is being displayed in their client's premises and in public areas, the priority of requirements were thus: reliability, functionality, then cost. Using a RaspberryPI, a small battery powered UPS (UPS PIco), and monitoring of the system (including CPU, RAM, hard disk) allowed us to keep tabs on the performance of the devices in the field. The RaspberryPI was connected to a wall-mounted TV in the offices to display the content. Controlling the devices was done through the use of message queues and a web-based administration interface.</p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="content">
+                        <h3 class="ui header">
+                            <a href="projects.html#cosc301">Network Management Course Content Refresh</a>
+                            <span class="sub header">Technical Writer, Zhiyi Huang,Department of Computer Science,
+                                University of Otago<br>October 2017 - present</span>
+                        </h3>
+                        <p>Since the course was last updated in 2010 there have been a large number of changes to the commands, tools, and general practises around Linux administration. Beyond the content of the refresh, the course web page was updated to use modern (responsive) web design practises, and the lab manual build process was updated to use modern continuous integration techniques to automate as much as possible (where the previous build system used docbook and makefiles to generate the lab manual).</p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="content">
+                        <h3 class="ui header">
+                            <a href="projects.html#pseman">Supporting Energy Monitoring At University of Otago</a>
+                            <span class="sub header">Designer & Software Developer, Hans Pietsch and David Eyers,Property Services Division and Department of Computer Science,
+                                University of Otago<br>July 2016 - December 2016</span>
+                        </h3>
+                        <p>In this project I worked with a multi-disciplinary team at the University of Otago to collect and collate a variety of energy related measurements from a disparate set of systems (e.g. building management systems, lighting systems, ad hoc sensors) at a high level of geographic (e.g. room, floor, building, and campus levels of detail) and temporal precision (most commercial systems only persist aggregate data). The prototype system was presented at the Otago Energy Research Centre's Symposium in 2016, and awarded Best Student Presentation.</p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="content">
+                        <h3 class="ui header">
+                            <a href="projects.html#dextero">Accelerometer Gloves</a>
+                            <span class="sub header">Research Assistant, Liz Franz,Department of Psychology,
+                                University of Otago<br>2013 - 2014</span>
+                        </h3>
+                        <p>In this project I designed, developed, and prototyped a set of accelerometer gloves to replace and improve upon a set of gloves that had gone out of production. The design of the new gloves achieved a sample rate of 125Hz (matching the existing pair), while improving upon the comfort level across a variety of different hand sizes and shapes.</p>
+                    </div>
+                </div>
+                
             </div>
-
-            <h3 class="title">Student Feedback</h3>
-            
-            <p>Nominated for an OUSA teaching award 2017. The students were invited by the Otago University Student Association to nominate Teachers/Tutors who made big impact and went above and beyond.</p>
-            <ul>
-                
-            </ul>
-            
-            <p>The following anonymous feedback was obtained by end-of-semester student evaluation questionnaires:</p>
-            <ul>
-                
-                <li><q>Paul was very helpful and cleared up any misunderstandings.</q></li>
-                
-                <li><q>Paul performed his herculean task with grace, empathy, and deep understanding of the material.</q></li>
-                
-                <li><q>The lab demonstrator is very helpful.</q></li>
-                
-            </ul>
-            
         </div>
 
         <div class="column">
