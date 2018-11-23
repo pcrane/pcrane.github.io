@@ -232,83 +232,6 @@
         </div>
 
         <div class="column">
-            <h2>Projects</h2>
-            <div class="ui raised segment">
-                <p>
-                    Each of the projects listed below were completed concurrent with PhD as paid work. All the
-                    projects involved aspects of requirements gathering, design, development, testing, and
-                    performance tuning. These projects were all conducted as sole software developer. See the
-                    <a href="https://paul.crane.net.nz/projects.html">projects page</a> for more detail.
-                </p>
-            </div>
-            <div class="ui items">
-                {% for project in projects %}
-                <div class="item">
-                    <div class="content">
-                        <h3 class="ui header">
-                            <a href="projects.html#{{project.a}}">{{project.what}}</a>
-                            <span class="sub header">
-                                        {{project.role}}, {{project.who.name}},
-                                        {{project.who.department}}, {{project.who.organisation}}<br>
-                                        {{project.when.start}} - {{project.when.end}}
-                                    </span>
-                        </h3>
-                        <p>{{project.short}}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="column">
-            <h2 class="title">Technical Knowledge</h2>
-            {% with sl=skill_levels %}
-            <div class="ui two column stackable doubling grid container">
-                <div class="column">
-                    <table class="ui very basic small compact table">
-                        <tbody>
-                        {% for item in sl.languages %}
-                        <tr>
-                            <th>
-                                <span data-bind="text: name" class="three column wide">{{item.name}}</span>
-                            </th>
-                            <td>
-                                    <span class="ui horizontal bulleted list">
-                                    {% for detail in item.details %}
-                                        <span data-bind="text: name" class="item">{{detail.name}}</span>
-                                    {% endfor %}
-                                    </span>
-                            </td>
-                        </tr>
-                        {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-                <div class="column">
-                    <table class="ui very basic small compact table">
-                        <tbody>
-                        {% for item in sl.tools %}
-                        <tr>
-                            <th>
-                                <span data-bind="text: name" class="three column wide">{{item.name}}</span>
-                            </th>
-                            <td>
-                                    <span class="ui horizontal bulleted list">
-                                    {% for detail in item.details %}
-                                        <span data-bind="text: name" class="item">{{detail.name}}</span>
-                                    {% endfor %}
-                                    </span>
-                            </td>
-                        </tr>
-                        {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            {% endwith %}
-        </div>
-
-        <div class="column">
             <h2 class="title">Lecturing Experience</h2>
             <div><p>I have been working as a full-time lecturer in the <a href="http://cs.otago.ac.nz/">Computer
                 Science Department</a> at <a href="http://otago.ac.nz">Otago University</a>. This involves,
@@ -393,6 +316,85 @@
             </ul>
             {% endfor %}
         </div>
+
+        <div class="column">
+            <h2>Projects</h2>
+            <div class="ui raised segment">
+                <p>
+                    Each of the projects listed below were completed concurrent with PhD as paid work. All the
+                    projects involved aspects of requirements gathering, design, development, testing, and
+                    performance tuning. These projects were all conducted as sole software developer. See the
+                    <a href="https://paul.crane.net.nz/projects.html">projects page</a> for more detail.
+                </p>
+            </div>
+            <div class="ui items">
+                {% for project in projects %}
+                <div class="item">
+                    <div class="content">
+                        <h3 class="ui header">
+                            <a href="projects.html#{{project.a}}">{{project.what}}</a>
+                            <span class="sub header">
+                                        {{project.role}}, {{project.who.name}},
+                                        {{project.who.department}}, {{project.who.organisation}}<br>
+                                        {{project.when.start}} - {{project.when.end}}
+                                    </span>
+                        </h3>
+                        <p>{{project.short}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="column">
+            <h2 class="title">Technical Knowledge</h2>
+            {% with sl=skill_levels %}
+            <div class="ui two column stackable doubling grid container">
+                <div class="column">
+                    <table class="ui very basic small compact table">
+                        <tbody>
+                        {% for item in sl.languages %}
+                        <tr>
+                            <th>
+                                <span data-bind="text: name" class="three column wide">{{item.name}}</span>
+                            </th>
+                            <td>
+                                    <span class="ui horizontal bulleted list">
+                                    {% for detail in item.details %}
+                                        <span data-bind="text: name" class="item">{{detail.name}}</span>
+                                    {% endfor %}
+                                    </span>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="column">
+                    <table class="ui very basic small compact table">
+                        <tbody>
+                        {% for item in sl.tools %}
+                        <tr>
+                            <th>
+                                <span data-bind="text: name" class="three column wide">{{item.name}}</span>
+                            </th>
+                            <td>
+                                    <span class="ui horizontal bulleted list">
+                                    {% for detail in item.details %}
+                                        <span data-bind="text: name" class="item">{{detail.name}}</span>
+                                    {% endfor %}
+                                    </span>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% endwith %}
+        </div>
+
+
 
         <div class="column">
             <h2 class="title">Administration</h2>

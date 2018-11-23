@@ -187,7 +187,14 @@
                                 <!-- ko with: image -->
                                 <figure class="ui medium right floated rounded image">
                                     <img data-bind="attr: {src:href, alt:alt}">
-                                    <figcaption data-bind="text:caption"></figcaption>
+                                    <figcaption>
+                                        <p data-bind="text:caption"></p>
+                                         <!-- ko if: $data.credit -->
+                                        <!-- ko with: credit -->
+                                         <p>(Image credit: <span data-bind="link: $data"></span>)</p>
+                                        <!-- /ko -->
+                                         <!--/ko -->
+                                    </figcaption>
                                 </figure>
                                 <!-- /ko -->
 

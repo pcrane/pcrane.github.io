@@ -3,7 +3,7 @@
   "name": "Paul Crane",
   "jobTitle": "Lecturer",
   "email":"paul@crane.net.nz",
-  "tag":"Lecturer in Computer Science who enjoys teaching and working alongside others with different skill-sets. Most of all, likes rising to a technical challenge.",
+  "tag":"Talented software engineer likes solving hard problems, delivering results, and pushing technical boundaries.",
   "givenName": "Paul",
   "familyName": "Crane",
   "contact": {
@@ -251,10 +251,10 @@
         "department": "ITS",
         "organisation": "Downer Group"
       },
-      "role": "Contract Software Developer",
+      "role": "Software Engineer",
       "when": {
         "start": "July 2017",
-        "end": "present"
+        "end": "December 2017"
       },
       "short": "At Downer I was tasked with displaying road safety information around Downer's offices, Downer's client's offices, and public information booths across the country. Because the information is being displayed in their client's premises and in public areas, the priority of requirements were thus: reliability, functionality, then cost. Using a RaspberryPI, a small battery powered UPS (UPS PIco), and monitoring of the system (including CPU, RAM, hard disk) allowed us to keep tabs on the performance of the devices in the field. The RaspberryPI was connected to a wall-mounted TV in the offices to display the content. Controlling the devices was done through the use of message queues and a web-based administration interface.",
       "details": [
@@ -263,14 +263,23 @@
         "The current feature set includes: remote monitoring (CPU, RAM, hard disk, and other metrics of the system); real-time control; device presence; customisable content templates; user and device isolation."
       ],
       "image": {
-        "alt": "Road-side shelter showing digital display driven by a RaspberryPI showing content of a webpage.",
-        "href": "./img/downer/info_board.jpg",
-        "caption": "Content presented on the display deployed in a road-side shelter."
+        "alt": "Remote display situated at Wapiti Bakery and Cafe in Te Anau.",
+        "href": "./img/downer/dylan_oneil_wapiti_bakery_large.jpg",
+        "caption": "Remote display situated at Wapiti Bakery and Cafe in Te Anau",
+        "credit" : {
+          "text": "Dylan O'Neil via Google Maps.",
+          "onclick": "ga('send', 'event', 'link','google-maps');",
+          "href": "https://www.google.com/maps/@-45.4147577,167.715968,3a,75y,90t/data=!3m7!1e2!3m5!1sAF1QipPqe-G23-MqhDai3KacDYgzOzMj3MWpBAz1vLQb!2e10!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPqe-G23-MqhDai3KacDYgzOzMj3MWpBAz1vLQb%3Dw365-h273-k-no!7i4032!8i3024"
+        }
       },
       "languages": [
         {
           "name": "Python 3",
-          "purpose": "Client and server side command and control."
+          "purpose": "Server side command and control."
+        },
+        {
+          "name": "Java",
+          "purpose": "Client application."
         },
         {
           "name": "HTML/CSS/Javascript",
@@ -278,8 +287,9 @@
         }
       ],
       "technologies": [
-        {"text":"RabbitMQ (message queue)", "onclick": "ga('send', 'event', 'link', 'rabbitmq');","href":"https://www.rabbitmq.com/"},
-        {"text":"Django (administration and user interface)", "onclick": "ga('send', 'event', 'link', 'django');","href":"https://www.djangoproject.com/"}
+        {"text":"Mosquitto (message queue)", "onclick": "ga('send', 'event', 'link', 'mosquitto');","href":"https://mosquitto.org/"},
+        {"text":"Django (administration and user interface)", "onclick": "ga('send', 'event', 'link', 'django');","href":"https://www.djangoproject.com/"},
+        {"text":"AndroidThings", "onclick": "ga('send', 'event', 'link', 'android-things');","href":"https://developer.android.com/things/"}
       ],
       "hardware": [
         {
@@ -300,7 +310,7 @@
       "role": "Technical Writer",
       "when": {
         "start": "October 2017",
-        "end": "present"
+        "end": "December 2017"
       },
       "short": "Since the course was last updated in 2010 there have been a large number of changes to the commands, tools, and general practises around Linux administration. Beyond the content of the refresh, the course web page was updated to use modern (responsive) web design practises, and the lab manual build process was updated to use modern continuous integration techniques to automate as much as possible (where the previous build system used docbook and makefiles to generate the lab manual).",
       "details": [
@@ -675,6 +685,15 @@
     "title": "Student Feedback",
     "items": [
       {
+        "preface": "Formal teaching evaluations were 'pretty outstanding [...] with a very good response rate'. All core teaching questions scored median values between 1 and 2 (lowest is 5, highest is 1). Student comments included qualities such as:",
+        "comments": [
+          "I really enjoyed how open Paul was to answering questions. He was also very knowledgeable about the subject which is always helpful.",
+          "Really good communicator, going to Paul's lectures always feels valuable and his verbal explanations help a lot with unpacking and understanding the concepts, really appreciate his depth of explanation in lectures and his patience and thoroughness when helping us in labs",
+          "Paul has a great attitude about the topic and is obviously very passionate about it. I enjoy his teaching style and the way that he interacts with the students. He is also very helpful after class if you have any questions. He is very receptive to students who show enthusiasm on the topics and he meets them with a similar attitude. Having a teacher who is also engaged in the student’s learning is rare and makes for a better learning environment."
+
+        ]
+      },
+      {
         "preface": "Nominated for an OUSA teaching award 2017. The students were invited by the Otago University Student Association to nominate Teachers/Tutors who made big impact and went above and beyond.",
         "comments": []
       },
@@ -699,7 +718,7 @@
     }
   ],
   "hobbies": [
-    "Routinely attend Ceroc and West Coast Swing partner dancing classes, and occasional competitions. I have recently qualified as a Ceroc Dance Teacher.",
+    "Routinely teach Ceroc partner dancing classes.",
     "I played Saxophone (jazz band and symphonic) for numerous years in local amateur groups."
   ]
 }
