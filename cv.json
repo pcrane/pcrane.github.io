@@ -1,7 +1,7 @@
 {
   "title":"Dr.",
   "name": "Paul Crane",
-  "jobTitle": "Lecturer",
+  "jobTitle": "Architect",
   "email":"paul@crane.net.nz",
   "tag":"Talented software engineer likes solving hard problems, delivering results, and pushing technical boundaries.",
   "givenName": "Paul",
@@ -435,17 +435,17 @@
       "sort": 1,
       "details": [
         {
-          "name": "Python",
-          "keys": [
-            "python"
-          ],
-          "capability": 7,
-          "desire": 7
-        },
-        {
           "name": "Java",
           "keys": [
             "java"
+          ],
+          "capability": 8,
+          "desire": 8
+        },
+        {
+          "name": "Python",
+          "keys": [
+            "python"
           ],
           "capability": 7,
           "desire": 7
