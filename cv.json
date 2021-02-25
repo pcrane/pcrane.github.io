@@ -1,9 +1,9 @@
 {
-  "title":"Dr.",
+  "title": "Dr",
   "name": "Paul Crane",
   "jobTitle": "Architect",
-  "email":"paul@crane.net.nz",
-  "tag":"Talented software engineer likes solving hard problems, delivering results, and pushing technical boundaries.",
+  "email": "paul@crane.net.nz",
+  "tag": "Software Engineer who likes solving hard problems, delivering results, and pushing technical boundaries.",
   "givenName": "Paul",
   "familyName": "Crane",
   "contact": {
@@ -11,18 +11,18 @@
       {
         "href": "mailto:paul@crane.net.nz",
         "onclick": "ga('send', 'event', 'link', 'mailto');",
-        "rel":"",
+        "rel": "",
         "value": "paul@crane.net.nz",
         "prefix": "email:",
-        "icon":"mail icon"
+        "icon": "mail icon"
       },
       {
         "href": "https://paul.crane.net.nz",
         "onclick": "ga('send', 'event', 'link', 'home');",
-        "rel":"",
+        "rel": "",
         "value": "paul.crane.net.nz",
         "prefix": "web:",
-        "icon":"home icon"
+        "icon": "home icon"
       },
       {
         "href": "https://github.com/pcrane",
@@ -30,7 +30,7 @@
         "rel": "noopener, noreferrer",
         "value": "Github",
         "prefix": "github:",
-        "icon":"github icon"
+        "icon": "github icon"
       },
       {
         "href": "https://www.linkedin.com/in/paulscrane/",
@@ -38,7 +38,7 @@
         "rel": "noopener, noreferrer",
         "value": "LinkedIn",
         "prefix": "linkedin:",
-        "icon":"linkedin icon"
+        "icon": "linkedin icon"
       },
       {
         "href": "https://scholar.google.co.nz/citations?user=kjrHeXQAAAAJ",
@@ -46,7 +46,7 @@
         "rel": "noopener, noreferrer",
         "value": "Google Scholar",
         "prefix": "Google Scholar:",
-        "icon":"google icon"
+        "icon": "google icon"
       },
       {
         "href": "https://stackoverflow.com/users/8884278/paul-crane",
@@ -69,8 +69,15 @@
         "href": "http://cs.otago.ac.nz"
       },
       "when": {
-        "start": "August 2012",
-        "end": "February 2017 (Defended June 2017; Graduated December 2017)"
+        "start": {
+          "month": "August",
+          "year": "2012"
+        },
+        "end": {
+          "month": "February",
+          "year": "2017",
+          "notes": "(Defended June 2017; Graduated December 2017)"
+        }
       },
       "title": {
         "text": "An Indoor Localisation System Based on Ubiquitous Technology",
@@ -88,7 +95,7 @@
       }
     },
     {
-      "what": "MSc",
+      "what": "MSc (Thesis Only) with Credit",
       "subject": "Information Science",
       "visible": true,
       "where": {
@@ -97,8 +104,14 @@
         "href": "http://www.otago.ac.nz/info-science/"
       },
       "when": {
-        "start": "July 2010",
-        "end": "December 2011"
+        "start": {
+          "month": "July",
+          "year": "2010"
+        },
+        "end": {
+          "month": "December",
+          "year": "2011"
+        }
       },
       "title": {
         "text": "Beacon - A Rapidly Deployable Cellphone Network",
@@ -106,13 +119,13 @@
         "href": "http://hdl.handle.net/10523/2267"
       },
       "abstract": {
-        "visible": false,
+        "visible": true,
         "long": [],
         "short": "The thesis is an examination of the use of rapidly deployable cell-phone networks for disaster relief efforts. During a disaster, effective communications are vital to coordinate response efforts and to keep civilians informed. We propose and test a system that is aimed at use by civilians without the need for them to have any special equipment apart from a GSM mobile phone."
       }
     },
     {
-      "what": "Postgraduate Diploma in Science",
+      "what": "Postgraduate Diploma in Science, with Distinction",
       "subject": "Telecommunications",
       "visible": true,
       "where": {
@@ -121,8 +134,14 @@
         "href": "http://www.telecom.otago.ac.nz"
       },
       "when": {
-        "start": "March 2010",
-        "end": "December 2010"
+        "start": {
+          "month": "March",
+          "year": "2010"
+        },
+        "end": {
+          "month": "December",
+          "year": "2010"
+        }
       },
       "title": {
         "text": "The Future of Telephony"
@@ -144,54 +163,172 @@
         "href": "http://cs.otago.ac.nz"
       },
       "when": {
-        "start": "February 2003",
-        "end": "December 2006"
+        "start": {
+          "month": "February",
+          "year": "2003"
+        },
+        "end": {
+          "month": "December",
+          "year": "2006"
+        }
       },
       "title": [],
-      "abstract": {"visible": false}
+      "abstract": {
+        "visible": false
+      }
     }
   ],
-  "publications":[
-    {
-      "title":"CRAFT: Reducing the effort for Indoor Localisation",
-      "author": [{"name":"Zhiyi Huang"},{"name":"Haibo Zhang"}],
-      "booktitle": "IEEE 28th Annual International Symposium on Person, Indoor and Mobile Radio Communications (PIMRC)",
-      "pages":"1-6",
-      "year":"2017",
-      "where":"Montreal, Canada",
-      "organisation":"IEEE",
-      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/pimrc2017/pimrc2017.pdf", "onclick": "ga('send', 'event', 'link', 'pimrc2017-pdf');"},
-      "bibtex":{"text": "citation", "href":"./publications/pimrc2017/pimrc2017.bib","onclick": "ga('send', 'event', 'link', 'pimrc2017-bib');"},
-      "slides":[]
+  "publications": {
+    "thesis": {
+      "phd": {
+        "title": {
+          "text": "An Indoor Localisation System Based on Ubiquitous Technology",
+          "onclick": "ga('send', 'event', 'link', 'phd-thesis');",
+          "href": "http://hdl.handle.net/10523/7564"
+        },
+        "abstract": {
+          "visible": true,
+          "long": [
+            "Indoor localisation systems are concerned with locating people or devices within an indoor environment. Within the field, there are a large number of technologies available for this task. Depending on the technology and underlying method of location estimate the accuracy is variable.  This thesis examines ways to increase the accuracy of indoor localisation systems focusing on using ubiquitous technologies. Two popular methods for indoor localisation, fingerprinting and trilateration, were investigated.",
+            "The improvement to the fingerprint location accuracy is approximately 85% and was achieved by excluding poor quality measurements through the manipulation of the radio hardware transmission powers. The trilateration scheme location accuracy was improved by 32% accompanied by a decrease in computation time by 70% in general, and up to two orders of magnitude in some cases.",
+            "One problem with these popular indoor localisation methods is the need for a large amount of training data. To counter this a crowd-sourced approach was developed to decrease the amount of time taken to deploy a localisation system while improving the accuracy by 25% with state- of-the-art systems."
+          ],
+          "short": "Indoor localisation systems are concerned with locating people or devices indoors without the support of GPS. A key challenge is to derive accurate location estimates. The thesis explores, and improves upon, the accuracy of two different signal strength based approaches. The final contribution is to reduce the effort needed to deploy an indoor localisation system via crowd sourcing."
+        }
+      }
     },
-    {
-      "title":"Emender: Signal filter for Trilateration Based Indoor Localisation",
-      "author": [{ "name":"Zhiyi Huang"},{"name":"Haibo Zhang"}],
-      "booktitle": "IEEE 27th Annual International Symposium on Person, Indoor and Mobile Radio Communications (PIMRC)",
-      "pages":"1-6",
-      "year":"2016",
-      "where":"Valencia, Spain",
-      "organisation":"IEEE",
-      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/pimrc2016/pimrc2016.pdf", "onclick": "ga('send', 'event', 'link', 'pimrc2016-pdf');"},
-      "bibtex":{"text": "citation", "href":"./publications/pimrc2016/pimrc2016.bib", "onclick": "ga('send', 'event', 'link', 'pimrc2016-bib');"},
-      "slides":[]
-    },
-    {
-      "title":"SIB: Noise Reduction in Fingerprint-based Indoor Localisation using Multiple Transmission Powers",
-      "author": [{ "name":"Zhiyi Huang"},{"name":"Haibo Zhang"}],
-      "booktitle": "Proceedings of the 13th International Conference on Mobile and Ubiquitous Multimedia",
-      "pages":"208-211",
-      "year":"2014",
-      "where":"Melbourne, Australia",
-      "organisation":"ACM",
-      "paper":{"text": "paper", "href":"https://paul.crane.net.nz/publications/mum2014/mum2014.pdf", "onclick": "ga('send', 'event', 'link', 'mum2014-pdf');"},
-      "bibtex":{"text": "citation", "href":"./publications/mum2014/mum2014.bib", "onclick": "ga('send', 'event', 'link', 'mum2014-bib');"},
-      "slides":[]
-    }
-  ],
+    "papers": [
+      {
+        "title": "CRAFT: Reducing the effort for Indoor Localisation",
+        "author": [
+          {
+            "name": "Zhiyi Huang"
+          },
+          {
+            "name": "Haibo Zhang"
+          }
+        ],
+        "authors" : [
+          {
+            "initial": "P",
+            "lastname": "Crane",
+            "format": "yes"
+          },
+          {
+            "initial": "Z",
+            "lastname": "Huang"
+          },
+          {
+            "initial": "H",
+            "lastname": "Zhang"
+          }
+        ],
+        "booktitle": "IEEE 28th Annual International Symposium on Person, Indoor and Mobile Radio Communications (PIMRC)",
+        "pages": "1-6",
+        "year": "2017",
+        "where": "Montreal, Canada",
+        "organisation": "IEEE",
+        "paper": {
+          "text": "paper",
+          "href": "https://paul.crane.net.nz/publications/pimrc2017/pimrc2017.pdf",
+          "onclick": "ga('send', 'event', 'link', 'pimrc2017-pdf');"
+        },
+        "bibtex": {
+          "text": "citation",
+          "href": "./publications/pimrc2017/pimrc2017.bib",
+          "onclick": "ga('send', 'event', 'link', 'pimrc2017-bib');"
+        },
+        "slides": []
+      },
+      {
+        "title": "Emender: Signal filter for Trilateration Based Indoor Localisation",
+        "author": [
+          {
+            "name": "Zhiyi Huang"
+          },
+          {
+            "name": "Haibo Zhang"
+          }
+        ],
+        "authors" : [
+          {
+            "initial": "P",
+            "lastname": "Crane",
+            "format": "yes"
+          },
+          {
+            "initial": "Z",
+            "lastname": "Huang"
+          },
+          {
+            "initial": "H",
+            "lastname": "Zhang"
+          }
+        ],
+        "booktitle": "IEEE 27th Annual International Symposium on Person, Indoor and Mobile Radio Communications (PIMRC)",
+        "pages": "1-6",
+        "year": "2016",
+        "where": "Valencia, Spain",
+        "organisation": "IEEE",
+        "paper": {
+          "text": "paper",
+          "href": "https://paul.crane.net.nz/publications/pimrc2016/pimrc2016.pdf",
+          "onclick": "ga('send', 'event', 'link', 'pimrc2016-pdf');"
+        },
+        "bibtex": {
+          "text": "citation",
+          "href": "./publications/pimrc2016/pimrc2016.bib",
+          "onclick": "ga('send', 'event', 'link', 'pimrc2016-bib');"
+        },
+        "slides": []
+      },
+      {
+        "title": "SIB: Noise Reduction in Fingerprint-based Indoor Localisation using Multiple Transmission Powers",
+        "author": [
+          {
+            "name": "Zhiyi Huang"
+          },
+          {
+            "name": "Haibo Zhang"
+          }
+        ],
+        "authors" : [
+          {
+            "initial": "P",
+            "lastname": "Crane",
+            "format": "yes"
+          },
+          {
+            "initial": "Z",
+            "lastname": "Huang"
+          },
+          {
+            "initial": "H",
+            "lastname": "Zhang"
+          }
+        ],
+        "booktitle": "Proceedings of the 13th International Conference on Mobile and Ubiquitous Multimedia",
+        "pages": "208-211",
+        "year": "2014",
+        "where": "Melbourne, Australia",
+        "organisation": "ACM",
+        "paper": {
+          "text": "paper",
+          "href": "https://paul.crane.net.nz/publications/mum2014/mum2014.pdf",
+          "onclick": "ga('send', 'event', 'link', 'mum2014-pdf');"
+        },
+        "bibtex": {
+          "text": "citation",
+          "href": "./publications/mum2014/mum2014.bib",
+          "onclick": "ga('send', 'event', 'link', 'mum2014-bib');"
+        },
+        "slides": []
+      }
+    ]
+  },
   "projects": [
     {
-      "a":"rtnf",
+      "a": "rtnf",
       "what": "Real-time Neuro-feedback",
       "who": {
         "name": "Phoebe Neo",
@@ -201,7 +338,7 @@
       "role": "Research Assistant",
       "when": {
         "start": "March 2017",
-        "end": "present"
+        "end": "November 2017"
       },
       "languages": [
         {
@@ -223,7 +360,6 @@
           "text": "BioRadio150",
           "onclick": "ga('send', 'event', 'link', 'bioradio');",
           "href": "https://glneurotech.com/bioradio/bioradio-150/"
-
         },
         {
           "text": "BioRadio",
@@ -244,7 +380,7 @@
       }
     },
     {
-      "a":"pidis",
+      "a": "pidis",
       "what": "Information Display",
       "who": {
         "name": "Joe Connolly",
@@ -266,7 +402,7 @@
         "alt": "Remote display situated at Wapiti Bakery and Cafe in Te Anau.",
         "href": "./img/downer/dylan_oneil_wapiti_bakery_large.jpg",
         "caption": "Remote display situated at Wapiti Bakery and Cafe in Te Anau",
-        "credit" : {
+        "credit": {
           "text": "Dylan O'Neil via Google Maps.",
           "onclick": "ga('send', 'event', 'link','google-maps');",
           "href": "https://www.google.com/maps/@-45.4147577,167.715968,3a,75y,90t/data=!3m7!1e2!3m5!1sAF1QipPqe-G23-MqhDai3KacDYgzOzMj3MWpBAz1vLQb!2e10!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPqe-G23-MqhDai3KacDYgzOzMj3MWpBAz1vLQb%3Dw365-h273-k-no!7i4032!8i3024"
@@ -287,9 +423,21 @@
         }
       ],
       "technologies": [
-        {"text":"Mosquitto (message queue)", "onclick": "ga('send', 'event', 'link', 'mosquitto');","href":"https://mosquitto.org/"},
-        {"text":"Django (administration and user interface)", "onclick": "ga('send', 'event', 'link', 'django');","href":"https://www.djangoproject.com/"},
-        {"text":"AndroidThings", "onclick": "ga('send', 'event', 'link', 'android-things');","href":"https://developer.android.com/things/"}
+        {
+          "text": "Mosquitto (message queue)",
+          "onclick": "ga('send', 'event', 'link', 'mosquitto');",
+          "href": "https://mosquitto.org/"
+        },
+        {
+          "text": "Django (administration and user interface)",
+          "onclick": "ga('send', 'event', 'link', 'django');",
+          "href": "https://www.djangoproject.com/"
+        },
+        {
+          "text": "AndroidThings",
+          "onclick": "ga('send', 'event', 'link', 'android-things');",
+          "href": "https://developer.android.com/things/"
+        }
       ],
       "hardware": [
         {
@@ -300,7 +448,7 @@
       ]
     },
     {
-      "a":"cosc301",
+      "a": "cosc301",
       "what": "Network Management Course Content Refresh",
       "who": {
         "name": "Zhiyi Huang",
@@ -326,12 +474,15 @@
         }
       ],
       "technologies": [
-        {"text":"Continuous Integration", "href":""}
+        {
+          "text": "Continuous Integration",
+          "href": ""
+        }
       ],
       "hardware": null
     },
     {
-      "a":"pseman",
+      "a": "pseman",
       "what": "Supporting Energy Monitoring At University of Otago",
       "role": "Designer & Software Developer",
       "who": {
@@ -365,19 +516,50 @@
         }
       ],
       "technologies": [
-        {"text":"RabbitMQ (message queue)", "onclick": "ga('send', 'event', 'link', 'rabbitmq');","href":"https://www.rabbitmq.com/"},
-        {"text":"InfluxDB (time series database)", "onclick": "ga('send', 'event', 'link', 'influx');","href":"https://www.influxdata.com/"},
-        {"text":"Grafana (time series visualisation)", "onclick": "ga('send', 'event', 'link', 'grafana');","href":"https://grafana.com/"},
-        {"text":"Django (administration and query interface)", "onclick": "ga('send', 'event', 'link', 'django');","href":"https://www.djangoproject.com/"},
-        {"text":"Postgresql", "onclick": "ga('send', 'event', 'link', 'postgres');","href":"https://www.postgresql.org/"},
-        {"text":"neo4j","onclick": "ga('send', 'event', 'link', 'neo4j');","href":"https://neo4j.com/"},
-        {"text":"Haystack Project (meta data tagging model)","onclick": "ga('send', 'event', 'link', 'haystack');","href":"http://project-haystack.org/"},
-        {"text":"REST/SOAP APIs","href":""}
+        {
+          "text": "RabbitMQ (message queue)",
+          "onclick": "ga('send', 'event', 'link', 'rabbitmq');",
+          "href": "https://www.rabbitmq.com/"
+        },
+        {
+          "text": "InfluxDB (time series database)",
+          "onclick": "ga('send', 'event', 'link', 'influx');",
+          "href": "https://www.influxdata.com/"
+        },
+        {
+          "text": "Grafana (time series visualisation)",
+          "onclick": "ga('send', 'event', 'link', 'grafana');",
+          "href": "https://grafana.com/"
+        },
+        {
+          "text": "Django (administration and query interface)",
+          "onclick": "ga('send', 'event', 'link', 'django');",
+          "href": "https://www.djangoproject.com/"
+        },
+        {
+          "text": "Postgresql",
+          "onclick": "ga('send', 'event', 'link', 'postgres');",
+          "href": "https://www.postgresql.org/"
+        },
+        {
+          "text": "neo4j",
+          "onclick": "ga('send', 'event', 'link', 'neo4j');",
+          "href": "https://neo4j.com/"
+        },
+        {
+          "text": "Haystack Project (meta data tagging model)",
+          "onclick": "ga('send', 'event', 'link', 'haystack');",
+          "href": "http://project-haystack.org/"
+        },
+        {
+          "text": "REST/SOAP APIs",
+          "href": ""
+        }
       ],
       "hardware": null
     },
     {
-      "a":"dextero",
+      "a": "dextero",
       "what": "Accelerometer Gloves",
       "role": "Research Assistant",
       "who": {
@@ -429,37 +611,38 @@
     }
   ],
   "skill_levels": {
-    "languages":[{
-      "category":"languages",
-      "name": "Daily",
-      "sort": 1,
-      "details": [
-        {
-          "name": "Java",
-          "keys": [
-            "java"
-          ],
-          "capability": 8,
-          "desire": 8
-        },
-        {
-          "name": "Python",
-          "keys": [
-            "python"
-          ],
-          "capability": 7,
-          "desire": 7
-        },
-        {
-          "name": "C",
-          "keys": [
-            "c"
-          ],
-          "capability": 7,
-          "desire": 7
-        }
-      ]
-    },
+    "languages": [
+      {
+        "category": "languages",
+        "name": "Daily",
+        "sort": 1,
+        "details": [
+          {
+            "name": "Java",
+            "keys": [
+              "java"
+            ],
+            "capability": 8,
+            "desire": 8
+          },
+          {
+            "name": "Python",
+            "keys": [
+              "python"
+            ],
+            "capability": 7,
+            "desire": 7
+          },
+          {
+            "name": "C",
+            "keys": [
+              "c"
+            ],
+            "capability": 7,
+            "desire": 7
+          }
+        ]
+      },
       {
         "name": "Familiar",
         "sort": 2,
@@ -531,59 +714,82 @@
             "desire": 1
           }
         ]
-      }],
-    "tools":[
-      {"name":"Version Control",
+      }
+    ],
+    "tools": [
+      {
+        "name": "Version Control",
         "sort": 4,
         "details": [
           {
             "name": "git",
-            "keys": ["git"],
-            "capability": 7,
-            "desire": 7
+            "keys": [
+              "git"
+            ],
+            "capability": 8,
+            "desire": 8
           },
           {
             "name": "subversion",
-            "keys": ["svn"],
-            "capability": 7,
-            "desire": 7
-          }]
+            "keys": [
+              "svn"
+            ],
+            "capability": 6,
+            "desire": 6
+          }
+        ]
       },
-      {"name":"Databases",
+      {
+        "name": "Databases",
         "sort": 5,
         "details": [
           {
             "name": "SQL",
-            "keys": ["mysql","postgresql"],
+            "keys": [
+              "mysql",
+              "postgresql"
+            ],
             "capability": 7,
             "desire": 7
           },
           {
             "name": "NoSQL",
-            "keys": ["Bolt"],
+            "keys": [
+              "Bolt"
+            ],
             "capability": 7,
             "desire": 7
           },
           {
             "name": "Timeseries",
-            "keys": ["influx"],
+            "keys": [
+              "influx"
+            ],
             "capability": 7,
             "desire": 7
           }
         ]
       },
-      {"name":"Systems",
+      {
+        "name": "Systems",
         "sort": 6,
         "details": [
           {
             "name": "Linux (debian flavours)",
-            "keys": ["linux","debian", "ubuntu"],
+            "keys": [
+              "linux",
+              "debian",
+              "ubuntu"
+            ],
             "capability": 7,
             "desire": 7
           },
           {
             "name": "IoT",
-            "keys": ["TinyOS", "Android Things"],
+            "keys": [
+              "TinyOS",
+              "Android Things"
+            ],
             "capability": 7,
             "desire": 7
           }
@@ -591,30 +797,195 @@
       }
     ]
   },
-  "lecturing":[
+  "employment": [
     {
-      "name": { "text": "COSC430", "href": "http://www.cs.otago.ac.nz/cosc430/", "onclick": "ga('send', 'event', 'link', 'cs-cosc430');"},
-      "title": { "text": "Advanced Databases", "href": "http://www.cs.otago.ac.nz/cosc430/", "onclick": "ga('send', 'event', 'link', 'cs-cosc430');"},
+      "employer": "Diffblue",
+      "title": "Architect",
+      "when": {
+        "start": {
+          "month": "March",
+          "year": "2019"
+        }
+      },
+      "outline": "Diffblue spun out of the University of Oxford in 2016. Diffblue Cover, the company's first product, automatically generates tests for Java code to enable development teams to deliver higher quality software, faster. The development of Diffblue Cover is carried out across three main development teams each are around six or seven developers across a range of skills. Each team has an Architect to provide technical leadership and ensure the team is productive without reducing the quality of the code base, mentoring inexperienced developers, assisting with planning sprints, gathering feature requirements, conducting experiments, and shaping tooling and developmental processes used across the development teams within the company.",
+      "responsibilities": [
+        "Mentor the team and company engineers through code review, team stand-up discussions, and company-level technical discussions",
+        "Assist with the management, planning, estimation, and development of epics and features (including gathering requirements from stakeholders, to implementation, and engaging with quality assurance testers), APIs, documentation",
+        "Contribute to the management of the team through driving the team's objectives and key-results",
+        "Shape the big picture and company vision, improve the product's architecture, tooling, build-system, while becoming an expert in several relevant areas of the codebase",
+        "Provide expertise when in consultation with management",
+        "Aid with bug triaging and prioritisation; and proactively raise issues and blockers as appropriate",
+        "Contribute to timely delivery of releases and their release notes"
+      ],
+      "achievements": {
+        "list": [
+          "Designed and developed the libraries for UI related components of Diffblue Cover (consisting of three core modules)",
+          "Refactored CLI to improve maintainability, reduce complexity, and to follow good OOP design principles",
+          "Improved documentation of the code base, testing practises, introduced architecture design records",
+          "Designed and developed GUI tests for IntelliJ plugin",
+          "Improve quality of the codebase be introducing automated tooling"
+        ]
+      }
+    },
+    {
+      "employer": "Computer Science Department, University of Otago",
+      "title": "Lecturer (fixed term)",
+      "when": {
+        "start": {
+          "month": "January",
+          "year": "2018"
+        },
+        "end": {
+          "month": "November",
+          "year": "2018"
+        }
+      },
+      "outline": "The Department of Computer Science is a small department composed of 14 full-time academic staff, six service staff, and three teaching fellows. In this position I lectured undergraduate and graduate courses on Effective Programming, Object-Oriented Programming and User Interfaces, Linux Network Management, and Advanced Databases.",
+      "responsibilities": [
+        "Take lectures/tutorials conveying computer science concepts and provide appropriate assessment feedback to students from different academic and cultural backgrounds",
+        "Complete administrative tasks in a timely, efficient manner in accordance with the University's policies",
+        "Ensure relevant health and safety protocols are followed in all workplace activities"
+      ],
+      "achievements": {
+        "note": "Formal teaching evaluations were 'pretty outstanding [...] with a very good response rate'. All core teaching questions scored median values between 1 and 2 (lowest is 5, highest is 1). The following are some of the comments students left on the evaluation forms anonymously",
+        "list": [
+          "I really enjoyed how open Paul was to answering questions. He was also very knowledgeable about the subject which is always helpful.",
+          "Really good communicator, going to Paul's lectures always feels valuable and his verbal explanations help a lot with unpacking and understanding the concepts, really appreciate his depth of explanation in lectures and his patience and thoroughness when helping us in labs",
+          "Paul has a great attitude about the topic and is obviously very passionate about it. I enjoy his teaching style and the way that he interacts with the students. He is also very helpful after class if you have any questions. He is very receptive to students who show enthusiasm on the topics and he meets them with a similar attitude. Having a teacher who is also engaged in the student’s learning is rare and makes for a better learning environment.",
+          "Paul performed his herculean task with grace, empathy, and deep understanding of the material."
+        ]
+      }
+    },
+    {
+      "employer": "Computer Science Department, University of Otago",
+      "title": "Demonstrator",
+      "when": {
+        "start": {
+          "month": "January",
+          "year": "2005"
+        },
+        "end": {
+          "month": "November",
+          "year": "2017"
+        }
+      },
+      "outline": "Taught practical material to students for various courses over a twelve year period concurrent with my own undergraduate and postgraduate studies.",
+      "achievements": {
+        "list": [
+          "Nominated for an Otago University Students Association teaching award 2017."
+        ]
+      }
+    },
+    {
+      "employer": "Downer Group",
+      "title": "Software Engineer",
+      "when": {
+        "start": {
+          "month": "March",
+          "year": "2017"
+        },
+        "end": {
+          "month": "December",
+          "year": "2017"
+        }
+      },
+      "outline": "The Downer Group is a company involved in civil infrastructure works across Australia and New Zealand. I designed, developed, tested, deployed and maintained a novel containerised digital signage application to push (in realtime) a wide range of relevant up-to-date content to remote display clients around the country while maintaining integrity and security of the data. Briefly, the application consisted of an AndroidThings client application; a message queue for control commands; a web application and associated database for administration of devices, content hosting, and data gathering and parsing (via asynchronous task queues); and, public key infrastructure to authenticate remote clients.",
+      "achievements": {
+        "list": [
+          "Reduced the number of tourist enquiries of a dozen businesses in Te Anau (population 2000) about the status of the only road to Milford Sound (a popular tourist destination), which is often closed at short notice due to avalanches and other hazards common in mountainous areas",
+          "Increased visibility of earthquake recovery efforts by North Canterbury Transport Infrastructure Recovery (NCTIR), the organisation comprised of several government departments and private companies setup to recover from the magnitude 7.8 earthquake that struck Kaikōura in 2016"
+        ]
+      }
+    },
+    {
+      "employer": "Department of Psychology, University of Otago",
+      "title": "Research Assistant/Assistant Research Fellow",
+      "when": {
+        "start": {
+          "month": "February",
+          "year": "2013"
+        },
+        "end": {
+          "month": "August",
+          "year": "2015"
+        }
+      },
+      "when2": {
+        "start": {
+          "month": "February",
+          "year": "2017"
+        },
+        "end": {
+          "month": "December",
+          "year": "2017"
+        }
+      },
+      "outline": "The Department of Psychology develops the capability for breakthroughs in mental health treatment and neuroscience research. I implemented programs associated with all stages of the research pipeline from data collection to analysis and presentation across a variety of projects.",
+      "achievements": {
+        "list": [
+          "Designed, developed, tested flexible modular programs to carry out cutting-edge research using brain-computer interfaces and real-time neurofeedback",
+          "Standardised software interface between data acquisition, online experimental processing, and offline analysis to make subsequent development efforts easier and faster",
+          "Developed I2C library to gather data from multiple accelerometers at a high sample rate (125Hz) on an Arduino"
+        ]
+      }
+    }
+  ],
+  "lecturing": [
+    {
+      "name": {
+        "text": "COSC430",
+        "href": "http://www.cs.otago.ac.nz/cosc430/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc430');"
+      },
+      "title": {
+        "text": "Advanced Databases",
+        "href": "http://www.cs.otago.ac.nz/cosc430/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc430');"
+      },
       "language": "Relational, Non-relational, recent research developments in databases.",
       "offering": "S1 2018"
     },
     {
-      "name": { "text": "COSC326", "href": "http://www.cs.otago.ac.nz/cosc326/", "onclick": "ga('send', 'event', 'link', 'cs-cosc326');"},
-      "title": {"text": "Effective Programming", "href": "http://www.cs.otago.ac.nz/cosc326/", "onclick": "ga('send', 'event', 'link', 'cs-cosc326');"},
+      "name": {
+        "text": "COSC326",
+        "href": "http://www.cs.otago.ac.nz/cosc326/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc326');"
+      },
+      "title": {
+        "text": "Effective Programming",
+        "href": "http://www.cs.otago.ac.nz/cosc326/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc326');"
+      },
       "language": "Students work on various problems, assistance is given via Socratic method.",
       "offering": "S1 and S2 2018"
     },
     {
-      "name": { "text": "COSC346", "href": "http://www.cs.otago.ac.nz/cosc346/", "onclick": "ga('send', 'event', 'link', 'cs-cosc346');"},
-      "title": { "text": "Object Oriented Programming and User Interfaces", "href": "http://www.cs.otago.ac.nz/cosc346/", "onclick": "ga('send', 'event', 'link', 'cs-cosc346');"},
+      "name": {
+        "text": "COSC346",
+        "href": "http://www.cs.otago.ac.nz/cosc346/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc346');"
+      },
+      "title": {
+        "text": "Object Oriented Programming and User Interfaces",
+        "href": "http://www.cs.otago.ac.nz/cosc346/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc346');"
+      },
       "language": "Swift 4",
       "offering": "S2 2018"
     }
   ],
   "courses": [
     {
-      "name": { "text": "COMP160", "href": "http://www.cs.otago.ac.nz/comp160/", "onclick": "ga('send', 'event', 'link', 'cs-cosc160');"},
-      "title": { "text": "Computer Programming", "href": "http://www.cs.otago.ac.nz/comp160/", "onclick": "ga('send', 'event', 'link', 'cs-cosc160');"},
+      "name": {
+        "text": "COMP160",
+        "href": "http://www.cs.otago.ac.nz/comp160/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc160');"
+      },
+      "title": {
+        "text": "Computer Programming",
+        "href": "http://www.cs.otago.ac.nz/comp160/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc160');"
+      },
       "language": "Java",
       "year": [
         2005,
@@ -623,8 +994,16 @@
       "postfix": "(renamed to COSC160 in 2009)"
     },
     {
-      "name": { "text": "COSC241", "href": "http://www.cs.otago.ac.nz/cosc241/", "onclick": "ga('send', 'event', 'link', 'cs-cosc241');"},
-      "title": { "text": "Programming and Problem Solving", "href": "http://www.cs.otago.ac.nz/cosc241/", "onclick": "ga('send', 'event', 'link', 'cs-cosc241');"},
+      "name": {
+        "text": "COSC241",
+        "href": "http://www.cs.otago.ac.nz/cosc241/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc241');"
+      },
+      "title": {
+        "text": "Programming and Problem Solving",
+        "href": "http://www.cs.otago.ac.nz/cosc241/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc241');"
+      },
       "language": "Java",
       "year": [
         2009,
@@ -634,8 +1013,16 @@
       ]
     },
     {
-      "name": { "text": "COSC242", "href": "http://www.cs.otago.ac.nz/cosc242/", "onclick": "ga('send', 'event', 'link', 'cs-cosc242');"},
-      "title": { "text": "Algorithms and Data Structures", "href": "http://www.cs.otago.ac.nz/cosc242/", "onclick": "ga('send', 'event', 'link', 'cs-cosc242');"},
+      "name": {
+        "text": "COSC242",
+        "href": "http://www.cs.otago.ac.nz/cosc242/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc242');"
+      },
+      "title": {
+        "text": "Algorithms and Data Structures",
+        "href": "http://www.cs.otago.ac.nz/cosc242/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc242');"
+      },
       "language": "C",
       "year": [
         2006,
@@ -647,8 +1034,16 @@
       ]
     },
     {
-      "name": { "text": "COSC243", "href": "http://www.cs.otago.ac.nz/cosc243/", "onclick": "ga('send', 'event', 'link', 'cs-cosc243');"},
-      "title": { "text": "Computer Architecture and Operating Systems", "href": "http://www.cs.otago.ac.nz/cosc243/", "onclick": "ga('send', 'event', 'link', 'cs-cosc243');"},
+      "name": {
+        "text": "COSC243",
+        "href": "http://www.cs.otago.ac.nz/cosc243/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc243');"
+      },
+      "title": {
+        "text": "Computer Architecture and Operating Systems",
+        "href": "http://www.cs.otago.ac.nz/cosc243/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc243');"
+      },
       "language": "theory",
       "year": [
         2007,
@@ -657,8 +1052,16 @@
       ]
     },
     {
-      "name": { "text": "COSC244", "href": "http://www.cs.otago.ac.nz/cosc244/", "onclick": "ga('send', 'event', 'link', 'cs-cosc244');"},
-      "title": { "text": "Data Communications, Networks, and the Internet", "href": "http://www.cs.otago.ac.nz/cosc244/", "onclick": "ga('send', 'event', 'link', 'cs-cosc244');"},
+      "name": {
+        "text": "COSC244",
+        "href": "http://www.cs.otago.ac.nz/cosc244/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc244');"
+      },
+      "title": {
+        "text": "Data Communications, Networks, and the Internet",
+        "href": "http://www.cs.otago.ac.nz/cosc244/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc244');"
+      },
       "language": "theory, Java",
       "year": [
         2007,
@@ -669,8 +1072,16 @@
       ]
     },
     {
-      "name": { "text": "COSC301", "href": "http://www.cs.otago.ac.nz/cosc301/", "onclick": "ga('send', 'event', 'link', 'cs-cosc301');"},
-      "title": { "text": "Network Management", "href": "http://www.cs.otago.ac.nz/cosc301/", "onclick": "ga('send', 'event', 'link', 'cs-cosc301');"},
+      "name": {
+        "text": "COSC301",
+        "href": "http://www.cs.otago.ac.nz/cosc301/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc301');"
+      },
+      "title": {
+        "text": "Network Management",
+        "href": "http://www.cs.otago.ac.nz/cosc301/",
+        "onclick": "ga('send', 'event', 'link', 'cs-cosc301');"
+      },
       "language": "Linux, Ubuntu",
       "year": [
         2013,
@@ -681,7 +1092,7 @@
       ]
     }
   ],
-  "feedback":{
+  "feedback": {
     "title": "Student Feedback",
     "items": [
       {
@@ -690,7 +1101,6 @@
           "I really enjoyed how open Paul was to answering questions. He was also very knowledgeable about the subject which is always helpful.",
           "Really good communicator, going to Paul's lectures always feels valuable and his verbal explanations help a lot with unpacking and understanding the concepts, really appreciate his depth of explanation in lectures and his patience and thoroughness when helping us in labs",
           "Paul has a great attitude about the topic and is obviously very passionate about it. I enjoy his teaching style and the way that he interacts with the students. He is also very helpful after class if you have any questions. He is very receptive to students who show enthusiasm on the topics and he meets them with a similar attitude. Having a teacher who is also engaged in the student’s learning is rare and makes for a better learning environment."
-
         ]
       },
       {
