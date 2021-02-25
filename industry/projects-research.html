@@ -1,0 +1,9 @@
+{% extends 'industry/section.html' %}
+{% block section_title %}Research Projects{% endblock %}
+{% block section_body %}
+    {% for project in projects %}
+        {% if project.type and project.type == "research" %}
+            {% include 'industry/project.html' %}
+        {% endif %}
+    {% endfor %}
+{% endblock %}
