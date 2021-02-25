@@ -1,0 +1,30 @@
+{% extends 'industry/section.html' %}
+
+{% block section_title %}Teaching{% endblock %}
+
+{% block section_body %}
+
+    <h3>Lecturing</h3>
+{#{% for class in lecturing %}#}
+    {% include 'industry/lecturing.html' %}
+{#{% endfor %}#}
+
+    <h3>Demonstrating</h3>
+{#{% for class in demonstrating %}#}
+    {% include 'industry/demonstrating.html' %}
+{#{% endfor %}#}
+
+    <h3>Formal Feedback</h3>
+    <p>{{ feedback.informal.preface }}</p>
+    <ul>
+{% for comment in feedback.formal.comments %}
+    {% include 'industry/feedback-formal.html' %}
+{% endfor %}
+    </ul>
+
+    <h3>Informal Feedback</h3>
+    <p>{{ feedback.informal.preface }}</p>
+{% for comment in feedback.informal.comments %}
+    {% include 'industry/feedback-informal.html' %}
+{% endfor %}
+{% endblock %}

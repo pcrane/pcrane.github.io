@@ -1,0 +1,7 @@
+<h3>{{qualification.what}}</h3>
+{{qualification.subject}}, {{qualification.where.text}}, {{qualification.when.end.year}}
+
+{% if qualification.abstract.visible %}
+<p>Thesis Title: <i><a href="{{qualification.title.href}}" onclick="{{qualification.title.onclick}}">{{qualification.title.text}}</a></i></p>
+<p>{{qualification.abstract.short}}</p>
+{% endif %}
