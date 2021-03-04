@@ -24,12 +24,12 @@ h1, h2, h3, h4, h5 {
     page-break-before: auto;
 }
 
-h1, h2 {
-    text-decoration: underline;
-}
-
 section, span, div, table {
     text-align: justify;
+}
+
+.section {
+    page-break-inside: avoid;
 }
 
 a {
@@ -38,5 +38,12 @@ a {
 }
 
 a[href^=http]:after {
-    content: " <" attr(href) "> ";
+    content: "\A<" attr(href) "> ";
+    white-space: pre;
+    word-wrap: break-word;
+}
+
+a[href^=mailto]:after {
+    content: "\A    ";
+    white-space: pre;
 }

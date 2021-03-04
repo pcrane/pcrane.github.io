@@ -3,9 +3,9 @@
 {% block section_title %}Education{% endblock %}
 
 {% block section_body %}
-{% for qualification in education %}
-    {% if qualification.visible  %}
-    {% include 'industry/qualification.html' %}
-    {% endif %}
-{% endfor %}
+    {%- for qualification in education -%}
+        {%- if qualification.visible -%}
+            {% include 'industry/qualification.html' %}
+        {%- endif -%}
+    {%- endfor -%}
 {% endblock %}

@@ -1,3 +1,6 @@
-{% for author in paper.authors %}
-    {% if author.format %}<b>{% endif %}{{author.lastname}}, {{author.initial}}.{% if author.format %}</b>{% endif %}, {% endfor %}
-<a href="{{paper.paper.href}}">{{ paper.title }}</a>. <i>{{paper.booktitle}}</i> {{paper.year}}, {{paper.where}}.
+{%- for author in paper.authors -%}
+    {%- if author.format -%}
+        <b>{{ author.initial }}. {{ author.lastname }},</b>{% else %} {{ author.initial }}. {{ author.lastname }},
+    {%- endif -%}
+{%- endfor %} <span>{{ link_format(paper.paper.href, paper.title, paper.paper.onclick) }}</span>
+<i>{{ paper.booktitle }}</i> {{ paper.year }}, {{ paper.where }}.
