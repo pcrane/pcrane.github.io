@@ -1,11 +1,17 @@
 <div class="column">
-    <h1 class="ui header">{% include 'industry/name.html' %}</h1>
-        <ul class="ui horizontal bulleted link list">
-            {% for method in contact.methods %}
-                {% include 'industry/method.html' %}
-            {% endfor %}
-        </ul>
-    {% if tag %}
-    <p><span class="sub header">{{tag}}</span></p>
-    {% endif %}
+    <h1 class="ui dividing header">{%- include 'industry/name.html' -%}
+    <span class="sub header">
+    {% with role = employment|sort(attribute="when.start.year", reverse=true)|first %}
+        {{ role.title }} at {{ role.employer }}
+    {% endwith %}
+    </span>
+    </h1>
+    <ul class="ui horizontal bulleted link list">
+        {%- for method in contact.methods %}
+            {% include 'industry/method.html' %}
+        {%- endfor -%}
+    </ul>
+    {% if tag -%}
+        <p><span class="sub header">{{tag}}</span></p>
+    {%- endif %}
 </div>

@@ -3,41 +3,37 @@
 {% block section_title %}Employment{% endblock %}
 
 {% block section_body %}
-{% for job in employment|sort(attribute="when.start.year", reverse=true) %}
-<h3 class="ui header">{{ job.title }}
-    <span class="sub header">
-    {% if job.employer %} {{ job.employer }}{% endif %}
-    </span>
-    <span class="sub header">
-    {{ job.when.start.month }} {{ job.when.start.year }} -
-        {% if job.when.end %}
-        {{ job.when.end.month }}{{ job.when.end.year }}
-        {% else %}present{% endif %}
-    {% if job.when2 %}
-        ; {{ job.when.start.month }} {{ job.when.start.year }} -
-        {% if job.when.end %}
-        {{ job.when.end.month }}{{ job.when.end.year }}{% endif %}
-    {% endif %}
-    </span></h3>
-{{ job.outline }}
-<br>
-{% if job.responsibilities %}
-<h4 class="ui header">Responsibilities</h4>
-<ul>
-    {% for responsibility in job.responsibilities %}
-    <li>{{ responsibility }}</li>
-    {% endfor %}
-</ul>
-{% endif %}
-
-{% if job.achievements %}
-<h4 class="ui tiny header">Achievements</h4>
-{% if job.achievements.note %} {{ job.achievements.note }} {% endif %}
-<ul>
-    {% for achievement in job.achievements.list %}
-    <li>{{ achievement }}</li>
-    {% endfor %}
-</ul>
-{% endif %}
-{% endfor %}
+    {% for job in employment|sort(attribute="when.start.year", reverse=true) %}
+        {%- if job.visible -%}
+            <div class="section">
+            <h3 class="ui header">{{ job.title }}
+                <span class="sub header">{%- if job.employer -%}{{ job.employer }}{%- endif -%}</span>
+                <span class="sub header">{{ job.when.start.month }} {{ job.when.start.year }} -
+                    {%- if job.when.end %} {{ job.when.end.month }} {{ job.when.end.year }}
+                    {%- else %} present{%- endif -%}
+                    {%- if job.when2 -%}; {{ job.when.start.month }} {{ job.when.start.year }} - {%- if job.when.end -%}{{ job.when.end.month }}{{ job.when.end.year }}{%- endif -%}
+                    {%- endif -%}
+                </span>
+            </h3>
+            <p>{{ job.outline }}</p>
+            {% if job.responsibilities -%}
+                <h4 class="ui header">Responsibilities</h4>
+                <ul>
+                    {%- for responsibility in job.responsibilities %}
+                        <li>{{ responsibility }}</li>
+                    {%- endfor %}
+                </ul>
+            {%- endif -%}
+            {% if job.achievements %}
+                <h4 class="ui tiny header">Achievements</h4>
+                {% if job.achievements.note -%} {{ job.achievements.note }} {%- endif -%}
+                <ul>
+                    {%- for achievement in job.achievements.list %}
+                        <li>{{ achievement }}</li>
+                    {%- endfor %}
+                </ul>
+            {%- endif -%}
+            </div>
+        {%- endif %}
+    {%- endfor -%}
 {% endblock %}

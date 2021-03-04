@@ -1,7 +1,7 @@
 <li>{{ comment.paper }} {{ comment.year }}
     <ul>
-    {%  for c in comment.comments %}
-    <li>{{ c }}</li>
-    {% endfor %}
+        {% for c in comment.comments %}
+        <li>{{ c }}</li>
+        {% endfor %}
     </ul>
 </li>

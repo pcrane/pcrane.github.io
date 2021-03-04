@@ -1,8 +1,9 @@
 <li class="item">
-    {% if method.icon %}
+    {%- if method.icon -%}
     <i class="{{method.icon}}"></i>
-    {% else %}
+    {%- else -%}
     <span>{{method.prefix}}</span>
-    {% endif %}
-    {{ link_format(method.href, method.value, method.onclick, method.rel) }}
-</li>
+    {%- endif -%}
+    <span class="middle aligned">
+      {{ link_format(method.href, method.value, method.onclick, method.rel) }}
+    </span>
