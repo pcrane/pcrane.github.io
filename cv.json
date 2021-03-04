@@ -3,7 +3,7 @@
   "name": "Paul Crane",
   "jobTitle": "Architect",
   "email": "paul@crane.net.nz",
-  "tag": "Software Engineer who likes solving hard problems, delivering results, and pushing technical boundaries.",
+  "tag": "Software Engineer interested in solving hard problems, delivering results, and pushing technical boundaries.",
   "givenName": "Paul",
   "familyName": "Crane",
   "contact": {
@@ -27,7 +27,7 @@
       {
         "href": "https://github.com/pcrane",
         "onclick": "ga('send', 'event', 'link', 'github');",
-        "rel": "noopener, noreferrer",
+        "rel": "noopener noreferrer",
         "value": "Github",
         "prefix": "github:",
         "icon": "github icon"
@@ -35,7 +35,7 @@
       {
         "href": "https://www.linkedin.com/in/paulscrane/",
         "onclick": "ga('send', 'event', 'link', 'linkedin');",
-        "rel": "noopener, noreferrer",
+        "rel": "noopener noreferrer",
         "value": "LinkedIn",
         "prefix": "linkedin:",
         "icon": "linkedin icon"
@@ -43,7 +43,7 @@
       {
         "href": "https://scholar.google.co.nz/citations?user=kjrHeXQAAAAJ",
         "onclick": "ga('send', 'event', 'link', 'scholar');",
-        "rel": "noopener, noreferrer",
+        "rel": "noopener noreferrer",
         "value": "Google Scholar",
         "prefix": "Google Scholar:",
         "icon": "google icon"
@@ -51,7 +51,7 @@
       {
         "href": "https://stackoverflow.com/users/8884278/paul-crane",
         "onclick": "ga('send', 'event', 'link', 'stackoverflow');",
-        "rel": "noopener, noreferrer",
+        "rel": "noopener noreferrer",
         "value": "Stack Overflow",
         "prefix": "Stack Overflow",
         "icon": "stack overflow icon"
@@ -801,35 +801,38 @@
     {
       "employer": "Diffblue",
       "title": "Architect",
+      "visible": "true",
       "when": {
         "start": {
           "month": "March",
           "year": "2019"
         }
       },
-      "outline": "Diffblue spun out of the University of Oxford in 2016. Diffblue Cover, the company's first product, automatically generates tests for Java code to enable development teams to deliver higher quality software, faster. The development of Diffblue Cover is carried out across three main development teams each are around six or seven developers across a range of skills. Each team has an Architect to provide technical leadership and ensure the team is productive without reducing the quality of the code base, mentoring inexperienced developers, assisting with planning sprints, gathering feature requirements, conducting experiments, and shaping tooling and developmental processes used across the development teams within the company.",
+      "outline": "Diffblue Cover automatically generates tests for Java code to enable development teams to deliver higher quality software, faster. Development occurs across three teams comprised of six or seven developers with a range of skills and experience. Each team has an Architect to provide technical leadership and ensure the team is productive without reducing the quality of the code base.",
       "responsibilities": [
         "Mentor the team and company engineers through code review, team stand-up discussions, and company-level technical discussions",
-        "Assist with the management, planning, estimation, and development of epics and features (including gathering requirements from stakeholders, to implementation, and engaging with quality assurance testers), APIs, documentation",
-        "Contribute to the management of the team through driving the team's objectives and key-results",
-        "Shape the big picture and company vision, improve the product's architecture, tooling, build-system, while becoming an expert in several relevant areas of the codebase",
+        "Assist with the management, planning, estimation, and development of features",
+        "Gathering requirements from stakeholders and engaging with quality assurance testers",
+        "Contribute to the management of the team",
+        "Shape the big picture and company vision, improve the product's architecture, tooling, build-system",
         "Provide expertise when in consultation with management",
-        "Aid with bug triaging and prioritisation; and proactively raise issues and blockers as appropriate",
+        "Aid with bug triaging and prioritisation and proactively raise issues and blockers as appropriate",
         "Contribute to timely delivery of releases and their release notes"
       ],
       "achievements": {
         "list": [
-          "Designed and developed the libraries for UI related components of Diffblue Cover (consisting of three core modules)",
+          "Designed and developed the three core modules for UI related components of Diffblue Cover",
           "Refactored CLI to improve maintainability, reduce complexity, and to follow good OOP design principles",
           "Improved documentation of the code base, testing practises, introduced architecture design records",
-          "Designed and developed GUI tests for IntelliJ plugin",
-          "Improve quality of the codebase be introducing automated tooling"
+          "Designed and developed GUI tests for IntelliJ plugin reducing the amount of manual QA effort in our fortnightly release process",
+          "Improved quality of the codebase by introducing automated tooling to check for style issues and bugs"
         ]
       }
     },
     {
       "employer": "Computer Science Department, University of Otago",
       "title": "Lecturer (fixed term)",
+      "visible": "true",
       "when": {
         "start": {
           "month": "January",
@@ -840,19 +843,18 @@
           "year": "2018"
         }
       },
-      "outline": "The Department of Computer Science is a small department composed of 14 full-time academic staff, six service staff, and three teaching fellows. In this position I lectured undergraduate and graduate courses on Effective Programming, Object-Oriented Programming and User Interfaces, Linux Network Management, and Advanced Databases.",
+      "outline": "The Department of Computer Science is a small department composed of 14 full-time academic staff, six service staff, and three teaching fellows. In this position I lectured undergraduate courses on Effective Programming, Object-Oriented Programming and User Interfaces, Linux Network Management, and a post-graduate course on Advanced Databases.",
       "responsibilities": [
         "Take lectures/tutorials conveying computer science concepts and provide appropriate assessment feedback to students from different academic and cultural backgrounds",
         "Complete administrative tasks in a timely, efficient manner in accordance with the University's policies",
         "Ensure relevant health and safety protocols are followed in all workplace activities"
       ],
       "achievements": {
-        "note": "Formal teaching evaluations were 'pretty outstanding [...] with a very good response rate'. All core teaching questions scored median values between 1 and 2 (lowest is 5, highest is 1). The following are some of the comments students left on the evaluation forms anonymously",
+        "note": "Formal teaching evaluations were 'pretty outstanding [...] with a very good response rate'. All core teaching questions scored median values in the top two levels. The following are some of the comments students left on the evaluation forms anonymously",
         "list": [
           "I really enjoyed how open Paul was to answering questions. He was also very knowledgeable about the subject which is always helpful.",
           "Really good communicator, going to Paul's lectures always feels valuable and his verbal explanations help a lot with unpacking and understanding the concepts, really appreciate his depth of explanation in lectures and his patience and thoroughness when helping us in labs",
-          "Paul has a great attitude about the topic and is obviously very passionate about it. I enjoy his teaching style and the way that he interacts with the students. He is also very helpful after class if you have any questions. He is very receptive to students who show enthusiasm on the topics and he meets them with a similar attitude. Having a teacher who is also engaged in the student’s learning is rare and makes for a better learning environment.",
-          "Paul performed his herculean task with grace, empathy, and deep understanding of the material."
+          "Paul has a great attitude about the topic and is obviously very passionate about it. I enjoy his teaching style and the way that he interacts with the students. He is also very helpful after class if you have any questions. He is very receptive to students who show enthusiasm on the topics and he meets them with a similar attitude. Having a teacher who is also engaged in the student’s learning is rare and makes for a better learning environment."
         ]
       }
     },
@@ -879,6 +881,7 @@
     {
       "employer": "Downer Group",
       "title": "Software Engineer",
+      "visible": "true",
       "when": {
         "start": {
           "month": "March",
@@ -1128,7 +1131,7 @@
     }
   ],
   "hobbies": [
-    "Routinely teach Ceroc partner dancing classes.",
-    "I played Saxophone (jazz band and symphonic) for numerous years in local amateur groups."
+    "Qualified Ceroc dance teacher",
+    "Played saxophone in amateur music groups"
   ]
 }
