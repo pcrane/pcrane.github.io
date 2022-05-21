@@ -1,0 +1,1 @@
+- {{ link_format(method.href, method.value, method.onclick, method.rel) }}
