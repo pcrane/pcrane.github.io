@@ -1,5 +1,5 @@
 <div class="column">
-    <h1 class="ui dividing header">{%- include 'industry/name.html' -%}
+    <h1 class="ui dividing header">{%- include 'html/name.html' -%}
     <span class="sub header">
     {% with role = employment|sort(attribute="when.start.year", reverse=true)|first %}
         {{ role.title }} at {{ role.employer }}
@@ -8,7 +8,7 @@
     </h1>
     <ul class="ui horizontal bulleted link list">
         {%- for method in contact.methods %}
-            {% include 'industry/method.html' %}
+            {% include 'html/method.html' %}
         {%- endfor -%}
     </ul>
     {% if tag -%}

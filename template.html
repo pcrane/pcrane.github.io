@@ -16,12 +16,12 @@
 
     <meta property="og:url" content="https://paul.crane.net.nz">
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="{% include 'industry/name.html' %}">
+    <meta property="og:title" content="{% include 'html/name.html' %}">
     <meta property="og:description" content="{{ tag }}">
-    <meta property="og:site_name" content="{% include 'industry/name.html' %} - Resume">
+    <meta property="og:site_name" content="{% include 'html/name.html' %} - Resume">
     <meta property="og:locale" content="en_GB">
 
-    <title>{% include 'industry/name.html' %}</title>
+    <title>{% include 'html/name.html' %}</title>
     <meta name="description" content="{{ tag }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
           integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
@@ -97,23 +97,23 @@
 
 <div class="ui main container" role="main">
     <div class="ui one column centered grid">
-        {%- include 'industry/title.html' -%}
+        {%- include 'html/title.html' -%}
         {%- if employment -%}
-            {%- include 'industry/employment.html' -%}
+            {%- include 'html/employment.html' -%}
         {%- endif -%}
         {%- if 0 -%}
             {%- if projects -%}
-                {%- include 'industry/projects-engineer.html' -%}
+                {%- include 'html/projects-engineer.html' -%}
             {%- endif -%}
             {%- if projects -%}
-                {%- include 'industry/projects-research.html' -%}
+                {%- include 'html/projects-research.html' -%}
             {%- endif -%}
         {%- endif -%}
         {%- if awards -%}
-            {%- include 'industry/awards.html' -%}
+            {%- include 'html/awards.html' -%}
         {%- endif -%}
         {%- if education -%}
-            {%- include 'industry/education.html' -%}
+            {%- include 'html/education.html' -%}
         {%- endif -%}
         {%- if 0 -%}
             {%- if memberships -%}
@@ -136,10 +136,10 @@
             {%- endif -%}
         {%- endif -%}
         {%- if publications -%}
-            {%- include 'industry/publications.html' -%}
+            {%- include 'html/publications.html' -%}
         {%- endif -%}
         {%- if service -%}
-            {%- include 'industry/services.html' -%}
+            {%- include 'html/services.html' -%}
         {%- endif -%}
     </div>
 </div>

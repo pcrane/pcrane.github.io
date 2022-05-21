@@ -1,9 +1,9 @@
-{% extends 'industry/section.html' %}
+{% extends 'html/section.html' %}
 
 {% block section_title %}Awards and Honours{% endblock %}
 
 {% block section_body %}
 {% for award in awards %}
-{% include 'industry/award.html' %}
+{% include 'html/award.html' %}
 {% endfor %}
 {% endblock %}
