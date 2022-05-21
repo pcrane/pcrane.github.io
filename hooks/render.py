@@ -4,6 +4,7 @@ import json
 import os
 import sys
 from jinja2 import Environment, FileSystemLoader
+from weasyprint import HTML
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -27,5 +28,7 @@ with open('cv.json', 'r', encoding="utf-8") as cv:
         template = env.get_template('template.md')
         content = template.render(data)
         print(content)
+
+    HTML("index.html").write_pdf("paul_crane.pdf")
 
     sys.stdout = stdout
