@@ -6,12 +6,12 @@
     {% endwith %}
     </span>
     </h1>
+    {% if tag -%}
+        <p><span class="sub header">{{tag}}</span></p>
+    {%- endif %}
     <ul class="ui horizontal bulleted link list">
         {%- for method in contact.methods %}
             {% include 'html/method.html' %}
         {%- endfor -%}
     </ul>
-    {% if tag -%}
-        <p><span class="sub header">{{tag}}</span></p>
-    {%- endif %}
 </div>
