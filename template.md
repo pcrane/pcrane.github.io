@@ -1,4 +1,4 @@
-{%- macro link_format(method) -%}[{{ method.value }}]({{ method.href }}){%- endmacro -%}
+{%- macro link_format(method) -%}{% if method.emoji %}{{ method.emoji }} {% endif %}[{{ method.value }}]({{ method.href }}){%- endmacro -%}
 
 {%- include 'md/title.md' %}
 {% if employment -%}

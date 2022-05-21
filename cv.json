@@ -14,7 +14,8 @@
         "rel": "",
         "value": "paul@crane.net.nz",
         "prefix": "email:",
-        "icon": "mail icon"
+        "icon": "mail icon",
+        "emoji": ":email:"
       },
       {
         "href": "https://paul.crane.net.nz",
@@ -22,7 +23,8 @@
         "rel": "",
         "value": "paul.crane.net.nz",
         "prefix": "web:",
-        "icon": "home icon"
+        "icon": "home icon",
+        "emoji": ":house:"
       },
       {
         "href": "https://github.com/pcrane",
@@ -30,7 +32,8 @@
         "rel": "noopener noreferrer",
         "value": "Github",
         "prefix": "github:",
-        "icon": "github icon"
+        "icon": "github icon",
+        "emoji": ":octocat:"
       },
       {
         "href": "https://www.linkedin.com/in/paulscrane/",
@@ -38,7 +41,8 @@
         "rel": "noopener noreferrer",
         "value": "LinkedIn",
         "prefix": "linkedin:",
-        "icon": "linkedin icon"
+        "icon": "linkedin icon",
+        "emoji": ":office:"
       },
       {
         "href": "https://scholar.google.co.nz/citations?user=kjrHeXQAAAAJ",
@@ -46,7 +50,8 @@
         "rel": "noopener noreferrer",
         "value": "Google Scholar",
         "prefix": "Google Scholar:",
-        "icon": "google icon"
+        "icon": "google icon",
+        "emoji": ":book:"
       },
       {
         "href": "https://stackoverflow.com/users/8884278/paul-crane",
@@ -54,7 +59,8 @@
         "rel": "noopener noreferrer",
         "value": "Stack Overflow",
         "prefix": "Stack Overflow",
-        "icon": "stack overflow icon"
+        "icon": "stack overflow icon",
+        "emoji": ":raising_hand:"
       }
     ]
   },
