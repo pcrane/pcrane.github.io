@@ -22,4 +22,10 @@ with open('cv.json', 'r', encoding="utf-8") as cv:
         content = template.render(data)
         print(content)
 
+    with open('README.md', 'w', encoding="utf-8") as f:
+        sys.stdout = f
+        template = env.get_template('template.md')
+        content = template.render(data)
+        print(content)
+
     sys.stdout = stdout
