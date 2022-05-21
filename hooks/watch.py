@@ -27,7 +27,7 @@ class DummyHTTPHandler(BaseHTTPRequestHandler):
 
       cv_file = os.path.join(current_working_directory, "cv.json")
       try:
-        with open(cv_file, "r") as cv:
+        with open(cv_file, "r", encoding="utf-8") as cv:
           data = json.load(cv)
       except json.decoder.JSONDecodeError as e:
         self.send_response(500)
