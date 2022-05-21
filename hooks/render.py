@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-from jinja2 import Environment, FileSystemLoader, select_autoescape
 import json
 import os
+from jinja2 import Environment, FileSystemLoader
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
