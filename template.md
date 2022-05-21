@@ -1,4 +1,4 @@
-{%- macro link_format(href, text, onclick, rel="noopener noreferrer", target="_blank") -%}[{{ text }}]({{ href }}){%- endmacro -%}
+{%- macro link_format(method) -%}[{{ method.value }}]({{ method.href }}){%- endmacro -%}
 
 {%- include 'md/title.md' %}
 {% if employment -%}

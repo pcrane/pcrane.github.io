@@ -336,7 +336,7 @@
         function linkHandler(funcName) {
             return function (element, valueAccessor, allBindings, viewModel, bindingContext) {
                 var valueObj = valueAccessor();
-                var text = valueObj.text;
+                var text = valueObj.value;
                 var href = valueObj.href;
 
                 var nextBinding;

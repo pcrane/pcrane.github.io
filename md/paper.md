@@ -14,4 +14,4 @@
 {%- for iter in iterable -%}{{ highlight(iter) }}, {% endfor -%}
 {%- endmacro -%}
 
-{{ to_list(paper.authors) }}{{ link_format(paper.paper.href, paper.title, paper.paper.onclick) }}, _{{ paper.booktitle }}_ {{ paper.year }}, {{ paper.where }}.
+{{ to_list(paper.authors) }}{{ link_format(paper.paper) }}, _{{ paper.booktitle }}_ {{ paper.year }}, {{ paper.where }}.

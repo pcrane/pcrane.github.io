@@ -2,5 +2,5 @@
     {%- if author.format -%}
         <b>{{ author.initial }}. {{ author.lastname }},</b>{% else %} {{ author.initial }}. {{ author.lastname }},
     {%- endif -%}
-{%- endfor %} <span>{{ link_format(paper.paper.href, paper.title, paper.paper.onclick) }}</span>
+{%- endfor %} <span>{{ link_format(paper.paper.href, paper.paper.value, paper.paper.onclick) }}</span>
 <i>{{ paper.booktitle }}</i> {{ paper.year }}, {{ paper.where }}.

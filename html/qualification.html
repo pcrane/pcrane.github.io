@@ -1,7 +1,7 @@
 <h3 class="ui header">{{qualification.what}}
-    <span class="sub header">{{qualification.subject}}, {{qualification.where.text}}, {{qualification.when.end.year}}</span>
+    <span class="sub header">{{qualification.subject}}, {{qualification.where.value}}, {{qualification.when.end.year}}</span>
 </h3>
 {% if qualification.abstract.visible -%}
-<p><i>{{ link_format(qualification.title.href, qualification.title.text, qualification.title.onclick) }}</i></p>
+<p><i>{{ link_format(qualification.title.href, qualification.title.value, qualification.title.onclick) }}</i></p>
     <p>{{qualification.abstract.short}}</p>
 {%- endif -%}

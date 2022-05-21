@@ -64,7 +64,7 @@
       "subject": "Computer Science",
       "visible": true,
       "where": {
-        "text": "University of Otago",
+        "value": "University of Otago",
         "onclick": "ga('send', 'event', 'link', 'cs');",
         "href": "http://cs.otago.ac.nz"
       },
@@ -80,7 +80,7 @@
         }
       },
       "title": {
-        "text": "An Indoor Localisation System Based on Ubiquitous Technology",
+        "value": "An Indoor Localisation System Based on Ubiquitous Technology",
         "onclick": "ga('send', 'event', 'link', 'phd-thesis');",
         "href": "http://hdl.handle.net/10523/7564"
       },
@@ -99,7 +99,7 @@
       "subject": "Information Science",
       "visible": true,
       "where": {
-        "text": "University of Otago",
+        "value": "University of Otago",
         "onclick": "ga('send', 'event', 'link', 'info');",
         "href": "http://www.otago.ac.nz/info-science/"
       },
@@ -114,7 +114,7 @@
         }
       },
       "title": {
-        "text": "Beacon - A Rapidly Deployable Cellphone Network",
+        "value": "Beacon - A Rapidly Deployable Cellphone Network",
         "onclick": "ga('send', 'event', 'link', 'msc-thesis');",
         "href": "http://hdl.handle.net/10523/2267"
       },
@@ -129,7 +129,7 @@
       "subject": "Telecommunications",
       "visible": true,
       "where": {
-        "text": "University of Otago",
+        "value": "University of Otago",
         "onclick": "ga('send', 'event', 'link', 'telecom');",
         "href": "http://www.telecom.otago.ac.nz"
       },
@@ -158,7 +158,7 @@
       "subject": "Computer Science",
       "visible": false,
       "where": {
-        "text": "University of Otago",
+        "value": "University of Otago",
         "onclick": "ga('send', 'event', 'link', 'cs');",
         "href": "http://cs.otago.ac.nz"
       },
@@ -182,7 +182,7 @@
     "thesis": {
       "phd": {
         "title": {
-          "text": "An Indoor Localisation System Based on Ubiquitous Technology",
+          "value": "An Indoor Localisation System Based on Ubiquitous Technology",
           "onclick": "ga('send', 'event', 'link', 'phd-thesis');",
           "href": "http://hdl.handle.net/10523/7564"
         },
@@ -229,12 +229,12 @@
         "where": "Montreal, Canada",
         "organisation": "IEEE",
         "paper": {
-          "text": "paper",
+          "value": "CRAFT: Reducing the effort for Indoor Localisation",
           "href": "https://paul.crane.net.nz/publications/pimrc2017/pimrc2017.pdf",
           "onclick": "ga('send', 'event', 'link', 'pimrc2017-pdf');"
         },
         "bibtex": {
-          "text": "citation",
+          "value": "citation",
           "href": "./publications/pimrc2017/pimrc2017.bib",
           "onclick": "ga('send', 'event', 'link', 'pimrc2017-bib');"
         },
@@ -271,12 +271,12 @@
         "where": "Valencia, Spain",
         "organisation": "IEEE",
         "paper": {
-          "text": "paper",
+          "value": "Emender: Signal filter for Trilateration Based Indoor Localisation",
           "href": "https://paul.crane.net.nz/publications/pimrc2016/pimrc2016.pdf",
           "onclick": "ga('send', 'event', 'link', 'pimrc2016-pdf');"
         },
         "bibtex": {
-          "text": "citation",
+          "value": "citation",
           "href": "./publications/pimrc2016/pimrc2016.bib",
           "onclick": "ga('send', 'event', 'link', 'pimrc2016-bib');"
         },
@@ -313,12 +313,12 @@
         "where": "Melbourne, Australia",
         "organisation": "ACM",
         "paper": {
-          "text": "paper",
+          "value": "SIB: Noise Reduction in Fingerprint-based Indoor Localisation using Multiple Transmission Powers",
           "href": "https://paul.crane.net.nz/publications/mum2014/mum2014.pdf",
           "onclick": "ga('send', 'event', 'link', 'mum2014-pdf');"
         },
         "bibtex": {
-          "text": "citation",
+          "value": "citation",
           "href": "./publications/mum2014/mum2014.bib",
           "onclick": "ga('send', 'event', 'link', 'mum2014-bib');"
         },
@@ -357,12 +357,12 @@
       "technologies": null,
       "hardware": [
         {
-          "text": "BioRadio150",
+          "value": "BioRadio150",
           "onclick": "ga('send', 'event', 'link', 'bioradio');",
           "href": "https://glneurotech.com/bioradio/bioradio-150/"
         },
         {
-          "text": "BioRadio",
+          "value": "BioRadio",
           "onclick": "ga('send', 'event', 'link', 'bioradio');",
           "href": "https://glneurotech.com/bioradio/"
         }
@@ -403,7 +403,7 @@
         "href": "./img/downer/dylan_oneil_wapiti_bakery_large.jpg",
         "caption": "Remote display situated at Wapiti Bakery and Cafe in Te Anau",
         "credit": {
-          "text": "Dylan O'Neil via Google Maps.",
+          "value": "Dylan O'Neil via Google Maps.",
           "onclick": "ga('send', 'event', 'link','google-maps');",
           "href": "https://www.google.com/maps/@-45.4147577,167.715968,3a,75y,90t/data=!3m7!1e2!3m5!1sAF1QipPqe-G23-MqhDai3KacDYgzOzMj3MWpBAz1vLQb!2e10!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPqe-G23-MqhDai3KacDYgzOzMj3MWpBAz1vLQb%3Dw365-h273-k-no!7i4032!8i3024"
         }
@@ -424,24 +424,24 @@
       ],
       "technologies": [
         {
-          "text": "Mosquitto (message queue)",
+          "value": "Mosquitto (message queue)",
           "onclick": "ga('send', 'event', 'link', 'mosquitto');",
           "href": "https://mosquitto.org/"
         },
         {
-          "text": "Django (administration and user interface)",
+          "value": "Django (administration and user interface)",
           "onclick": "ga('send', 'event', 'link', 'django');",
           "href": "https://www.djangoproject.com/"
         },
         {
-          "text": "AndroidThings",
+          "value": "AndroidThings",
           "onclick": "ga('send', 'event', 'link', 'android-things');",
           "href": "https://developer.android.com/things/"
         }
       ],
       "hardware": [
         {
-          "text": "Raspberry Pi 3",
+          "value": "Raspberry Pi 3",
           "onclick": "ga('send', 'event', 'link', 'rpi');",
           "href": "https://www.raspberrypi.org/products/raspberry-pi-3-model-b/"
         }
@@ -475,7 +475,7 @@
       ],
       "technologies": [
         {
-          "text": "Continuous Integration",
+          "value": "Continuous Integration",
           "href": ""
         }
       ],
@@ -517,42 +517,42 @@
       ],
       "technologies": [
         {
-          "text": "RabbitMQ (message queue)",
+          "value": "RabbitMQ (message queue)",
           "onclick": "ga('send', 'event', 'link', 'rabbitmq');",
           "href": "https://www.rabbitmq.com/"
         },
         {
-          "text": "InfluxDB (time series database)",
+          "value": "InfluxDB (time series database)",
           "onclick": "ga('send', 'event', 'link', 'influx');",
           "href": "https://www.influxdata.com/"
         },
         {
-          "text": "Grafana (time series visualisation)",
+          "value": "Grafana (time series visualisation)",
           "onclick": "ga('send', 'event', 'link', 'grafana');",
           "href": "https://grafana.com/"
         },
         {
-          "text": "Django (administration and query interface)",
+          "value": "Django (administration and query interface)",
           "onclick": "ga('send', 'event', 'link', 'django');",
           "href": "https://www.djangoproject.com/"
         },
         {
-          "text": "Postgresql",
+          "value": "Postgresql",
           "onclick": "ga('send', 'event', 'link', 'postgres');",
           "href": "https://www.postgresql.org/"
         },
         {
-          "text": "neo4j",
+          "value": "neo4j",
           "onclick": "ga('send', 'event', 'link', 'neo4j');",
           "href": "https://neo4j.com/"
         },
         {
-          "text": "Haystack Project (meta data tagging model)",
+          "value": "Haystack Project (meta data tagging model)",
           "onclick": "ga('send', 'event', 'link', 'haystack');",
           "href": "http://project-haystack.org/"
         },
         {
-          "text": "REST/SOAP APIs",
+          "value": "REST/SOAP APIs",
           "href": ""
         }
       ],
@@ -600,11 +600,11 @@
       "technologies": null,
       "hardware": [
         {
-          "text": "Arduino Uno",
+          "value": "Arduino Uno",
           "href": "https://store.arduino.cc/usa/arduino-uno-rev3"
         },
         {
-          "text": "ADXL345",
+          "value": "ADXL345",
           "href": "https://www.sparkfun.com/products/9836"
         }
       ]
@@ -936,12 +936,12 @@
   "lecturing": [
     {
       "name": {
-        "text": "COSC430",
+        "value": "COSC430",
         "href": "http://www.cs.otago.ac.nz/cosc430/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc430');"
       },
       "title": {
-        "text": "Advanced Databases",
+        "value": "Advanced Databases",
         "href": "http://www.cs.otago.ac.nz/cosc430/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc430');"
       },
@@ -950,12 +950,12 @@
     },
     {
       "name": {
-        "text": "COSC326",
+        "value": "COSC326",
         "href": "http://www.cs.otago.ac.nz/cosc326/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc326');"
       },
       "title": {
-        "text": "Effective Programming",
+        "value": "Effective Programming",
         "href": "http://www.cs.otago.ac.nz/cosc326/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc326');"
       },
@@ -964,12 +964,12 @@
     },
     {
       "name": {
-        "text": "COSC346",
+        "value": "COSC346",
         "href": "http://www.cs.otago.ac.nz/cosc346/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc346');"
       },
       "title": {
-        "text": "Object Oriented Programming and User Interfaces",
+        "value": "Object Oriented Programming and User Interfaces",
         "href": "http://www.cs.otago.ac.nz/cosc346/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc346');"
       },
@@ -980,12 +980,12 @@
   "courses": [
     {
       "name": {
-        "text": "COMP160",
+        "value": "COMP160",
         "href": "http://www.cs.otago.ac.nz/comp160/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc160');"
       },
       "title": {
-        "text": "Computer Programming",
+        "value": "Computer Programming",
         "href": "http://www.cs.otago.ac.nz/comp160/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc160');"
       },
@@ -998,12 +998,12 @@
     },
     {
       "name": {
-        "text": "COSC241",
+        "value": "COSC241",
         "href": "http://www.cs.otago.ac.nz/cosc241/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc241');"
       },
       "title": {
-        "text": "Programming and Problem Solving",
+        "value": "Programming and Problem Solving",
         "href": "http://www.cs.otago.ac.nz/cosc241/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc241');"
       },
@@ -1017,12 +1017,12 @@
     },
     {
       "name": {
-        "text": "COSC242",
+        "value": "COSC242",
         "href": "http://www.cs.otago.ac.nz/cosc242/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc242');"
       },
       "title": {
-        "text": "Algorithms and Data Structures",
+        "value": "Algorithms and Data Structures",
         "href": "http://www.cs.otago.ac.nz/cosc242/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc242');"
       },
@@ -1038,12 +1038,12 @@
     },
     {
       "name": {
-        "text": "COSC243",
+        "value": "COSC243",
         "href": "http://www.cs.otago.ac.nz/cosc243/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc243');"
       },
       "title": {
-        "text": "Computer Architecture and Operating Systems",
+        "value": "Computer Architecture and Operating Systems",
         "href": "http://www.cs.otago.ac.nz/cosc243/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc243');"
       },
@@ -1056,12 +1056,12 @@
     },
     {
       "name": {
-        "text": "COSC244",
+        "value": "COSC244",
         "href": "http://www.cs.otago.ac.nz/cosc244/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc244');"
       },
       "title": {
-        "text": "Data Communications, Networks, and the Internet",
+        "value": "Data Communications, Networks, and the Internet",
         "href": "http://www.cs.otago.ac.nz/cosc244/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc244');"
       },
@@ -1076,12 +1076,12 @@
     },
     {
       "name": {
-        "text": "COSC301",
+        "value": "COSC301",
         "href": "http://www.cs.otago.ac.nz/cosc301/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc301');"
       },
       "title": {
-        "text": "Network Management",
+        "value": "Network Management",
         "href": "http://www.cs.otago.ac.nz/cosc301/",
         "onclick": "ga('send', 'event', 'link', 'cs-cosc301');"
       },
