@@ -17,26 +17,23 @@ Software Engineer interested in solving hard problems, delivering results, and p
 Diffblue
 March 2019 - present
 
-Diffblue Cover automatically generates tests for Java code to enable development teams to deliver higher quality software, faster. Development occurs across three teams comprised of six or seven developers with a range of skills and experience. Each team has an Architect to provide technical leadership and ensure the team is productive without reducing the quality of the code base.
+Diffblue is a small company that spun out of Oxford University in 2016. Diffblue Cover is a tool that automatically generates units tests for Java code. It uses reinforcement learning to enable development teams to deliver higher quality software, faster.
 
 #### Responsibilities
 
-* Mentor the team and company engineers through code review, team stand-up discussions, and company-level technical discussions
-* Assist with the management, planning, estimation, and development of features
-* Gathering requirements from stakeholders and engaging with quality assurance testers
-* Contribute to the management of the team
 * Shape the big picture and company vision, improve the product's architecture, tooling, build-system
-* Provide expertise when in consultation with management
-* Aid with bug triaging and prioritisation and proactively raise issues and blockers as appropriate
-* Contribute to timely delivery of releases and their release notes
+* Management, planning, estimation, and development of features and releases in a timely manner
+* Mentor and manage engineers in an agile environment through team stand-up discussions, code reviews, and company-level technical discussions
+* Gather requirements and provide expertise in discussions with management, stakeholders, and quality assurance testers
+* Assist with triaging and prioritisation of bugs and proactively raising issues and blockers as appropriate
 
 #### Achievements
 
-* Designed and developed the three core modules for UI related components of Diffblue Cover
-* Refactored CLI to improve maintainability, reduce complexity, and to follow good OOP design principles
-* Improved documentation of the code base, testing practises, introduced architecture design records
-* Designed and developed GUI tests for IntelliJ plugin reducing the amount of manual QA effort in our fortnightly release process
-* Improved quality of the codebase by introducing automated tooling to check for style issues and bugs
+* Re-designing the web-based reporting application from the ground up
+* Developed the foundations for key modules of Diffblue Cover's UI
+* Lead the technical integration of licensing allowing direct sales to customers
+* Designed and developed GUI tests for IntelliJ plugin enabling faster release cadence
+* Introduced code linters, static code checkers, and architecture decision records
 
 ### Lecturer (fixed term)
 Computer Science Department, University of Otago
