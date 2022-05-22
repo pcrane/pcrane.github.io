@@ -334,6 +334,7 @@
   },
   "projects": [
     {
+      "type": "research",
       "a": "rtnf",
       "what": "Real-time Neuro-feedback",
       "who": {
@@ -386,6 +387,7 @@
       }
     },
     {
+      "type": "commercial",
       "a": "pidis",
       "what": "Information Display",
       "who": {
@@ -454,6 +456,7 @@
       ]
     },
     {
+      "type": "hidden",
       "a": "cosc301",
       "what": "Network Management Course Content Refresh",
       "who": {
@@ -488,6 +491,7 @@
       "hardware": null
     },
     {
+      "type": "research",
       "a": "pseman",
       "what": "Supporting Energy Monitoring At University of Otago",
       "role": "Designer & Software Developer",
@@ -565,6 +569,7 @@
       "hardware": null
     },
     {
+      "type": "research",
       "a": "dextero",
       "what": "Accelerometer Gloves",
       "role": "Research Assistant",

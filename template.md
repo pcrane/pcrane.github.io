@@ -18,6 +18,12 @@
 {%- if education -%}
 {%- include 'md/education.md' -%}
 {%- endif -%}
+{%- if skill_levels -%}
+{%- include 'md/skill_levels.md' -%}
+{%- endif -%}
+{%- if projects -%}
+{%- include 'md/projects.md' -%}
+{%- endif -%}
 {%- if 0 -%}
 {%- if memberships -%}
 <h1>WARNING - FILL THE TEMPLATE FOR ASSOCIATION MEMBERSHIP</h1>
