@@ -559,7 +559,7 @@
         {
           "value": "Haystack Project (meta data tagging model)",
           "onclick": "ga('send', 'event', 'link', 'haystack');",
-          "href": "http://project-haystack.org/"
+          "href": "https://project-haystack.org/"
         },
         {
           "value": "REST/SOAP APIs",
@@ -641,15 +641,7 @@
             "keys": [
               "python"
             ],
-            "capability": 7,
-            "desire": 7
-          },
-          {
-            "name": "C",
-            "keys": [
-              "c"
-            ],
-            "capability": 7,
+            "capability": 6,
             "desire": 7
           }
         ]
@@ -668,21 +660,14 @@
             "capability": 3,
             "desire": 1
           },
+
           {
-            "name": "R",
+            "name": "C",
             "keys": [
-              "r"
+              "c"
             ],
-            "capability": 3,
-            "desire": 1
-          },
-          {
-            "name": "MatLab",
-            "keys": [
-              "matlab"
-            ],
-            "capability": 3,
-            "desire": 1
+            "capability": 7,
+            "desire": 7
           },
           {
             "name": "HTML/CSS/Javascript",
@@ -723,41 +708,34 @@
             ],
             "capability": 3,
             "desire": 1
+          },
+           {
+            "name": "R",
+            "keys": [
+              "r"
+            ],
+            "capability": 3,
+            "desire": 1
+          },
+          {
+            "name": "MatLab",
+            "keys": [
+              "matlab"
+            ],
+            "capability": 3,
+            "desire": 1
           }
         ]
       }
     ],
     "tools": [
       {
-        "name": "Version Control",
-        "sort": 4,
-        "details": [
-          {
-            "name": "git",
-            "keys": [
-              "git"
-            ],
-            "capability": 8,
-            "desire": 8
-          },
-          {
-            "name": "subversion",
-            "keys": [
-              "svn"
-            ],
-            "capability": 6,
-            "desire": 6
-          }
-        ]
-      },
-      {
         "name": "Databases",
-        "sort": 5,
+        "sort": 4,
         "details": [
           {
             "name": "SQL",
             "keys": [
-              "mysql",
               "postgresql"
             ],
             "capability": 7,
@@ -783,7 +761,7 @@
       },
       {
         "name": "Systems",
-        "sort": 6,
+        "sort": 5,
         "details": [
           {
             "name": "Linux (debian flavours)",
@@ -803,6 +781,36 @@
             ],
             "capability": 7,
             "desire": 7
+          }
+        ]
+      },
+       {
+        "name": "Build Systems/CI",
+        "sort": 6,
+        "details": [
+          {
+            "name": "Maven",
+            "keys": [
+              "mvn"
+            ],
+            "capability": 5,
+            "desire": 3
+          },
+          {
+            "name": "Gradle",
+            "keys": [
+              "gradle"
+            ],
+            "capability": 5,
+            "desire": 4
+          },
+          {
+            "name": "GitHub Actions",
+            "keys": [
+              "github actions"
+            ],
+            "capability": 5,
+            "desire": 4
           }
         ]
       }
