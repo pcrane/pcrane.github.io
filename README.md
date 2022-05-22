@@ -4,7 +4,6 @@ Architect at Diffblue
 
 Software Engineer interested in solving hard problems, delivering results, and pushing technical boundaries.
 
-- :email: [paul@crane.net.nz](mailto:paul@crane.net.nz)
 - :house: [paul.crane.net.nz](https://paul.crane.net.nz)
 - :octocat: [Github](https://github.com/pcrane)
 - :office: [LinkedIn](https://www.linkedin.com/in/paulscrane/)
