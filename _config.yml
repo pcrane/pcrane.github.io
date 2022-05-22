@@ -9,3 +9,5 @@ plugins:
   - jekyll-mentions
 
 repository: pcrane/pcrane.github.io
+
+exclude: [html,hooks,md,template.html,template.md]
