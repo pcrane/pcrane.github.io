@@ -84,6 +84,33 @@ The thesis is an examination of the use of rapidly deployable cell-phone network
 Telecommunications, [University of Otago](http://www.telecom.otago.ac.nz), 2010
 
 
+## Technical Knowledge
+
+|                  |                             |
+|------------------|-----------------------------|
+| Daily |  Java  Python |
+| Familiar |  LaTeX  C  HTML/CSS/Javascript |
+| Novice |  Go  C++  C#  R  MatLab |
+| Databases |  SQL  NoSQL  Timeseries |
+| Systems |  Linux (debian flavours)  IoT |
+| Build Systems/CI |  Maven  Gradle  GitHub Actions |
+## Research Projects
+
+### Real-time Neuro-feedback
+University of Otago, Phoebe Neo - Department of Psychology. March 2017 - November 2017
+
+This research project in the Psychology department aims to discover ways to reduce depressivity. I implemented a real-time neuro-feedback task according to an experimental protocol, and developed programs to analyse the data collected.
+
+### Supporting Energy Monitoring At University of Otago
+University of Otago, Hans Pietsch and David Eyers - Property Services Division and Department of Computer Science. July 2016 - December 2016
+
+In this project I worked with a multi-disciplinary team at the University of Otago to collect and collate a variety of energy related measurements from a disparate set of systems (e.g. building management systems, lighting systems, ad hoc sensors) at a high level of geographic (e.g. room, floor, building, and campus) and temporal precision (most commercial systems only persist aggregate data). The prototype system was presented at the Otago Energy Research Centre's Symposium in 2016, and awarded Best Student Presentation.
+
+### Accelerometer Gloves
+University of Otago, Liz Franz - Department of Psychology. 2013 - 2014
+
+In this project I designed, developed, and prototyped a set of accelerometer gloves to replace and improve upon a set of gloves that had gone out of production. The design of the new gloves achieved a sample rate of 125Hz (matching the existing pair), while improving upon the comfort level across a variety of different hand sizes and shapes.
+
 ## Publications
 ### Papers
 - **P. Crane**, Z. Huang, H. Zhang, [CRAFT: Reducing the effort for Indoor Localisation](https://paul.crane.net.nz/publications/pimrc2017/pimrc2017.pdf), _IEEE 28th Annual International Symposium on Person, Indoor and Mobile Radio Communications (PIMRC)_ 2017, Montreal, Canada.
