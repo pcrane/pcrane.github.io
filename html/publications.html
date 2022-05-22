@@ -1,0 +1,64 @@
+{% extends 'html/section.html' %}
+
+{% block section_title %}Publications{% endblock %}
+
+{% block section_body %}
+    {%- if 0 -%}
+        {%- with phd=publications.thesis.phd -%}
+            <h4>PhD Thesis</h4>
+            <ul class="ui list">
+                <li class="item">{% include 'html/phd.html' %}</li>
+            </ul>
+        {%- endwith -%}
+    {%- endif -%}
+    {%- with books=publications.books -%}
+        {%- if books -%}
+            <h4>Books</h4>
+            <ul class="ui list">
+                {%- for book in books -%}
+                    <li class="item">{%- include 'html/book.html' -%}</li>
+                {%- endfor -%}
+            </ul>
+        {%- endif -%}
+    {%- endwith -%}
+    {%- with papers=publications.papers -%}
+        {%- if papers -%}
+            <h4>Papers</h4>
+            <ul class="ui list">
+                {%- for paper in papers -%}
+                    <li class="item">{%- include 'html/paper.html' -%}</li>
+                {%- endfor -%}
+            </ul>
+        {%- endif -%}
+    {%- endwith -%}
+    {%- with conferences=publications.conferences -%}
+        {%- if conferences -%}
+            <h4>Conferences</h4>
+            <ul class="ui list">
+                {%- for conference in conferences -%}
+                    <li class="item">{%- include 'html/conference.html' -%}</li>
+                {%- endfor -%}
+            </ul>
+        {%- endif -%}
+    {%- endwith -%}
+    {%- with chapters=publications.chapters -%}
+        {%- if chapters -%}
+            <h4>Book Chapters</h4>
+            <ul class="ui list">
+                {%- for chapter in chapters -%}
+                    <li class="item">{%- include 'html/chapters.html' -%}</li>
+                {%- endfor -%}
+            </ul>
+        {%- endif -%}
+    {%- endwith -%}
+    {%- with working=publications.working -%}
+        {%- if working -%}
+            <h4>Working Papers</h4>
+            <ul class="ui list">
+                {%- for paper in working -%}
+                    <li class="item">{%- include 'html/working.html' -%}</li>
+                {%- endfor -%}
+            </ul>
+        {%- endif -%}
+    {%- endwith -%}
+{% endblock %}

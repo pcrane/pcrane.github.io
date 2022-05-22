@@ -4,11 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Control the behavior of search engine crawling and indexing -->
-    <meta name="robots" content="index,follow"><!-- All Search Engines -->
-    <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
 
-    <!-- Tells Google not to show the sitelinks search box -->
     <meta name="google" content="nositelinkssearchbox">
     <meta name="google" content="notranslate">
 
@@ -18,18 +16,17 @@
 
     <meta property="og:url" content="https://paul.crane.net.nz">
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="{{title}} {{name}}">
-    <meta property="og:description" content="{{tag}}">
-    <meta property="og:site_name" content="{{title}} {{name}} - Resume">
+    <meta property="og:title" content="{% include 'html/name.html' %}">
+    <meta property="og:description" content="{{ tag }}">
+    <meta property="og:site_name" content="{% include 'html/name.html' %} - Resume">
     <meta property="og:locale" content="en_GB">
 
-    <title>{{title}} {{name}}</title>
-    <meta name="description" content="{{tag}}">
-
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.css">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"
-          integrity="sha256-/Z28yXtfBv/6/alw+yZuODgTbKZm86IKbPE/5kjO/xY="
-          crossorigin="anonymous"/>
+    <title>{% include 'html/name.html' %}</title>
+    <meta name="description" content="{{ tag }}">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui-css@2.8.8/semantic.min.js"
+            integrity="sha256-VxL9ZXOItJ0i4nJLm39HIoX8u3cCRPRkDjMSXZ/RiQQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui-css@2.8.8/semantic.min.css"
+          integrity="sha256-ckBg2pN9ZF9KPn+vY00JXAkdqE1nv20iGM2haZhCBl4=" crossorigin="anonymous" media="screen">
 
     <link href="style.css" type="text/css" rel="stylesheet"/>
     <link href="print.css" type="text/css" rel="stylesheet" media="print"/>
@@ -37,385 +34,120 @@
     <!-- Structured Data -->
     <script type="application/ld+json">
         {
-          "@context": "http://schema.org",
-          "@type": "Person",
-          "name": "{{name}}",
-          "jobTitle": "{{jobTitle}}",
-          "givenName": "{{givenName}}",
-          "familyName": "{{familyName}}",
-          "url": "https://paul.crane.net.nz",
-          "email": "mailto:{{email}}",
-          "sameAs": [
-            "https://github.com/pcrane",
-            "https://www.linkedin.com/in/paulscrane/",
-            "https://scholar.google.co.nz/citations?user=kjrHeXQAAAAJ",
-            "https://stackoverflow.com/users/8884278/paul-crane",
-            "http://keybase.io/pscrane",
-            "https://twitter.com/paul_crane",
-            "https://otago.academia.edu/PaulCrane",
-            "http://orcid.org/0000-0002-7327-3873",
-            "https://www.researchgate.net/profile/Paul_Crane2"
-          ],
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Dunedin",
-            "addressRegion": "Otago",
-            "addressCountry": "nz"
-          },
-          "alumniOf": {
-            "@type": "EducationalOrganization",
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "{{ name }}",
+            "jobTitle": "{{ jobTitle }}",
+            "givenName": "{{ givenName }}",
+            "familyName": "{{ familyName }}",
+            "url": "https://paul.crane.net.nz",
+            "email": "mailto:{{ email }}",
+            "sameAs": [
+                "https://github.com/pcrane",
+                "https://www.linkedin.com/in/paulscrane/",
+                "https://scholar.google.co.nz/citations?user=kjrHeXQAAAAJ",
+                "https://stackoverflow.com/users/8884278/paul-crane",
+                "http://keybase.io/pscrane",
+                "https://twitter.com/paul_crane",
+                "https://otago.academia.edu/PaulCrane",
+                "http://orcid.org/0000-0002-7327-3873",
+                "https://www.researchgate.net/profile/Paul_Crane2"
+            ],
             "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "362 Leith Street",
-              "addressLocality": "Dunedin",
-              "addressRegion": "Otago"
+                "@type": "PostalAddress",
+                "addressLocality": "Oxford",
+                "addressRegion": "Oxfordshire",
+                "addressCountry": "gb"
             },
-            "url":"https://otago.ac.nz",
-            "name":"University of Otago"
-          }
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "362 Leith Street",
+                    "addressLocality": "Dunedin",
+                    "addressRegion": "Otago"
+                },
+                "url": "https://otago.ac.nz",
+                "name": "University of Otago"
+            }
         }
-
 
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106063554-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SY6Y3RR4P5"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-106063554-1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-SY6Y3RR4P5');
     </script>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NQBF3LB');</script>
-    <!-- End Google Tag Manager -->
-
-    {%- macro link_format(href, text, onclick, target="_blank", rel="noopener noreferrer") -%}
-    <a href="{{ href }}" {% if onclick %} onclick="{{ onclick }}" {% endif %} {%if rel | length>
-        0%}rel="{{rel}}"{%endif%} target="{{target}}">{{text}}</a>
-    {%- endmacro -%}
-
+    {%- macro link_format(href, text, onclick, rel="noopener noreferrer", target="_blank") -%}
+        <a href="{{ href }}" {% if onclick -%}onclick="{{ onclick }}"{%- endif %}{%- if rel | length>0 %}
+           rel="{{ rel }}"{%- endif %} target="{{ target }}">{{ text }}</a>
+    {%- endmacro %}
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQBF3LB"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQBF3LB"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
 <div class="ui main container" role="main">
     <div class="ui one column centered grid">
-        <div class="column">
-            <h1 class="ui header">{{title}} {{name}}</h1>
-            <div>
-                <ul class="ui horizontal bulleted link list">
-                    {% for method in contact.methods %}
-                    <li class="item">
-                        {% if method.icon %}
-                        <i class="{{method.icon}}"></i>
-                        {% else %}
-                        <span>{{method.prefix}}</span>
-                        {% endif %}
-                        {{ link_format(method.href, method.value, method.onclick, method.rel) }}
-                    </li>
-                    {% endfor %}
-                    <li class="item no-print">
-                        <a href="./paul_crane.pdf">PDF Version</a>
-                    </li>
-                </ul>
-            </div>
-
-            {% if tag %}
-            <span class="sub header">{{tag}}</span>
-            {% endif %}
-        </div>
-        <div class="column">
-            <h2>Education</h2>
-            <div class="ui items">
-                {% for class in education %}
-                <div class="item">
-                    <div class="content">
-                        {% if class.visible %}
-                        <h3 class="ui header">
-                                        <span class="content">
-                                            <span>
-                                                <span>{{class.what}}</span> - <span>{{class.subject}}</span>
-                                            </span>
-                                            <span class="sub header">
-                                                {% with a=class.title %}
-                                                    {% if a.href | length > 0 %}
-                                                        {{link_format(a.href, a.text, a.onclick, a.rel)}}
-                                                    {% else %}
-                                                        {{a.text}}
-                                                    {% endif %}
-                                                {% endwith %}
-                                            </span>
-                                        </span>
-                            <span class="sub header">
-                                            {% with when=class.when %}
-                                            <span class="ui left aligned">
-                                                <span>{{when.start}}</span> - <span>{{when.end}}</span>
-                                            </span>
-                                            {% endwith %}
-
-                                            {% with where=class.where %}
-                                            <span class="ui right aligned">
-                                                {% with a=where %}
-                                                    {% if a.href | length > 0 %}
-                                                        {{link_format(a.href, a.text, a.onclick)}}
-                                                    {% else %}
-                                                        {{a.text}}
-                                                    {% endif %}
-                                                {% endwith %}
-                                            </span>
-                                            {% endwith %}
-                                        </span>
-
-                        </h3>
-                        {% with abstract=class.abstract %}
-                        {% if abstract.visible %}
-                        <p>
-                            <span>{{abstract.short}}</span>
-                        </p>
-                        {% endif %}
-                        {% endwith %}
-                        {% endif %}
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="column">
-            <h2>Publications</h2>
-            <div class="ui items">
-                {% for publication in publications %}
-                <div class="item">
-                    <div class="content">
-                        <h3 class="ui header">
-                            <span>{{publication.title}}</span>
-
-                            <span class="content sub header">
-                                        with
-                                        {% for author in publication.author %}
-                                            <span>{{author.name}}</span>,
-                                        {% endfor %}
-                                        <i>{{publication.booktitle}}</i>,
-                                        pp. <span>{{publication.pages}}</span>,
-                                        <span>{{publication.year}}</span>
-                                        <span>{{publication.where}}</span>.
-                                    </span>
-
-                            <span class="sub header">
-                                {% if publication.paper  %}{% with a=publication.paper  %}{{link_format(a.href, a.text, a.onclick)}}{% endwith %}{% endif %}
-                                {% if publication.slides %}{% with a=publication.slides %}{{link_format(a.href, a.text, a.onclick)}}{% endwith %}{% endif %}
-                                {% if publication.bibtex %}{% with a=publication.bibtex %}{{link_format(a.href, a.text, a.onclick)}}{% endwith %}{% endif %}
-                            </span>
-                        </h3>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="column">
-            <h2 class="title">Lecturing Experience</h2>
-            <div><p>I have been working as a full-time lecturer in the <a href="http://cs.otago.ac.nz/">Computer
-                Science Department</a> at <a href="http://otago.ac.nz">Otago University</a>. This involves,
-                researching and devloping teaching materials (lectures, labs, assignments, etc.), delivering
-                lectures,
-                marking and providing feedback to students.
-            </p></div>
-            <div>
-                <table class="ui very basic small compact table">
-                    <thead>
-                    <tr>
-                        <th>Paper</th>
-                        <th>Offering</th>
-                        <th>Title</th>
-                        <th>Topics</th>
-                    </tr>
-                    </thead>
-                    <tbody data-bind="foreach: lecturing">
-                    {% for class in lecturing %}
-                    <tr>
-                        <td>
-                            <span data-bind="text: name.text" class="item">{{class.name.text}}</span>
-                        </td>
-                        <td>
-                            <span data-bind="text: offering" class="item">{{class.offering}}</span>
-                        </td>
-                        <td>
-                                <span data-bind="link: title" class="item">
-                                    {% with a=class.title %}
-                                        {{link_format(a.href, a.text, a.onclick)}}
-                                    {% endwith %}</span>
-                        </td>
-                        <td>
-                            <span data-bind="text:language" class="item">{{class.language}}</span>
-                        </td>
-                    </tr>
-                    {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-
-            <h2 class="title">Demonstrating Experience</h2>
-            <div><p>I have been employed demonstrating labs for numerous undergraduate courses concurrent with
-                postgraduate studies. Lab demonstrators have similar responsibilities to a teaching-assistant. The
-                main role is to assist students with the practical lab work and help them to understand concepts
-                taught in lectures.
-            </p></div>
-
-            <div>
-                <table class="ui very basic small compact table">
-                    <thead>
-                    <tr>
-                        <th>Paper</th>
-                        <th>Title</th>
-                        <th>Skillset</th>
-                        <th>Years</th>
-                    </tr>
-                    </thead>
-                    <tbody data-bind="foreach: courses">
-                    {% for course in courses %}
-                    <tr>
-                        <td><span data-bind="link: title">{{course.name.text}}</span></td>
-                        <td><span data-bind="link: title" class="item">
-                                    {% with a=course.title %}
-                                        {{link_format(a.href, a.text, a.onclick)}}
-                                    {% endwith %}</span></td>
-                        <td data-bind="text:language">{{course.language}}</td>
-                        <td data-bind="text:year">{{course.year}}</td>
-                    </tr>
-                    {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-
-            <h3 class="title">{{feedback.title}}</h3>
-            {% for item in feedback['items'] %}
-            <p>{{item.preface}}</p>
-            <ul>
-                {% for comment in item.comments %}
-                <li><q>{{comment}}</q></li>
-                {% endfor %}
-            </ul>
-            {% endfor %}
-        </div>
-
-        <div class="column">
-            <h2>Projects</h2>
-            <div class="ui raised segment">
-                <p>
-                    Each of the projects listed below were completed concurrent with PhD as paid work. All the
-                    projects involved aspects of requirements gathering, design, development, testing, and
-                    performance tuning. These projects were all conducted as sole software developer. See the
-                    <a href="https://paul.crane.net.nz/projects.html">projects page</a> for more detail.
-                </p>
-            </div>
-            <div class="ui items">
-                {% for project in projects %}
-                <div class="item">
-                    <div class="content">
-                        <h3 class="ui header">
-                            <a href="projects.html#{{project.a}}">{{project.what}}</a>
-                            <span class="sub header">
-                                        {{project.role}}, {{project.who.name}},
-                                        {{project.who.department}}, {{project.who.organisation}}<br>
-                                        {{project.when.start}} - {{project.when.end}}
-                                    </span>
-                        </h3>
-                        <p>{{project.short}}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="column">
-            <h2 class="title">Technical Knowledge</h2>
-            {% with sl=skill_levels %}
-            <div class="ui two column stackable doubling grid container">
-                <div class="column">
-                    <table class="ui very basic small compact table">
-                        <tbody>
-                        {% for item in sl.languages %}
-                        <tr>
-                            <th>
-                                <span data-bind="text: name" class="three column wide">{{item.name}}</span>
-                            </th>
-                            <td>
-                                    <span class="ui horizontal bulleted list">
-                                    {% for detail in item.details %}
-                                        <span data-bind="text: name" class="item">{{detail.name}}</span>
-                                    {% endfor %}
-                                    </span>
-                            </td>
-                        </tr>
-                        {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-                <div class="column">
-                    <table class="ui very basic small compact table">
-                        <tbody>
-                        {% for item in sl.tools %}
-                        <tr>
-                            <th>
-                                <span data-bind="text: name" class="three column wide">{{item.name}}</span>
-                            </th>
-                            <td>
-                                    <span class="ui horizontal bulleted list">
-                                    {% for detail in item.details %}
-                                        <span data-bind="text: name" class="item">{{detail.name}}</span>
-                                    {% endfor %}
-                                    </span>
-                            </td>
-                        </tr>
-                        {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            {% endwith %}
-        </div>
-
-
-
-        <div class="column">
-            <h2 class="title">Administration</h2>
-            <div class="ui items">
-                {% for admin in administration %}
-                <div class="item">
-                    <div class="content">
-                        <h3 class="ui header">
-                            {{admin.name}}
-                        </h3>
-                        <p>{{admin.description}}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="column">
-            <h2 class="title">Hobbies</h2>
-            <div class="ui items">
-                {% for hobby in hobbies %}
-                <div class="item">
-                    <div class="content">
-                        <p data-bind="text: $data">{{hobby}}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
+        {%- include 'html/title.html' -%}
+        {%- if employment -%}
+            {%- include 'html/employment.html' -%}
+        {%- endif -%}
+        {%- if 0 -%}
+            {%- if projects -%}
+                {%- include 'html/projects-engineer.html' -%}
+            {%- endif -%}
+            {%- if projects -%}
+                {%- include 'html/projects-research.html' -%}
+            {%- endif -%}
+        {%- endif -%}
+        {%- if awards -%}
+            {%- include 'html/awards.html' -%}
+        {%- endif -%}
+        {%- if education -%}
+            {%- include 'html/education.html' -%}
+        {%- endif -%}
+        {%- if skill_levels -%}
+            {%- include 'html/skill_levels.html' -%}
+        {%- endif -%}
+        {%- if projects -%}
+            {%- include 'html/projects.html' -%}
+        {%- endif -%}
+        {%- if 0 -%}
+            {%- if memberships -%}
+                <h1>WARNING - FILL THE TEMPLATE FOR ASSOCIATION MEMBERSHIP</h1>
+            {%- endif -%}
+            {%- if research -%}
+                <h1>WARNING - FILL THE TEMPLATE FOR RESEARCH</h1>
+            {%- endif -%}
+            {%- if grants -%}
+                <h1>WARNING - FILL THE TEMPLATE FOR GRANTS</h1>
+            {%- endif -%}
+            {%- if invited -%}
+                <h1>WARNING - FILL THE TEMPLATE FOR INVITED TALKS</h1>
+            {%- endif -%}
+            {%- if consulting -%}
+                <h1>WARNING - FILL THE TEMPLATE FOR CONSULTING</h1>
+            {%- endif -%}
+            {%- if advisory -%}
+                <h1>WARNING - FILL THE TEMPLATE FOR ADVISORY BOARDS</h1>
+            {%- endif -%}
+        {%- endif -%}
+        {%- if publications -%}
+            {%- include 'html/publications.html' -%}
+        {%- endif -%}
+        {%- if service -%}
+            {%- include 'html/services.html' -%}
+        {%- endif -%}
     </div>
 </div>
 </body>

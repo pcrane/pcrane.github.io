@@ -1,0 +1,40 @@
+{%  extends 'html/section.html' %}
+
+{% macro to_table_row(item) %}
+<tr>
+    <th>
+        <span class="three column wide">{{item.name}}</span>
+    </th>
+    <td>
+            <span class="ui horizontal bulleted list">
+            {% for detail in item.details %}
+                <span class="item">{{detail.name}}</span>
+            {% endfor %}
+            </span>
+    </td>
+</tr>
+{% endmacro %}
+
+{% block section_title %}Technical Knowledge{% endblock %}
+{% block section_body %}
+<div class="ui two column stackable doubling grid container">
+    <div class="column">
+        <table class="ui very basic small compact table">
+            <tbody>
+            {% for item in skill_levels.languages %}
+                {{ to_table_row(item) }}
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="column">
+        <table class="ui very basic small compact table">
+            <tbody>
+            {% for item in skill_levels.tools %}
+            {{ to_table_row(item) }}
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

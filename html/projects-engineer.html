@@ -1,0 +1,7 @@
+{% extends 'html/section.html' %}
+{% block section_title %}Contract Developer{% endblock %}
+{% block section_body %}
+{% for project in projects if project.type and project.type == "commercial" %}
+{% include 'html/project.html' %}
+{% endfor %}
+{% endblock %}

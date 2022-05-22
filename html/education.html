@@ -1,0 +1,11 @@
+{% extends 'html/section.html' %}
+
+{% block section_title %}Education{% endblock %}
+
+{% block section_body %}
+    {%- for qualification in education -%}
+        {%- if qualification.visible -%}
+            {% include 'html/qualification.html' %}
+        {%- endif -%}
+    {%- endfor -%}
+{% endblock %}

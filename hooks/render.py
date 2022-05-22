@@ -1,6 +1,10 @@
-from jinja2 import Environment, FileSystemLoader, select_autoescape
+#!/usr/bin/env python3
+
 import json
 import os
+import sys
+from jinja2 import Environment, FileSystemLoader
+from weasyprint import HTML
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -8,8 +12,23 @@ env = Environment(
     loader=FileSystemLoader(os.path.abspath(os.path.join(dir_path, os.pardir)))
 )
 
-template = env.get_template('template.html')
 
-data = json.load(open('cv.json'))
+with open('cv.json', 'r', encoding="utf-8") as cv:
+    data = json.load(cv)
 
-print(template.render(data))
+    stdout = sys.stdout
+    with open('index.html', 'w', encoding="utf-8") as f:
+        sys.stdout = f
+        template = env.get_template('template.html')
+        content = template.render(data)
+        print(content)
+
+    with open('README.md', 'w', encoding="utf-8") as f:
+        sys.stdout = f
+        template = env.get_template('template.md')
+        content = template.render(data)
+        print(content)
+
+    HTML("index.html").write_pdf("paul_crane.pdf")
+
+    sys.stdout = stdout

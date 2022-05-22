@@ -1,0 +1,10 @@
+{% extends 'html/section.html' %}
+
+{% block section_title %}Service{% endblock %}
+{% block section_body %}
+{% with s=service %}
+{% for service in s %}
+{% include 'html/service.html' %}
+{% endfor %}
+{% endwith %}
+{% endblock %}
